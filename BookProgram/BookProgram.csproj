@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6DA05D29-F39B-46EA-81D9-A770E1F4F3F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BookProgram</RootNamespace>
+    <AssemblyName>BookProgram</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CFormMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CFormMessage.Designer.cs">
+      <DependentUpon>CFormMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Chapter_class.cs" />
+    <Compile Include="Classes\Book_class.cs" />
+    <Compile Include="Classes\Location_сlass.cs" />
+    <Compile Include="Classes\Second_person_class.cs" />
+    <Compile Include="Classes\Location_help_class.cs" />
+    <Compile Include="UserControls\Mybooks_Foto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Mybooks_Foto.Designer.cs">
+      <DependentUpon>Mybooks_Foto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Mybooks_Newchapter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Mybooks_Newchapter.Designer.cs">
+      <DependentUpon>Mybooks_Newchapter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Reader_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Reader_1.Designer.cs">
+      <DependentUpon>Reader_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Reader_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Reader_2.Designer.cs">
+      <DependentUpon>Reader_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Reader_3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Reader_3.Designer.cs">
+      <DependentUpon>Reader_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Reader_4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Reader_4.Designer.cs">
+      <DependentUpon>Reader_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Reader_5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Reader_5.Designer.cs">
+      <DependentUpon>Reader_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Reader_6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Reader_6.Designer.cs">
+      <DependentUpon>Reader_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Spravochnik_obschii.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Spravochnik_obschii.Designer.cs">
+      <DependentUpon>Spravochnik_obschii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Spravochnik_name.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Spravochnik_name.Designer.cs">
+      <DependentUpon>Spravochnik_name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Spravochnik_mifolog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Spravochnik_mifolog.Designer.cs">
+      <DependentUpon>Spravochnik_mifolog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Spravochnik_anglruss.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Spravochnik_anglruss.Designer.cs">
+      <DependentUpon>Spravochnik_anglruss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Mybooks_Glaverson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Mybooks_Glaverson.Designer.cs">
+      <DependentUpon>Mybooks_Glaverson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Mybooks_Location.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Mybooks_Location.Designer.cs">
+      <DependentUpon>Mybooks_Location.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Mybooks_Newbook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Mybooks_Newbook.Designer.cs">
+      <DependentUpon>Mybooks_Newbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Mybooks_Oglavlenie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Mybooks_Oglavlenie.Designer.cs">
+      <DependentUpon>Mybooks_Oglavlenie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Mybooks_Vtorperson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Mybooks_Vtorperson.Designer.cs">
+      <DependentUpon>Mybooks_Vtorperson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Person_class.cs" />
+    <Compile Include="Classes\Serialize.cs" />
+    <Compile Include="UserControls\Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Translate\ExportWord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Translate\ExportWord.Designer.cs">
+      <DependentUpon>ExportWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Translate\InputText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Translate\InputText.Designer.cs">
+      <DependentUpon>InputText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Translate\MainTranslate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Translate\MainTranslate.Designer.cs">
+      <DependentUpon>MainTranslate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Person_list.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Person_list.Designer.cs">
+      <DependentUpon>Person_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CForm.Designer.cs">
+      <DependentUpon>CForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CFormDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CFormDialog.Designer.cs">
+      <DependentUpon>CFormDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Person.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Person.Designer.cs">
+      <DependentUpon>Person.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Mybooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Mybooks.Designer.cs">
+      <DependentUpon>Mybooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Reader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Reader.Designer.cs">
+      <DependentUpon>Reader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Settings_class.cs" />
+    <Compile Include="UserControls\Spravochnik.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Spravochnik.Designer.cs">
+      <DependentUpon>Spravochnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\Vtorpers_help_class.cs" />
+    <EmbeddedResource Include="CFormMessage.resx">
+      <DependentUpon>CFormMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Mybooks_Foto.resx">
+      <DependentUpon>Mybooks_Foto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Mybooks_Newchapter.resx">
+      <DependentUpon>Mybooks_Newchapter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Mybooks_Glaverson.resx">
+      <DependentUpon>Mybooks_Glaverson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Mybooks_Location.resx">
+      <DependentUpon>Mybooks_Location.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Mybooks_Newbook.resx">
+      <DependentUpon>Mybooks_Newbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Mybooks_Oglavlenie.resx">
+      <DependentUpon>Mybooks_Oglavlenie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Mybooks_Vtorperson.resx">
+      <DependentUpon>Mybooks_Vtorperson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Translate\ExportWord.resx">
+      <DependentUpon>ExportWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Translate\InputText.resx">
+      <DependentUpon>InputText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Translate\MainTranslate.resx">
+      <DependentUpon>MainTranslate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Person_list.resx">
+      <DependentUpon>Person_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CForm.resx">
+      <DependentUpon>CForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CFormDialog.resx">
+      <DependentUpon>CFormDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Person.resx">
+      <DependentUpon>Person.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Mybooks.resx">
+      <DependentUpon>Mybooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Reader.resx">
+      <DependentUpon>Reader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Spravochnik.resx">
+      <DependentUpon>Spravochnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Spravochnik_anglruss.resx">
+      <DependentUpon>Spravochnik_anglruss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Spravochnik_mifolog.resx">
+      <DependentUpon>Spravochnik_mifolog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Spravochnik_name.resx">
+      <DependentUpon>Spravochnik_name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Spravochnik_obschii.resx">
+      <DependentUpon>Spravochnik_obschii.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1414255352_loading-01.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Стартовая-страница.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\к_с_старт.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\н_с_старт.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\с_с_старт.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\н_с_свернуть.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\к_с_свернуть.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\с_с_свернуть.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\к_с_закрыть.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\к_с_развернуть.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\н_с_закрыть.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\н_с_развернуть.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\с_с_закрыть.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\с_с_развернуть.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Основной фон1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Имя.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\к_персонажи.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\н_персонажи.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\с_персонажи.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\к_книги.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\н_книги.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\с_книги.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\к_справочники.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\н_справочники.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\с_справочники.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\к_ролевые.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\н_ролевые.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\с_ролевые.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\к_перевод.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\н_перевод.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\с_перевод.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c_читалка.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\к_читалка.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\н_читалка.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\настройки.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\новый герой.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ворд.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Путь.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Сохранить.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\закр.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Форматировать.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\новая глава.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\новая книга.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\остальные персонажи.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\главный персонаж.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\локации.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фото_перс.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Для пикчербоксов.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Стрелочка 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Для-пикчербоксов1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ворд_аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\главный-персонаж-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\добавить-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\закр-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\локации-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\настройки-аним.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\новая-глава-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\новая-книга-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Новый-герой-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\остальные-персонажи-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Путь-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Сохранить-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Стрелочка-1-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Стрелочка-2-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\форматировать-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фото-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Стрелочка 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\добавить.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\с.к закрыть.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\с.к. закрыть.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\с.н закрыть.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\с.н.свернуть.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\с.свернуть.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\старт-закрыть.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Изменить.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Изменить-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Удалить.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\удаление-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\слов англо-русский.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\слов именной.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\слов мифологический.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\слов общий.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\слов-именной-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\слов-мифологический-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\слов-общий-аним.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\разделитель.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

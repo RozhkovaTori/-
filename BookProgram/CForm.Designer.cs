@@ -338,7 +338,7 @@
             this.pictureBox2.Image = global::BookProgram.Properties.Resources.Имя;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(119, 25);
+            this.pictureBox2.Size = new System.Drawing.Size(101, 25);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 

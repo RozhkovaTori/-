@@ -30,6 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.word = new System.Windows.Forms.PictureBox();
+            this.foto = new System.Windows.Forms.PictureBox();
+            this.spravka = new System.Windows.Forms.PictureBox();
+            this.locacii = new System.Windows.Forms.PictureBox();
+            this.vtorpers = new System.Windows.Forms.PictureBox();
+            this.glavpers = new System.Windows.Forms.PictureBox();
+            this.newcharper = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.oglav = new System.Windows.Forms.Panel();
             this.oglavknigi = new System.Windows.Forms.ListBox();
@@ -41,33 +48,26 @@
             this.oknige = new System.Windows.Forms.Panel();
             this.VisibleMenu = new System.Windows.Forms.Panel();
             this.DocMenu = new System.Windows.Forms.Panel();
-            this.HideMenu = new System.Windows.Forms.Panel();
             this.HideMenuBtn = new System.Windows.Forms.PictureBox();
+            this.HideMenu = new System.Windows.Forms.Panel();
             this.ShowMenuBut = new System.Windows.Forms.PictureBox();
-            this.word = new System.Windows.Forms.PictureBox();
-            this.foto = new System.Windows.Forms.PictureBox();
-            this.locacii = new System.Windows.Forms.PictureBox();
-            this.vtorpers = new System.Windows.Forms.PictureBox();
-            this.glavpers = new System.Windows.Forms.PictureBox();
-            this.newcharper = new System.Windows.Forms.PictureBox();
-            this.spravka = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.word)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spravka)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locacii)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vtorpers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.glavpers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newcharper)).BeginInit();
             this.panel2.SuspendLayout();
             this.oglav.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.oknige.SuspendLayout();
             this.VisibleMenu.SuspendLayout();
             this.DocMenu.SuspendLayout();
-            this.HideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HideMenuBtn)).BeginInit();
+            this.HideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShowMenuBut)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.word)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.locacii)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vtorpers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.glavpers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.newcharper)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spravka)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -84,6 +84,89 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(43, 828);
             this.panel1.TabIndex = 0;
+            // 
+            // word
+            // 
+            this.word.BackgroundImage = global::BookProgram.Properties.Resources.ворд;
+            this.word.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.word.Dock = System.Windows.Forms.DockStyle.Top;
+            this.word.Location = new System.Drawing.Point(0, 240);
+            this.word.Name = "word";
+            this.word.Size = new System.Drawing.Size(43, 40);
+            this.word.TabIndex = 10;
+            this.word.TabStop = false;
+            // 
+            // foto
+            // 
+            this.foto.BackgroundImage = global::BookProgram.Properties.Resources.фото_перс;
+            this.foto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.foto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.foto.Location = new System.Drawing.Point(0, 200);
+            this.foto.Name = "foto";
+            this.foto.Size = new System.Drawing.Size(43, 40);
+            this.foto.TabIndex = 11;
+            this.foto.TabStop = false;
+            this.foto.Click += new System.EventHandler(this.foto_Click);
+            // 
+            // spravka
+            // 
+            this.spravka.BackgroundImage = global::BookProgram.Properties.Resources.с_к_закрыть;
+            this.spravka.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.spravka.Dock = System.Windows.Forms.DockStyle.Top;
+            this.spravka.Location = new System.Drawing.Point(0, 160);
+            this.spravka.Name = "spravka";
+            this.spravka.Size = new System.Drawing.Size(43, 40);
+            this.spravka.TabIndex = 13;
+            this.spravka.TabStop = false;
+            this.spravka.Click += new System.EventHandler(this.spravka_Click);
+            // 
+            // locacii
+            // 
+            this.locacii.BackgroundImage = global::BookProgram.Properties.Resources.локации;
+            this.locacii.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.locacii.Dock = System.Windows.Forms.DockStyle.Top;
+            this.locacii.Location = new System.Drawing.Point(0, 120);
+            this.locacii.Name = "locacii";
+            this.locacii.Size = new System.Drawing.Size(43, 40);
+            this.locacii.TabIndex = 12;
+            this.locacii.TabStop = false;
+            this.locacii.Click += new System.EventHandler(this.locacii_Click);
+            // 
+            // vtorpers
+            // 
+            this.vtorpers.BackgroundImage = global::BookProgram.Properties.Resources.остальные_персонажи;
+            this.vtorpers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.vtorpers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.vtorpers.Location = new System.Drawing.Point(0, 80);
+            this.vtorpers.Name = "vtorpers";
+            this.vtorpers.Size = new System.Drawing.Size(43, 40);
+            this.vtorpers.TabIndex = 9;
+            this.vtorpers.TabStop = false;
+            this.vtorpers.Click += new System.EventHandler(this.vtorpers_Click);
+            // 
+            // glavpers
+            // 
+            this.glavpers.BackgroundImage = global::BookProgram.Properties.Resources.главный_персонаж;
+            this.glavpers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.glavpers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.glavpers.Location = new System.Drawing.Point(0, 40);
+            this.glavpers.Name = "glavpers";
+            this.glavpers.Size = new System.Drawing.Size(43, 40);
+            this.glavpers.TabIndex = 8;
+            this.glavpers.TabStop = false;
+            this.glavpers.Click += new System.EventHandler(this.glavpers_Click);
+            // 
+            // newcharper
+            // 
+            this.newcharper.BackgroundImage = global::BookProgram.Properties.Resources.новая_глава;
+            this.newcharper.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.newcharper.Dock = System.Windows.Forms.DockStyle.Top;
+            this.newcharper.Location = new System.Drawing.Point(0, 0);
+            this.newcharper.Name = "newcharper";
+            this.newcharper.Size = new System.Drawing.Size(43, 40);
+            this.newcharper.TabIndex = 7;
+            this.newcharper.TabStop = false;
+            this.newcharper.Click += new System.EventHandler(this.newcharper_Click);
             // 
             // panel2
             // 
@@ -188,17 +271,6 @@
             this.DocMenu.Size = new System.Drawing.Size(20, 230);
             this.DocMenu.TabIndex = 11;
             // 
-            // HideMenu
-            // 
-            this.HideMenu.BackColor = System.Drawing.Color.Transparent;
-            this.HideMenu.Controls.Add(this.ShowMenuBut);
-            this.HideMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.HideMenu.Location = new System.Drawing.Point(0, 230);
-            this.HideMenu.Name = "HideMenu";
-            this.HideMenu.Size = new System.Drawing.Size(702, 10);
-            this.HideMenu.TabIndex = 10;
-            this.HideMenu.Visible = false;
-            // 
             // HideMenuBtn
             // 
             this.HideMenuBtn.Dock = System.Windows.Forms.DockStyle.Top;
@@ -210,6 +282,17 @@
             this.HideMenuBtn.TabIndex = 0;
             this.HideMenuBtn.TabStop = false;
             this.HideMenuBtn.Click += new System.EventHandler(this.HideMenuBtn_Click);
+            // 
+            // HideMenu
+            // 
+            this.HideMenu.BackColor = System.Drawing.Color.Transparent;
+            this.HideMenu.Controls.Add(this.ShowMenuBut);
+            this.HideMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.HideMenu.Location = new System.Drawing.Point(0, 230);
+            this.HideMenu.Name = "HideMenu";
+            this.HideMenu.Size = new System.Drawing.Size(702, 10);
+            this.HideMenu.TabIndex = 10;
+            this.HideMenu.Visible = false;
             // 
             // ShowMenuBut
             // 
@@ -223,88 +306,6 @@
             this.ShowMenuBut.TabStop = false;
             this.ShowMenuBut.Click += new System.EventHandler(this.ShowMenuBut_Click);
             // 
-            // word
-            // 
-            this.word.BackgroundImage = global::BookProgram.Properties.Resources.ворд;
-            this.word.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.word.Dock = System.Windows.Forms.DockStyle.Top;
-            this.word.Location = new System.Drawing.Point(0, 240);
-            this.word.Name = "word";
-            this.word.Size = new System.Drawing.Size(43, 40);
-            this.word.TabIndex = 10;
-            this.word.TabStop = false;
-            // 
-            // foto
-            // 
-            this.foto.BackgroundImage = global::BookProgram.Properties.Resources.фото_перс;
-            this.foto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.foto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.foto.Location = new System.Drawing.Point(0, 200);
-            this.foto.Name = "foto";
-            this.foto.Size = new System.Drawing.Size(43, 40);
-            this.foto.TabIndex = 11;
-            this.foto.TabStop = false;
-            this.foto.Click += new System.EventHandler(this.foto_Click);
-            // 
-            // locacii
-            // 
-            this.locacii.BackgroundImage = global::BookProgram.Properties.Resources.локации;
-            this.locacii.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.locacii.Dock = System.Windows.Forms.DockStyle.Top;
-            this.locacii.Location = new System.Drawing.Point(0, 120);
-            this.locacii.Name = "locacii";
-            this.locacii.Size = new System.Drawing.Size(43, 40);
-            this.locacii.TabIndex = 12;
-            this.locacii.TabStop = false;
-            this.locacii.Click += new System.EventHandler(this.locacii_Click);
-            // 
-            // vtorpers
-            // 
-            this.vtorpers.BackgroundImage = global::BookProgram.Properties.Resources.остальные_персонажи;
-            this.vtorpers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.vtorpers.Dock = System.Windows.Forms.DockStyle.Top;
-            this.vtorpers.Location = new System.Drawing.Point(0, 80);
-            this.vtorpers.Name = "vtorpers";
-            this.vtorpers.Size = new System.Drawing.Size(43, 40);
-            this.vtorpers.TabIndex = 9;
-            this.vtorpers.TabStop = false;
-            this.vtorpers.Click += new System.EventHandler(this.vtorpers_Click);
-            // 
-            // glavpers
-            // 
-            this.glavpers.BackgroundImage = global::BookProgram.Properties.Resources.главный_персонаж;
-            this.glavpers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.glavpers.Dock = System.Windows.Forms.DockStyle.Top;
-            this.glavpers.Location = new System.Drawing.Point(0, 40);
-            this.glavpers.Name = "glavpers";
-            this.glavpers.Size = new System.Drawing.Size(43, 40);
-            this.glavpers.TabIndex = 8;
-            this.glavpers.TabStop = false;
-            this.glavpers.Click += new System.EventHandler(this.glavpers_Click);
-            // 
-            // newcharper
-            // 
-            this.newcharper.BackgroundImage = global::BookProgram.Properties.Resources.новая_глава;
-            this.newcharper.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.newcharper.Dock = System.Windows.Forms.DockStyle.Top;
-            this.newcharper.Location = new System.Drawing.Point(0, 0);
-            this.newcharper.Name = "newcharper";
-            this.newcharper.Size = new System.Drawing.Size(43, 40);
-            this.newcharper.TabIndex = 7;
-            this.newcharper.TabStop = false;
-            this.newcharper.Click += new System.EventHandler(this.newcharper_Click);
-            // 
-            // spravka
-            // 
-            this.spravka.BackgroundImage = global::BookProgram.Properties.Resources.с_к_закрыть;
-            this.spravka.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.spravka.Dock = System.Windows.Forms.DockStyle.Top;
-            this.spravka.Location = new System.Drawing.Point(0, 160);
-            this.spravka.Name = "spravka";
-            this.spravka.Size = new System.Drawing.Size(43, 40);
-            this.spravka.TabIndex = 13;
-            this.spravka.TabStop = false;
-            // 
             // Mybooks_Oglavlenie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -317,22 +318,22 @@
             this.Name = "Mybooks_Oglavlenie";
             this.Size = new System.Drawing.Size(745, 828);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.word)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spravka)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locacii)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vtorpers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.glavpers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newcharper)).EndInit();
             this.panel2.ResumeLayout(false);
             this.oglav.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
             this.oknige.ResumeLayout(false);
             this.VisibleMenu.ResumeLayout(false);
             this.DocMenu.ResumeLayout(false);
-            this.HideMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.HideMenuBtn)).EndInit();
+            this.HideMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ShowMenuBut)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.word)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.foto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.locacii)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vtorpers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.glavpers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.newcharper)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spravka)).EndInit();
             this.ResumeLayout(false);
 
         }

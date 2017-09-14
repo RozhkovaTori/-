@@ -62,6 +62,12 @@ namespace BookProgram {
         private void vtorpers_Click(object sender, EventArgs e) {
             CFormDialog f = new CFormDialog(new Mybooks_Vtorperson());
             f.Show();
+            }
+
+        private void spravka_Click(object sender, EventArgs e)
+        {
+            CFormDialog f = new CFormDialog(new Mybooks_spravochnik());
+            f.Show();
         }
         private void locacii_Click(object sender, EventArgs e) {
             CFormDialog f = new CFormDialog(new Mybooks_Location());
@@ -81,5 +87,6 @@ namespace BookProgram {
                     }
         }
         #endregion
+
     }
 }

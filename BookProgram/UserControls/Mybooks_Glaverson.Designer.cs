@@ -35,8 +35,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.add_to_book = new System.Windows.Forms.PictureBox();
             this.remove_to_book = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -84,11 +82,9 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.add_to_book);
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel3.Controls.Add(this.remove_to_book);
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Controls.Add(this.add_to_book);
             this.panel3.Location = new System.Drawing.Point(350, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(45, 531);
@@ -96,12 +92,12 @@
             // 
             // add_to_book
             // 
-            this.add_to_book.BackgroundImage = global::BookProgram.Properties.Resources.Стрелочка_1;
             this.add_to_book.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.add_to_book.Dock = System.Windows.Forms.DockStyle.Top;
-            this.add_to_book.Location = new System.Drawing.Point(0, 215);
+            this.add_to_book.Image = global::BookProgram.Properties.Resources.Стрелочка_1;
+            this.add_to_book.Location = new System.Drawing.Point(0, 0);
             this.add_to_book.Name = "add_to_book";
-            this.add_to_book.Size = new System.Drawing.Size(45, 50);
+            this.add_to_book.Size = new System.Drawing.Size(45, 45);
             this.add_to_book.TabIndex = 3;
             this.add_to_book.TabStop = false;
             this.add_to_book.Click += new System.EventHandler(this.add_to_book_Click);
@@ -110,33 +106,17 @@
             // 
             // remove_to_book
             // 
-            this.remove_to_book.BackgroundImage = global::BookProgram.Properties.Resources.Стрелочка_2;
             this.remove_to_book.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.remove_to_book.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.remove_to_book.Location = new System.Drawing.Point(0, 266);
+            this.remove_to_book.Dock = System.Windows.Forms.DockStyle.Top;
+            this.remove_to_book.Image = global::BookProgram.Properties.Resources.Стрелочка_2;
+            this.remove_to_book.Location = new System.Drawing.Point(0, 45);
             this.remove_to_book.Name = "remove_to_book";
-            this.remove_to_book.Size = new System.Drawing.Size(45, 50);
+            this.remove_to_book.Size = new System.Drawing.Size(45, 45);
             this.remove_to_book.TabIndex = 2;
             this.remove_to_book.TabStop = false;
             this.remove_to_book.Click += new System.EventHandler(this.remove_to_book_Click);
             this.remove_to_book.MouseLeave += new System.EventHandler(this.remove_to_book_MouseLeave);
             this.remove_to_book.MouseHover += new System.EventHandler(this.remove_to_book_MouseHover);
-            // 
-            // panel5
-            // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(45, 215);
-            this.panel5.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 316);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(45, 215);
-            this.panel4.TabIndex = 0;
             // 
             // Mybooks_Glaverson
             // 
@@ -144,8 +124,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Name = "Mybooks_Glaverson";
             this.Size = new System.Drawing.Size(745, 531);
             this.panel1.ResumeLayout(false);
@@ -164,8 +144,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox add_to_book;
         private System.Windows.Forms.PictureBox remove_to_book;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
         public System.Windows.Forms.ListBox book_gg;
         public System.Windows.Forms.ListBox all_gg;
     }

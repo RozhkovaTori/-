@@ -122,6 +122,7 @@ namespace BookProgram {
         }
         private void Persons_Click(object sender, EventArgs e)
         {
+            Body.Controls.Clear();
             Persons.Image = Properties.Resources.к_персонажи;
             Arxivper it = new Arxivper();
             it.Dock = DockStyle.Fill;
@@ -139,11 +140,12 @@ namespace BookProgram {
         }     
         private void my_books_Click(object sender, EventArgs e)
         {
+            Body.Controls.Clear();
             my_books.Image = Properties.Resources.к_книги;
             Mybooks it = new Mybooks();
             it.Dock = DockStyle.Fill;
-            Controls.Add(it);
-            Controls.SetChildIndex(it, 0);            
+            Body.Controls.Add(it);
+            Body.Controls.SetChildIndex(it, 0);            
         }
         private void my_books_MouseLeave(object sender, EventArgs e)
         {
@@ -160,6 +162,7 @@ namespace BookProgram {
         }
         private void spravka_Click(object sender, EventArgs e)
         {
+            Body.Controls.Clear();
             spravka.Image = Properties.Resources.к_справочники;
             Spravochnik it = new Spravochnik();
             it.Dock = DockStyle.Fill;
@@ -177,6 +180,7 @@ namespace BookProgram {
         }
         private void reader_Click(object sender, EventArgs e)
         {
+            Body.Controls.Clear();
             reader.Image = Properties.Resources.к_читалка;
             Reader it = new Reader();
             it.Dock = DockStyle.Fill;
@@ -194,6 +198,7 @@ namespace BookProgram {
         }
         private void perevod_Click(object sender, EventArgs e)
         {
+            Body.Controls.Clear();
             perevod.Image = Properties.Resources.к_перевод;
             MainTranslate it = new MainTranslate();
             it.Dock = DockStyle.Fill;
@@ -214,6 +219,7 @@ namespace BookProgram {
             MainMenu.Height = temp_height_menu;
         }
         private void setting_Click(object sender, EventArgs e) {
+            Body.Controls.Clear();
             Settings it = new Settings();
             it.Dock = DockStyle.Fill;
             Body.Controls.Add(it);

@@ -77,7 +77,7 @@ namespace BookProgram {
             if (openFileDialog3.ShowDialog() == DialogResult.OK)
                 горизонтал.Image = Image.FromFile(openFileDialog3.FileName);
         }
-        private void label23_Click(object sender, EventArgs e) {
+        public void label23_Click(object sender, EventArgs e) {
             if (cr) {
                 string error = "";
                 if (isClonFio()) error += "Ошибка: Такие Имя Фамилия уже существуют";
@@ -276,7 +276,7 @@ namespace BookProgram {
         }
         private void Dobnovpers_Resize(object sender, EventArgs e) { centering(); }
         void centering() {
-            panel1.Left = Width / 2 - panel1.Width / 2; 
+            persik.Left = Width / 2 - persik.Width / 2; 
         }
 
  

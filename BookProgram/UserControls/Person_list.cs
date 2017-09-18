@@ -12,7 +12,7 @@ using System.IO;
 namespace BookProgram {
     public partial class Arxivper : UserControl {
         public static Arxivper selfref_Arxivper { get; set; }
-        Dobnovpers select = new Dobnovpers(false, false);
+        public Dobnovpers select = new Dobnovpers(false, false);
         public Arxivper() {
             InitializeComponent();
             Arxivlist.Sorted = true;
@@ -67,5 +67,46 @@ namespace BookProgram {
         private void pech_Click(object sender, EventArgs e) {
             select.build_word_doc();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Person_help_class help = new Person_help_class();
+            string title = (select.variable.TabCount + 1).ToString();
+            TabPage myTabPage = new TabPage(title);
+#region   
+            help.persik = new Panel();
+            help.persik.Dock = DockStyle.Fill;
+
+            help.CompliteBtnm = new Label();
+            help.CompliteBtnm.Size = select.CompliteBtnm.Size;
+            help.CompliteBtnm.Location = select.CompliteBtnm.Location;
+            help.persik.Controls.Add(help.CompliteBtnm);
+
+            help.fio = new TextBox();
+            help.fio.Size = select.FIO.Size;
+            help.fio.Location = select.FIO.Location;
+            help.fio.Multiline = true;
+            help.persik.Controls.Add(help.fio);
+
+            help.профиль = new PictureBox();
+            help.профиль.SizeMode = select.профиль.SizeMode;
+            help.профиль.Size = select.профиль.Size;
+            help.профиль.Location = select.профиль.Location;
+            help.профиль.DoubleClick += new EventHandler(select.label23_Click);
+            help.persik.Controls.Add(help.профиль);
+
+            //dynamic_content.Controls.Add(help.persik);
+            //mass_l.Add(help);
+
+#endregion
+            select.variable.TabPages.Add(myTabPage);
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (select.variable.SelectedTab.Name != "Defaul") 
+            select.variable.TabPages.Remove(select.variable.SelectedTab);
+        }
+
     }
 }

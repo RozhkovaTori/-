@@ -31,18 +31,23 @@ namespace BookProgram {
             HideMenu.Visible = false;
             oknige.Height = temp_height_menu;
         }
-        public void refrash_list() {
-            if (CForm.selfref.mass_book.Count > 0) {
-            oglavknigi.Items.Clear();
-            CForm.selfref.save_to_file(CForm.selfref.global_path_file);
-            foreach (Chapter_class c in CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав)
-                oglavknigi.Items.Add(c.оглавнение);
+        public void refrash_list()
+        {
+            if (CForm.selfref.mass_book.Count > 0)
+            {
+                oglavknigi.Items.Clear();
+                CForm.selfref.save_to_file(CForm.selfref.global_path_file);
+                //if (CForm.selfref.mass_book.Count > 0)
+                //    foreach (Chapter_class c in CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав)
+                        //oglavknigi.Items.Add(c.оглавнение);
             }
         }
-        private void oglavknigi_DoubleClick(object sender, EventArgs e) {
+        private void oglavknigi_DoubleClick(object sender, EventArgs e)
+        {
             if (oglavknigi.Items.Count > 0 && oglavknigi.SelectedIndex >= 0)
                 foreach (Chapter_class c in CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав)
-                    if (oglavknigi.Items[oglavknigi.SelectedIndex].ToString() == c.оглавнение) {
+                    if (oglavknigi.Items[oglavknigi.SelectedIndex].ToString() == c.оглавнение)
+                    {
                         Mybooks_Newchapter n = new Mybooks_Newchapter(false);
                         n.init_poly(c);
                         CFormDialog f = new CFormDialog(n);

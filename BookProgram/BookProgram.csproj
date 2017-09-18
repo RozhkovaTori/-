@@ -57,6 +57,7 @@
     <Compile Include="Classes\Chapter_class.cs" />
     <Compile Include="Classes\Book_class.cs" />
     <Compile Include="Classes\Location_сlass.cs" />
+    <Compile Include="Classes\Person_help_class.cs" />
     <Compile Include="Classes\Second_person_class.cs" />
     <Compile Include="Classes\Location_help_class.cs" />
     <Compile Include="UserControls\Mybooks_Foto.cs">

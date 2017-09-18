@@ -114,6 +114,7 @@
             // Defaul
             // 
             this.Defaul.AutoScroll = true;
+            this.Defaul.BackColor = System.Drawing.Color.White;
             this.Defaul.Controls.Add(this.persik);
             this.Defaul.Location = new System.Drawing.Point(4, 26);
             this.Defaul.Name = "Defaul";
@@ -121,7 +122,6 @@
             this.Defaul.Size = new System.Drawing.Size(646, 560);
             this.Defaul.TabIndex = 0;
             this.Defaul.Text = "Главный персонаж";
-            this.Defaul.UseVisualStyleBackColor = true;
             // 
             // persik
             // 
@@ -201,6 +201,7 @@
             this.izmen.Size = new System.Drawing.Size(25, 25);
             this.izmen.TabIndex = 28;
             this.izmen.TabStop = false;
+            this.izmen.DoubleClick += new System.EventHandler(this.izmen_DoubleClick);
             // 
             // горизонтал
             // 

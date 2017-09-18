@@ -59,20 +59,20 @@ namespace BookProgram {
             горизонтал.Image = (Image)pers.imgak;
 
         }
-        private void pictureBox1_DoubleClick(object sender, EventArgs e) {
+        public void pictureBox1_DoubleClick(object sender, EventArgs e) {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
                 профиль.Image = Image.FromFile(openFileDialog1.FileName);
         }
-        private void Dobnovpers_MouseDown(object sender, MouseEventArgs e) {
+        public void Dobnovpers_MouseDown(object sender, MouseEventArgs e) {
             this.Capture = false;
             Message n = Message.Create(this.Handle, 0xa1, new IntPtr(2), IntPtr.Zero);
             this.WndProc(ref n);
         }
-        private void pictureBox2_DoubleClick(object sender, EventArgs e) {
+        public void pictureBox2_DoubleClick(object sender, EventArgs e) {
             if (openFileDialog2.ShowDialog() == DialogResult.OK)
             гориз_профиль.Image = Image.FromFile(openFileDialog2.FileName);
         }
-        private void горизонтал_DoubleClick(object sender, EventArgs e)
+        public void горизонтал_DoubleClick(object sender, EventArgs e)
         {
             if (openFileDialog3.ShowDialog() == DialogResult.OK)
                 горизонтал.Image = Image.FromFile(openFileDialog3.FileName);
@@ -274,11 +274,14 @@ namespace BookProgram {
                s.Show(); 
            }
         }
-        private void Dobnovpers_Resize(object sender, EventArgs e) { centering(); }
+        public void Dobnovpers_Resize(object sender, EventArgs e) { centering(); }
         void centering() {
             persik.Left = Width / 2 - persik.Width / 2; 
         }
 
- 
+        public void izmen_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

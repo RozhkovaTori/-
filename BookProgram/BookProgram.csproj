@@ -59,12 +59,6 @@
     <Compile Include="Classes\Location_сlass.cs" />
     <Compile Include="Classes\Second_person_class.cs" />
     <Compile Include="Classes\Location_help_class.cs" />
-    <Compile Include="UserControls\Mybooks_Spravochnik.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\Mybooks_Spravochnik.Designer.cs">
-      <DependentUpon>Mybooks_Spravochnik.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\Mybooks_Foto.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -252,9 +246,6 @@
     <Compile Include="Classes\Vtorpers_help_class.cs" />
     <EmbeddedResource Include="CFormMessage.resx">
       <DependentUpon>CFormMessage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Mybooks_Spravochnik.resx">
-      <DependentUpon>Mybooks_Spravochnik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Mybooks_Foto.resx">
       <DependentUpon>Mybooks_Foto.cs</DependentUpon>

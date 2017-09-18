@@ -64,11 +64,7 @@ namespace BookProgram {
             f.Show();
             }
 
-        private void spravka_Click(object sender, EventArgs e)
-        {
-            CFormDialog f = new CFormDialog(new Mybooks_spravochnik());
-            f.Show();
-        }
+       
         private void locacii_Click(object sender, EventArgs e) {
             CFormDialog f = new CFormDialog(new Mybooks_Location());
             f.Show();

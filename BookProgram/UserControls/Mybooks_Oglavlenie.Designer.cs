@@ -32,7 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.word = new System.Windows.Forms.PictureBox();
             this.foto = new System.Windows.Forms.PictureBox();
-            this.spravka = new System.Windows.Forms.PictureBox();
             this.locacii = new System.Windows.Forms.PictureBox();
             this.vtorpers = new System.Windows.Forms.PictureBox();
             this.glavpers = new System.Windows.Forms.PictureBox();
@@ -54,7 +53,6 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.word)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spravka)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.locacii)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vtorpers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.glavpers)).BeginInit();
@@ -74,7 +72,6 @@
             // 
             this.panel1.Controls.Add(this.word);
             this.panel1.Controls.Add(this.foto);
-            this.panel1.Controls.Add(this.spravka);
             this.panel1.Controls.Add(this.locacii);
             this.panel1.Controls.Add(this.vtorpers);
             this.panel1.Controls.Add(this.glavpers);
@@ -90,7 +87,7 @@
             this.word.BackgroundImage = global::BookProgram.Properties.Resources.ворд;
             this.word.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.word.Dock = System.Windows.Forms.DockStyle.Top;
-            this.word.Location = new System.Drawing.Point(0, 240);
+            this.word.Location = new System.Drawing.Point(0, 200);
             this.word.Name = "word";
             this.word.Size = new System.Drawing.Size(43, 40);
             this.word.TabIndex = 10;
@@ -101,24 +98,12 @@
             this.foto.BackgroundImage = global::BookProgram.Properties.Resources.фото_перс;
             this.foto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.foto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.foto.Location = new System.Drawing.Point(0, 200);
+            this.foto.Location = new System.Drawing.Point(0, 160);
             this.foto.Name = "foto";
             this.foto.Size = new System.Drawing.Size(43, 40);
             this.foto.TabIndex = 11;
             this.foto.TabStop = false;
             this.foto.Click += new System.EventHandler(this.foto_Click);
-            // 
-            // spravka
-            // 
-            this.spravka.BackgroundImage = global::BookProgram.Properties.Resources.с_к_закрыть;
-            this.spravka.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.spravka.Dock = System.Windows.Forms.DockStyle.Top;
-            this.spravka.Location = new System.Drawing.Point(0, 160);
-            this.spravka.Name = "spravka";
-            this.spravka.Size = new System.Drawing.Size(43, 40);
-            this.spravka.TabIndex = 13;
-            this.spravka.TabStop = false;
-            this.spravka.Click += new System.EventHandler(this.spravka_Click);
             // 
             // locacii
             // 
@@ -320,7 +305,6 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.word)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spravka)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.locacii)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vtorpers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.glavpers)).EndInit();
@@ -361,6 +345,5 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem удалитьГлавуToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.PictureBox spravka;
     }
 }

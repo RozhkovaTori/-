@@ -77,6 +77,7 @@ namespace BookProgram {
 #region  
             help.persik = new Panel();
             help.persik.Dock = DockStyle.Fill;
+            help.persik.BackColor = Color.Transparent;
 
             #region Texbox
 
@@ -92,144 +93,138 @@ namespace BookProgram {
             help.образ.Multiline = true;
             help.persik.Controls.Add(help.образ);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.прозвище = new TextBox();
+            help.прозвище.Size = select.прозвище.Size;
+            help.прозвище.Location = select.прозвище.Location;
+            help.прозвище.Multiline = true;
+            help.persik.Controls.Add(help.прозвище);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.возраст = new TextBox();
+            help.возраст.Size = select.возраст.Size;
+            help.возраст.Location = select.возраст.Location;
+            help.возраст.Multiline = true;
+            help.persik.Controls.Add(help.возраст);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.дата = new TextBox();
+            help.дата.Size = select.дата.Size;
+            help.дата.Location = select.дата.Location;
+            help.дата.Multiline = true;
+            help.persik.Controls.Add(help.дата);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.пол = new TextBox();
+            help.пол.Size = select.пол.Size;
+            help.пол.Location = select.пол.Location;
+            help.пол.Multiline = true;
+            help.persik.Controls.Add(help.пол);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.раса = new TextBox();
+            help.раса.Size = select.раса.Size;
+            help.раса.Location = select.раса.Location;
+            help.раса.Multiline = true;
+            help.persik.Controls.Add(help.раса);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.место_рождения = new TextBox();
+            help.место_рождения.Size = select.место_рождения.Size;
+            help.место_рождения.Location = select.место_рождения.Location;
+            help.место_рождения.Multiline = true;
+            help.persik.Controls.Add(help.место_рождения);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.профессия = new TextBox();
+            help.профессия.Size = select.профессия.Size;
+            help.профессия.Location = select.профессия.Location;
+            help.профессия.Multiline = true;
+            help.persik.Controls.Add(help.профессия);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.приндалженость = new TextBox();
+            help.приндалженость.Size = select.приндалженость.Size;
+            help.приндалженость.Location = select.приндалженость.Location;
+            help.приндалженость.Multiline = true;
+            help.persik.Controls.Add(help.приндалженость);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.биография = new TextBox();
+            help.биография.Size = select.биография.Size;
+            help.биография.Location = select.биография.Location;
+            help.биография.Multiline = true;
+            help.persik.Controls.Add(help.биография);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.взаимоотношения = new RichTextBox();
+            help.взаимоотношения.Size = select.взаимоотношения.Size;
+            help.взаимоотношения.Location = select.взаимоотношения.Location;
+            help.взаимоотношения.Multiline = true;
+            help.persik.Controls.Add(help.взаимоотношения);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.характер = new TextBox();
+            help.характер.Size = select.характер.Size;
+            help.характер.Location = select.характер.Location;
+            help.характер.Multiline = true;
+            help.persik.Controls.Add(help.характер);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.преимущества = new TextBox();
+            help.преимущества.Size = select.преимущества.Size;
+            help.преимущества.Location = select.преимущества.Location;
+            help.преимущества.Multiline = true;
+            help.persik.Controls.Add(help.преимущества);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.факты = new TextBox();
+            help.факты.Size = select.факты.Size;
+            help.факты.Location = select.факты.Location;
+            help.факты.Multiline = true;
+            help.persik.Controls.Add(help.факты);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.внешность = new TextBox();
+            help.внешность.Size = select.внешность.Size;
+            help.внешность.Location = select.внешность.Location;
+            help.внешность.Multiline = true;
+            help.persik.Controls.Add(help.внешность);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.увлечения = new TextBox();
+            help.увлечения.Size = select.увлечения.Size;
+            help.увлечения.Location = select.увлечения.Location;
+            help.увлечения.Multiline = true;
+            help.persik.Controls.Add(help.увлечения);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.способности = new TextBox();
+            help.способности.Size = select.способности.Size;
+            help.способности.Location = select.способности.Location;
+            help.способности.Multiline = true;
+            help.persik.Controls.Add(help.способности);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.эффекты = new TextBox();
+            help.эффекты.Size = select.эффекты.Size;
+            help.эффекты.Location = select.эффекты.Location;
+            help.эффекты.Multiline = true;
+            help.persik.Controls.Add(help.эффекты);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.доп_информация = new TextBox();
+            help.доп_информация.Size = select.доп_информация.Size;
+            help.доп_информация.Location = select.доп_информация.Location;
+            help.доп_информация.Multiline = true;
+            help.persik.Controls.Add(help.доп_информация);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.книга = new TextBox();
+            help.книга.Size = select.книга.Size;
+            help.книга.Location = select.книга.Location;
+            help.книга.Multiline = true;
+            help.persik.Controls.Add(help.книга);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.источник = new TextBox();
+            help.источник.Size = select.источник.Size;
+            help.источник.Location = select.источник.Location;
+            help.источник.Multiline = true;
+            help.persik.Controls.Add(help.источник);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
+            help.короткий_сюжет = new TextBox();
+            help.короткий_сюжет.Size = select.короткий_сюжет.Size;
+            help.короткий_сюжет.Location = select.короткий_сюжет.Location;
+            help.короткий_сюжет.Multiline = true;
+            help.persik.Controls.Add(help.короткий_сюжет);
 
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
-
-            help.fio = new TextBox();
-            help.fio.Size = select.FIO.Size;
-            help.fio.Location = select.FIO.Location;
-            help.fio.Multiline = true;
-            help.persik.Controls.Add(help.fio);
-            
+            help.заметки = new TextBox();
+            help.заметки.Size = select.заметки.Size;
+            help.заметки.Location = select.заметки.Location;
+            help.заметки.Multiline = true;
+            help.persik.Controls.Add(help.заметки);
+ 
             #endregion
             #region Label 
 
@@ -409,14 +404,10 @@ namespace BookProgram {
 
             #endregion
 
-
-            //dynamic_content.Controls.Add(help.persik);
-            //mass_l.Add(help);
-
-            #endregion
+            myTabPage.Controls.Add(help.persik);
             select.variable.TabPages.Add(myTabPage);
+            #endregion
         }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             if (select.variable.SelectedTab.Name != "Defaul") 

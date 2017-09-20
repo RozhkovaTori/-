@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace BookProgram
 {
-    class Person_help_class
+   public class Person_help_class
     {
         public Panel persik { get; set; }
         public Label CompliteBtnm { get; set; }

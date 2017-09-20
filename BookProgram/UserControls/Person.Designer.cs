@@ -99,18 +99,6 @@
             this.variable.SuspendLayout();
             this.SuspendLayout();
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // openFileDialog2
-            // 
-            this.openFileDialog2.FileName = "openFileDialog2";
-            // 
-            // openFileDialog3
-            // 
-            this.openFileDialog3.FileName = "openFileDialog3";
-            // 
             // Defaul
             // 
             this.Defaul.AutoScroll = true;
@@ -125,7 +113,6 @@
             // 
             // persik
             // 
-            this.persik.AutoScroll = true;
             this.persik.AutoSize = true;
             this.persik.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.persik.BackColor = System.Drawing.Color.Transparent;
@@ -195,22 +182,26 @@
             // 
             // izmen
             // 
+            this.izmen.BackgroundImage = global::BookProgram.Properties.Resources.Изменить;
             this.izmen.Image = global::BookProgram.Properties.Resources.Изменить;
             this.izmen.Location = new System.Drawing.Point(593, 49);
             this.izmen.Name = "izmen";
             this.izmen.Size = new System.Drawing.Size(25, 25);
+            this.izmen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.izmen.TabIndex = 28;
             this.izmen.TabStop = false;
-            this.izmen.DoubleClick += new System.EventHandler(this.izmen_DoubleClick);
+            this.izmen.Click += new System.EventHandler(this.izmen_DoubleClick);
             // 
             // горизонтал
             // 
             this.горизонтал.BackgroundImage = global::BookProgram.Properties.Resources.Для_пикчербоксов;
-            this.горизонтал.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.горизонтал.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.горизонтал.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.горизонтал.Image = global::BookProgram.Properties.Resources.Для_пикчербоксов;
             this.горизонтал.Location = new System.Drawing.Point(3, 2084);
             this.горизонтал.Name = "горизонтал";
             this.горизонтал.Size = new System.Drawing.Size(626, 145);
-            this.горизонтал.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.горизонтал.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.горизонтал.TabIndex = 27;
             this.горизонтал.TabStop = false;
             this.горизонтал.DoubleClick += new System.EventHandler(this.горизонтал_DoubleClick);
@@ -841,10 +832,11 @@
             this.гориз_профиль.BackgroundImage = global::BookProgram.Properties.Resources.Для_пикчербоксов;
             this.гориз_профиль.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.гориз_профиль.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.гориз_профиль.Image = global::BookProgram.Properties.Resources.Для_пикчербоксов;
             this.гориз_профиль.Location = new System.Drawing.Point(252, 82);
             this.гориз_профиль.Name = "гориз_профиль";
             this.гориз_профиль.Size = new System.Drawing.Size(350, 190);
-            this.гориз_профиль.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.гориз_профиль.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.гориз_профиль.TabIndex = 2;
             this.гориз_профиль.TabStop = false;
             this.гориз_профиль.DoubleClick += new System.EventHandler(this.pictureBox2_DoubleClick);
@@ -854,10 +846,11 @@
             this.профиль.BackgroundImage = global::BookProgram.Properties.Resources.Для_пикчербоксов;
             this.профиль.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.профиль.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.профиль.Location = new System.Drawing.Point(10, 17);
+            this.профиль.Image = global::BookProgram.Properties.Resources.Для_пикчербоксов;
+            this.профиль.Location = new System.Drawing.Point(23, 17);
             this.профиль.Name = "профиль";
-            this.профиль.Size = new System.Drawing.Size(235, 300);
-            this.профиль.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.профиль.Size = new System.Drawing.Size(221, 293);
+            this.профиль.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.профиль.TabIndex = 2;
             this.профиль.TabStop = false;
             this.профиль.DoubleClick += new System.EventHandler(this.pictureBox1_DoubleClick);

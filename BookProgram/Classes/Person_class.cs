@@ -44,11 +44,14 @@ namespace BookProgram
         public Bitmap img { get; set; }
         public Bitmap imga { get; set; }
         public Bitmap imgak { get; set; }
-        List<Person_class> variable = new List<Person_class>();
+      
+        List<Person_help_class> variable = new List<Person_help_class>();
 
-        public void add_variable(Person_class add) { variable.Add(add); }
+        public void add_variable(Person_help_class add) { variable.Add(add); }
 
-        public void remove_variable(Person_class remove) { variable.Remove(remove); }
+        public void remove_variable(Person_help_class remove) { variable.Remove(remove); }
+
+        public Person_help_class[] get_variable { get { return variable.ToArray(); } }
     }
 
 }

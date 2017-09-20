@@ -13,6 +13,7 @@ namespace BookProgram {
     public partial class Dobnovpers : UserControl {
         bool cr;
         bool book;
+        public List<Panel> resize = new List<Panel>();
         public static Dobnovpers selfref_dobn { get; set; }
         public Dobnovpers(bool create, bool inbook) {
             InitializeComponent();
@@ -24,6 +25,7 @@ namespace BookProgram {
             }
             cr = create;
             book = inbook;
+
         }
         public void init_book_info(Book_class book) {
             книга.Text = book.название;
@@ -58,10 +60,18 @@ namespace BookProgram {
             гориз_профиль.Image = (Image)pers.imga;
             горизонтал.Image = (Image)pers.imgak;
 
+            if (pers.get_variable.Length > 1)
+                foreach (Person_help_class p in pers.get_variable) {
+
+
+                }
+
         }
         public void pictureBox1_DoubleClick(object sender, EventArgs e) {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            if (openFileDialog1.ShowDialog() == DialogResult.OK) {
+                профиль.BackgroundImage = null;
                 профиль.Image = Image.FromFile(openFileDialog1.FileName);
+            }
         }
         public void Dobnovpers_MouseDown(object sender, MouseEventArgs e) {
             this.Capture = false;
@@ -70,12 +80,18 @@ namespace BookProgram {
         }
         public void pictureBox2_DoubleClick(object sender, EventArgs e) {
             if (openFileDialog2.ShowDialog() == DialogResult.OK)
-            гориз_профиль.Image = Image.FromFile(openFileDialog2.FileName);
+            {
+                гориз_профиль.BackgroundImage = null;
+                гориз_профиль.Image = Image.FromFile(openFileDialog2.FileName);
+            }
         }
         public void горизонтал_DoubleClick(object sender, EventArgs e)
         {
             if (openFileDialog3.ShowDialog() == DialogResult.OK)
+            {
                 горизонтал.Image = Image.FromFile(openFileDialog3.FileName);
+                горизонтал.BackgroundImage = null;
+            }
         }
         public void label23_Click(object sender, EventArgs e) {
             if (cr) {
@@ -83,8 +99,7 @@ namespace BookProgram {
                 if (isClonFio()) error += "Ошибка: Такие Имя Фамилия уже существуют";
                 if (String.IsNullOrEmpty(FIO.Text)) error += "Ошибка: Поле Имя Фамилия пустое";
 
-                if (error == "")
-                {
+                if (error == "") {
                     Person_class pers = new Person_class();
                     pers.fio = FIO.Text;
                     pers.прозвище = прозвище.Text;
@@ -133,8 +148,31 @@ namespace BookProgram {
                 string error = "";
                 if (String.IsNullOrEmpty(FIO.Text)) error += "Ошибка: Поле Имя Фамилия пустое";
 
-                if (error == "")
-                {
+                if (error == "") {
+
+                    if (book)
+                    {
+                        for (int i = 0; i < CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей.Length; i++)
+                            if (FIO.Text == CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей[i].fio)
+                            {
+                                CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].remove_gg(CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей[i]);
+                                break;
+                            }
+
+                    }
+                    else
+                    {
+                        for (int i = 0; i < CForm.selfref.mass_person.Count; i++)
+                            if (FIO.Text == CForm.selfref.mass_person[i].fio)
+                            {
+                                CForm.selfref.mass_person.Remove(CForm.selfref.mass_person[i]);
+                                break;
+                            }
+
+                    }
+
+
+
                     Person_class pers = new Person_class();
                     pers.fio = FIO.Text;
                     pers.прозвище = прозвище.Text;
@@ -164,23 +202,17 @@ namespace BookProgram {
                     pers.imga = new Bitmap(гориз_профиль.Image);
                     pers.imgak = new Bitmap(горизонтал.Image);
 
-                    if (book) {
-                        for (int i = 0; i < CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей.Length; i++)
-                            if (FIO.Text == CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей[i].fio) {
-                                CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].remove_gg(CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей[i]);
-                                break;
-                            }
+
+
+                    if (book)
+                    {
                         CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].add_gg(pers);
                         Mybooks_Glaverson.selfref_Mybooks_Glaverson.refrash_list();
                     }
-                    else {
-                    for (int i = 0; i < CForm.selfref.mass_person.Count; i++)
-                        if (FIO.Text == CForm.selfref.mass_person[i].fio) {
-                            CForm.selfref.mass_person.Remove(CForm.selfref.mass_person[i]);
-                            break;
-                        }
-                    CForm.selfref.mass_person.Add(pers);
-                    Arxivper.selfref_Arxivper.refrash_list();
+                    else
+                    {
+                        CForm.selfref.mass_person.Add(pers);
+                        Arxivper.selfref_Arxivper.refrash_list();
                     }
                 }
                 else {
@@ -274,13 +306,15 @@ namespace BookProgram {
                s.Show(); 
            }
         }
-        public void Dobnovpers_Resize(object sender, EventArgs e) { centering(); }
-        void centering() {
-            persik.Left = Width / 2 - persik.Width / 2; 
+        public void Dobnovpers_Resize(object sender, EventArgs e) { centering(persik,resize.ToArray()); }
+        public void centering(Panel start, Panel[] clone) {
+            start.Left = Width / 2 - start.Width / 2;
+            if(clone.Length > 0)
+             foreach (Panel p in clone)
+                p.Left = Width / 2 - p.Width / 2;
         }
-
-        public void izmen_DoubleClick(object sender, EventArgs e)
-        {
+        public void izmen_DoubleClick(object sender, EventArgs e) {
+            FIO.ReadOnly = false;
 
         }
     }

@@ -14,6 +14,7 @@ namespace BookProgram {
         bool cr;
         bool book;
         public List<Panel> resize = new List<Panel>();
+        public List<Person_help_class> help_m = new List<Person_help_class>();
         public static Dobnovpers selfref_dobn { get; set; }
         public Dobnovpers(bool create, bool inbook) {
             InitializeComponent();
@@ -62,8 +63,13 @@ namespace BookProgram {
 
             if (pers.get_variable.Length > 1)
                 foreach (Person_help_class p in pers.get_variable) {
-
-
+                    string title = (variable.TabCount + 1).ToString();
+                    TabPage myTabPage = new TabPage(title);
+                    myTabPage.BackColor = Color.White;
+                    myTabPage.AutoScroll = true;
+                    resize.Add(p.persik);
+                    myTabPage.Controls.Add(resize[resize.Count - 1]);
+                    variable.TabPages.Add(myTabPage);
                 }
 
         }
@@ -128,6 +134,7 @@ namespace BookProgram {
                     if(профиль.Image != null) pers.img = new Bitmap(профиль.Image);
                     if(гориз_профиль.Image != null) pers.imga = new Bitmap(гориз_профиль.Image);
                     if(горизонтал.Image != null) pers.imgak = new Bitmap(горизонтал.Image);
+                    foreach (Person_help_class h in help_m) pers.add_variable(h);
 
                     if (book) {
                         CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].add_gg(pers);
@@ -201,10 +208,10 @@ namespace BookProgram {
                     pers.img = new Bitmap(профиль.Image);
                     pers.imga = new Bitmap(гориз_профиль.Image);
                     pers.imgak = new Bitmap(горизонтал.Image);
+                    foreach (Person_help_class h in help_m) pers.add_variable(h);
 
 
-
-                    if (book)
+                        if (book)
                     {
                         CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].add_gg(pers);
                         Mybooks_Glaverson.selfref_Mybooks_Glaverson.refrash_list();
@@ -219,7 +226,7 @@ namespace BookProgram {
                     CFormMessage s = new CFormMessage(error);
                     s.Show();                  
                 }
-            }
+            } 
         }
         bool isClonFio() {
             foreach (Person_class p in CForm.selfref.mass_person)

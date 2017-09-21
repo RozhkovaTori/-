@@ -80,7 +80,6 @@ namespace BookProgram {
             help.persik = new Panel();
             help.persik.Size = select.persik.Size;
             help.persik.Location = select.persik.Location;
-
             #region Texbox
 
             help.fio = new TextBox();
@@ -529,6 +528,7 @@ namespace BookProgram {
             select.resize.Add(help.persik);
             myTabPage.Controls.Add(select.resize[select.resize.Count - 1]);
             select.variable.TabPages.Add(myTabPage);
+            select.help_m.Add(help);
             #endregion
         }
 

@@ -7,6 +7,7 @@ using System.Windows.Forms;
 
 namespace BookProgram
 {
+   [Serializable]
    public class Person_help_class
     {
         public Panel persik { get; set; }

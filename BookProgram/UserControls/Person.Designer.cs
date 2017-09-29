@@ -212,7 +212,7 @@
             this.CompliteBtnm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CompliteBtnm.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CompliteBtnm.ForeColor = System.Drawing.Color.Black;
-            this.CompliteBtnm.Location = new System.Drawing.Point(529, 2);
+            this.CompliteBtnm.Location = new System.Drawing.Point(529, 0);
             this.CompliteBtnm.Name = "CompliteBtnm";
             this.CompliteBtnm.Size = new System.Drawing.Size(100, 27);
             this.CompliteBtnm.TabIndex = 26;

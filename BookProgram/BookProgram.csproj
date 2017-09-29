@@ -60,6 +60,24 @@
     <Compile Include="Classes\Person_help_class.cs" />
     <Compile Include="Classes\Second_person_class.cs" />
     <Compile Include="Classes\Location_help_class.cs" />
+    <Compile Include="UserControls\Reader_Chitalka.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Reader_Chitalka.Designer.cs">
+      <DependentUpon>Reader_Chitalka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Mybooks_Videoplayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Mybooks_Videoplayer.Designer.cs">
+      <DependentUpon>Mybooks_Videoplayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Helper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Helper.Designer.cs">
+      <DependentUpon>Helper.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Mybooks_Foto.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -76,42 +94,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\Reader_1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\Reader_1.Designer.cs">
-      <DependentUpon>Reader_1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\Reader_2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\Reader_2.Designer.cs">
-      <DependentUpon>Reader_2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\Reader_3.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\Reader_3.Designer.cs">
-      <DependentUpon>Reader_3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\Reader_4.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\Reader_4.Designer.cs">
-      <DependentUpon>Reader_4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\Reader_5.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\Reader_5.Designer.cs">
-      <DependentUpon>Reader_5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\Reader_6.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\Reader_6.Designer.cs">
-      <DependentUpon>Reader_6.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Spravochnik_obschii.cs">
       <SubType>UserControl</SubType>
@@ -245,8 +227,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Vtorpers_help_class.cs" />
+    <Compile Include="UserControls\Videoplayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Videoplayer.Designer.cs">
+      <DependentUpon>Videoplayer.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CFormMessage.resx">
       <DependentUpon>CFormMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Helper.resx">
+      <DependentUpon>Helper.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Mybooks_Foto.resx">
       <DependentUpon>Mybooks_Foto.cs</DependentUpon>
@@ -266,8 +257,14 @@
     <EmbeddedResource Include="UserControls\Mybooks_Oglavlenie.resx">
       <DependentUpon>Mybooks_Oglavlenie.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Mybooks_Videoplayer.resx">
+      <DependentUpon>Mybooks_Videoplayer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Mybooks_Vtorperson.resx">
       <DependentUpon>Mybooks_Vtorperson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Reader_Chitalka.resx">
+      <DependentUpon>Reader_Chitalka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
@@ -321,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Spravochnik_obschii.resx">
       <DependentUpon>Spravochnik_obschii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Videoplayer.resx">
+      <DependentUpon>Videoplayer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

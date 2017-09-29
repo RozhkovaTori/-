@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BookProgram
 {
-    public partial class Reader_2 : UserControl
+    public partial class Helper : UserControl
     {
-        public Reader_2()
+        public Helper()
         {
             InitializeComponent();
         }

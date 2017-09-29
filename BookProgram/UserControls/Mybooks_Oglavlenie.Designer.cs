@@ -50,6 +50,7 @@
             this.HideMenuBtn = new System.Windows.Forms.PictureBox();
             this.HideMenu = new System.Windows.Forms.Panel();
             this.ShowMenuBut = new System.Windows.Forms.PictureBox();
+            this.Video = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.word)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
@@ -66,11 +67,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.HideMenuBtn)).BeginInit();
             this.HideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShowMenuBut)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Video)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.word);
+            this.panel1.Controls.Add(this.Video);
             this.panel1.Controls.Add(this.foto);
             this.panel1.Controls.Add(this.locacii);
             this.panel1.Controls.Add(this.vtorpers);
@@ -87,7 +90,7 @@
             this.word.BackgroundImage = global::BookProgram.Properties.Resources.ворд;
             this.word.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.word.Dock = System.Windows.Forms.DockStyle.Top;
-            this.word.Location = new System.Drawing.Point(0, 200);
+            this.word.Location = new System.Drawing.Point(0, 240);
             this.word.Name = "word";
             this.word.Size = new System.Drawing.Size(43, 40);
             this.word.TabIndex = 10;
@@ -291,6 +294,16 @@
             this.ShowMenuBut.TabStop = false;
             this.ShowMenuBut.Click += new System.EventHandler(this.ShowMenuBut_Click);
             // 
+            // Video
+            // 
+            this.Video.BackColor = System.Drawing.Color.DarkRed;
+            this.Video.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Video.Location = new System.Drawing.Point(0, 200);
+            this.Video.Name = "Video";
+            this.Video.Size = new System.Drawing.Size(43, 40);
+            this.Video.TabIndex = 13;
+            this.Video.TabStop = false;
+            // 
             // Mybooks_Oglavlenie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,6 +331,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.HideMenuBtn)).EndInit();
             this.HideMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ShowMenuBut)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Video)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -345,5 +359,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem удалитьГлавуToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.PictureBox Video;
     }
 }

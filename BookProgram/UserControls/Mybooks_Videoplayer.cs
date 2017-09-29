@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BookProgram
 {
-    public partial class Reader_4 : UserControl
+    public partial class Mybooks_Videoplayer : UserControl
     {
-        public Reader_4()
+        public Mybooks_Videoplayer()
         {
             InitializeComponent();
         }

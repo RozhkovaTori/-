@@ -162,12 +162,14 @@ namespace BookProgram {
         }
         private void spravka_Click(object sender, EventArgs e)
         {
-            Body.Controls.Clear();
+          //  Body.Controls.Clear();
             spravka.Image = Properties.Resources.к_справочники;
-            Spravochnik it = new Spravochnik();
+            CFormDialog it = new CFormDialog(new Spravochnik());
+            it.Show();
+            //Spravochnik it = new Spravochnik();
             it.Dock = DockStyle.Fill;
-            Body.Controls.Add(it);
-            Body.Controls.SetChildIndex(it, 0);            
+            //Body.Controls.Add(it);
+           // Body.Controls.SetChildIndex(it, 0);            
         }
 
         private void reader_MouseHover(object sender, EventArgs e)
@@ -207,6 +209,22 @@ namespace BookProgram {
         }
 
 
+       private void setting_Click(object sender, EventArgs e) {
+            Body.Controls.Clear();
+            Settings it = new Settings();
+            it.Dock = DockStyle.Fill;
+            Body.Controls.Add(it);
+            Body.Controls.SetChildIndex(it, 0);
+        }
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Body.Controls.Clear();
+            Helper it = new Helper();
+            it.Dock = DockStyle.Fill;
+            Body.Controls.Add(it);
+            Body.Controls.SetChildIndex(it, 0);
+        }
+
         private void HideMenuBtn_Click(object sender, EventArgs e) {
             VisibleMenu.Visible = false;
             HideMenu.Visible = true;
@@ -218,13 +236,7 @@ namespace BookProgram {
             HideMenu.Visible = false;
             MainMenu.Height = temp_height_menu;
         }
-        private void setting_Click(object sender, EventArgs e) {
-            Body.Controls.Clear();
-            Settings it = new Settings();
-            it.Dock = DockStyle.Fill;
-            Body.Controls.Add(it);
-            Body.Controls.SetChildIndex(it, 0);
-        }
+       
         #endregion
         #region работа с файлами
         public void save_to_file(string path) {
@@ -276,5 +288,7 @@ namespace BookProgram {
             if (set.fullscreen) WindowState = FormWindowState.Maximized;
         }
         #endregion
+
+       
     } 
 }

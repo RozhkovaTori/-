@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BookProgram
 {
-    public partial class Reader_6 : UserControl
+    public partial class Reader_Chitalka : UserControl
     {
-        public Reader_6()
+        public Reader_Chitalka()
         {
             InitializeComponent();
         }

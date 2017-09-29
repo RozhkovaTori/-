@@ -42,8 +42,10 @@ namespace BookProgram {
             if (Arxivlist.Items.Count > 0 && Arxivlist.SelectedIndex >= 0) {
                 for (int i = 0; i < CForm.selfref.mass_person.Count; i++)
                     if (Arxivlist.Items[Arxivlist.SelectedIndex].ToString() == CForm.selfref.mass_person[i].fio) {
+                        int index = Arxivlist.SelectedIndex;
                         CForm.selfref.mass_person.Remove(CForm.selfref.mass_person[i]);
                         refrash_list();
+                        if (index > 0) Arxivlist.SetSelected(index - 1, true);
                         refrash_select();
                         break;
                     }
@@ -53,14 +55,17 @@ namespace BookProgram {
                 s.Show();
             } 
         }
-        private void Arxivlist_Click(object sender, EventArgs e) {
-            refrash_select();
-        }
-        void refrash_select() {
+        public void refrash_select() {
             if (Arxivlist.Items.Count > 0 && Arxivlist.SelectedIndex >= 0)
-                for (int i = 0; i < CForm.selfref.mass_person.Count; i++)
-                    if (Arxivlist.Items[Arxivlist.SelectedIndex].ToString() == CForm.selfref.mass_person[i].fio) {
-                        Dobnovpers.selfref_dobn.init_poly(CForm.selfref.mass_person[i]);
+                //for (int i = 0; i < CForm.selfref.mass_person.Count; i++)
+                //if (Arxivlist.Items[Arxivlist.SelectedIndex].ToString() == CForm.selfref.mass_person[i].fio) {
+                //  Dobnovpers.selfref_dobn.init_poly(CForm.selfref.mass_person[i]);
+                //break;
+                //}
+                foreach (Person_class p in CForm.selfref.mass_person) 
+                    if (Arxivlist.Items[Arxivlist.SelectedIndex].ToString() == p.fio) {
+                        select.init_poly(p);
+                     //   MessageBox.Show(p.fio);
                         break;
                     }
         }
@@ -549,5 +554,8 @@ namespace BookProgram {
             select.variable.TabPages.Remove(select.variable.SelectedTab);
         }
 
+        private void Arxivlist_SelectedIndexChanged(object sender, EventArgs e) {
+            refrash_select();
+        }
     }
 }

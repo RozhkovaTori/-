@@ -393,11 +393,6 @@
         #endregion
 
         private System.Windows.Forms.Panel MainMenu;
-        private System.Windows.Forms.PictureBox perevod;
-        private System.Windows.Forms.PictureBox reader;
-        private System.Windows.Forms.PictureBox spravka;
-        private System.Windows.Forms.PictureBox my_books;
-        private System.Windows.Forms.PictureBox Persons;
         private System.Windows.Forms.Panel BottomBar;
         private System.Windows.Forms.Panel TopBar;
         private System.Windows.Forms.PictureBox pictureBox5;
@@ -413,5 +408,10 @@
         private System.Windows.Forms.PictureBox HideMenuBtn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox setting;
+        public System.Windows.Forms.PictureBox perevod;
+        public System.Windows.Forms.PictureBox reader;
+        public System.Windows.Forms.PictureBox spravka;
+        public System.Windows.Forms.PictureBox my_books;
+        public System.Windows.Forms.PictureBox Persons;
     }
 }

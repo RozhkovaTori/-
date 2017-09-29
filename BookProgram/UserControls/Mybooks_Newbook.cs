@@ -23,11 +23,14 @@ namespace BookProgram
                 название.ReadOnly = true;
             }
             cr = create;
+            жанр.SelectedIndex = 0;
         }
         public void init_poly(Book_class book) {
             название.Text = book.название;
             о_книге.Text = book.о_книге;
             обложка.Image = (Image)book.обложка;
+            жанр.Text = book.жанр;
+
         }
         private void обложка_Click(object sender, EventArgs e) {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -43,6 +46,7 @@ namespace BookProgram
                    Book_class book = new Book_class();
                     book.название = название.Text;
                     book.о_книге = о_книге.Text;
+                    book.жанр = жанр.Text;
                     if (обложка.Image != null) book.обложка = new Bitmap(обложка.Image); 
 
                     CForm.selfref.mass_book.Add(book);
@@ -65,10 +69,10 @@ namespace BookProgram
                     название.Text = book.название;
                     о_книге.Text = book.о_книге;
                     обложка.Image = book.обложка;
+                    жанр.Text = book.жанр;
 
                     for (int i = 0; i < CForm.selfref.mass_book.Count; i++)
-                        if (название.Text == CForm.selfref.mass_book[i].название)
-                        {
+                        if (название.Text == CForm.selfref.mass_book[i].название) {
                             CForm.selfref.mass_book.Remove(CForm.selfref.mass_book[i]);
                             break;
                         }
@@ -91,7 +95,5 @@ namespace BookProgram
         void centering() {
             panel1.Left = Width / 2 - panel1.Width / 2;
         }
-
-       
     }
 }

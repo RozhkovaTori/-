@@ -10,6 +10,7 @@ namespace BookProgram {
     public class Book_class {
         public string название { get; set; }
         public string о_книге { get; set; }
+        public string жанр { get; set; }
         public Bitmap обложка { get; set; }
         //массив глав
         List<Chapter_class> хранилище_глав = new List<Chapter_class>();

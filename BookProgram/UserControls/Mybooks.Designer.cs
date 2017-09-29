@@ -64,7 +64,7 @@
             this.mybook.Name = "mybook";
             this.mybook.Size = new System.Drawing.Size(168, 815);
             this.mybook.TabIndex = 2;
-            this.mybook.Click += new System.EventHandler(this.mybook_Click);
+            this.mybook.SelectedIndexChanged += new System.EventHandler(this.mybook_SelectedIndexChanged);
             // 
             // contextMenuStrip1
             // 

@@ -23,8 +23,8 @@ namespace BookProgram {
             kniga.Controls.Add(headers);
             kniga.Controls.SetChildIndex(headers, 0);
             book.Dock = DockStyle.Fill;
-            Mybooks_Oglavlenie.selfref_Mybooks_Oglavlenie.VisibleMenu.Controls.Add(book);
-            Mybooks_Oglavlenie.selfref_Mybooks_Oglavlenie.VisibleMenu.Controls.SetChildIndex(book, 0);
+            headers.VisibleMenu.Controls.Add(book);
+            headers.VisibleMenu.Controls.SetChildIndex(book, 0);
             headers.Visible = false;
 
             if (File.Exists(CForm.selfref.global_path_file)) {
@@ -56,8 +56,11 @@ namespace BookProgram {
             if (mybook.Items.Count > 0) {
                 for (int i = 0; i < CForm.selfref.mass_book.Count; i++)
                     if (mybook.Items[mybook.SelectedIndex].ToString() == CForm.selfref.mass_book[i].название) {
+                        int temp = mybook.SelectedIndex;
                         CForm.selfref.mass_book.Remove(CForm.selfref.mass_book[i]);
                         refrash_list();
+                        if(mybook.Items.Count > 0) mybook.SetSelected(temp - 1, true);
+                        refresh_mybook();
                         break;
                     }
             }
@@ -66,17 +69,19 @@ namespace BookProgram {
                 s.Show();
             }
         }
-        private void mybook_Click(object sender, EventArgs e) {
-            refresh_mybook();
-            Mybooks_Oglavlenie.selfref_Mybooks_Oglavlenie.refrash_list();
-        }
         public void refresh_mybook() {
             if (mybook.Items.Count > 0 && mybook.SelectedIndex >= 0)
                 for (int i = 0; i < CForm.selfref.mass_book.Count; i++)
                     if (mybook.Items[mybook.SelectedIndex].ToString() == CForm.selfref.mass_book[i].название) {
-                        Mybooks_Newbook.selfref_book.init_poly(CForm.selfref.mass_book[i]);
+                        book.init_poly(CForm.selfref.mass_book[i]);
                         break;
                     }
+        }
+
+        private void mybook_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            refresh_mybook();
+            headers.refrash_list();
         }
     }
 }

@@ -13,6 +13,8 @@ namespace BookProgram {
     public partial class Dobnovpers : UserControl {
         bool cr;
         bool book;
+        bool izmen_bool = false;
+        string izmen_start_name;
         public List<Panel> resize = new List<Panel>();
         public List<Person_help_class> help_m = new List<Person_help_class>();
         public static Dobnovpers selfref_dobn { get; set; }
@@ -61,16 +63,16 @@ namespace BookProgram {
             гориз_профиль.Image = (Image)pers.imga;
             горизонтал.Image = (Image)pers.imgak;
 
-            if (pers.get_variable.Length > 1)
-                foreach (Person_help_class p in pers.get_variable) {
-                    string title = (variable.TabCount + 1).ToString();
-                    TabPage myTabPage = new TabPage(title);
-                    myTabPage.BackColor = Color.White;
-                    myTabPage.AutoScroll = true;
-                    resize.Add(p.persik);
-                    myTabPage.Controls.Add(resize[resize.Count - 1]);
-                    variable.TabPages.Add(myTabPage);
-                }
+            //if (pers.get_variable.Length > 1)
+            //    foreach (Person_help_class p in pers.get_variable) {
+            //        string title = (variable.TabCount + 1).ToString();
+            //        TabPage myTabPage = new TabPage(title);
+            //        myTabPage.BackColor = Color.White;
+            //        myTabPage.AutoScroll = true;
+            //        resize.Add(p.persik);
+            //        myTabPage.Controls.Add(resize[resize.Count - 1]);
+            //        variable.TabPages.Add(myTabPage);
+            //    }
 
         }
         public void pictureBox1_DoubleClick(object sender, EventArgs e) {
@@ -104,7 +106,6 @@ namespace BookProgram {
                 string error = "";
                 if (isClonFio()) error += "Ошибка: Такие Имя Фамилия уже существуют";
                 if (String.IsNullOrEmpty(FIO.Text)) error += "Ошибка: Поле Имя Фамилия пустое";
-
                 if (error == "") {
                     Person_class pers = new Person_class();
                     pers.fio = FIO.Text;
@@ -134,7 +135,7 @@ namespace BookProgram {
                     if(профиль.Image != null) pers.img = new Bitmap(профиль.Image);
                     if(гориз_профиль.Image != null) pers.imga = new Bitmap(гориз_профиль.Image);
                     if(горизонтал.Image != null) pers.imgak = new Bitmap(горизонтал.Image);
-                    foreach (Person_help_class h in help_m) pers.add_variable(h);
+                //    foreach (Person_help_class h in help_m) pers.add_variable(h);
 
                     if (book) {
                         CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].add_gg(pers);
@@ -143,6 +144,10 @@ namespace BookProgram {
                     else {
                         CForm.selfref.mass_person.Add(pers);
                         Arxivper.selfref_Arxivper.refrash_list();
+                      //  Arxivper.selfref_Arxivper.Arxivlist.SetSelected(0, true);
+                        Arxivper.selfref_Arxivper.refrash_select();
+                        //Arxivper.selfref_Arxivper.select.init_poly(CForm.selfref.mass_person[Arxivper.selfref_Arxivper.Arxivlist.SelectedIndex]);
+
                     }
                     CFormDialog.CRefDialog.CloseCFormDialog(); // закрытие формы
                 }
@@ -156,29 +161,32 @@ namespace BookProgram {
                 if (String.IsNullOrEmpty(FIO.Text)) error += "Ошибка: Поле Имя Фамилия пустое";
 
                 if (error == "") {
-
-                    if (book)
-                    {
+                    if (book) {
                         for (int i = 0; i < CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей.Length; i++)
-                            if (FIO.Text == CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей[i].fio)
-                            {
+                            if (FIO.Text == CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей[i].fio) {
                                 CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].remove_gg(CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей[i]);
                                 break;
                             }
-
                     }
-                    else
-                    {
-                        for (int i = 0; i < CForm.selfref.mass_person.Count; i++)
-                            if (FIO.Text == CForm.selfref.mass_person[i].fio)
-                            {
-                                CForm.selfref.mass_person.Remove(CForm.selfref.mass_person[i]);
-                                break;
-                            }
-
+                    else {
+                        if (izmen_bool) {
+                            for (int i = 0; i < CForm.selfref.mass_person.Count; i++)
+                                if (izmen_start_name == CForm.selfref.mass_person[i].fio) {
+                                    CForm.selfref.mass_person.Remove(CForm.selfref.mass_person[i]);
+                                    izmen_bool = false;
+                                    FIO.ReadOnly = true;
+                                    MessageBox.Show(FIO.ReadOnly.ToString());
+                                    break;
+                                }
+                        }
+                        else {
+                            for (int i = 0; i < CForm.selfref.mass_person.Count; i++)
+                                if (FIO.Text == CForm.selfref.mass_person[i].fio) {
+                                    CForm.selfref.mass_person.Remove(CForm.selfref.mass_person[i]);
+                                    break;
+                                }
+                        }
                     }
-
-
 
                     Person_class pers = new Person_class();
                     pers.fio = FIO.Text;
@@ -208,18 +216,19 @@ namespace BookProgram {
                     pers.img = new Bitmap(профиль.Image);
                     pers.imga = new Bitmap(гориз_профиль.Image);
                     pers.imgak = new Bitmap(горизонтал.Image);
-                    foreach (Person_help_class h in help_m) pers.add_variable(h);
+                    //   foreach (Person_help_class h in help_m) pers.add_variable(h);
 
 
-                        if (book)
-                    {
+                    if (book) {
                         CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].add_gg(pers);
                         Mybooks_Glaverson.selfref_Mybooks_Glaverson.refrash_list();
                     }
-                    else
-                    {
+                    else {
                         CForm.selfref.mass_person.Add(pers);
                         Arxivper.selfref_Arxivper.refrash_list();
+                       // Arxivper.selfref_Arxivper.Arxivlist.SetSelected(0,true);
+                        Arxivper.selfref_Arxivper.refrash_select();
+                        //Arxivper.selfref_Arxivper.select.init_poly(pers);
                     }
                 }
                 else {
@@ -322,7 +331,8 @@ namespace BookProgram {
         }
         public void izmen_DoubleClick(object sender, EventArgs e) {
             FIO.ReadOnly = false;
-
+            izmen_bool = true;
+            izmen_start_name = FIO.Text;
         }
     }
 }

@@ -124,6 +124,7 @@
             this.жанр.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.жанр.FormattingEnabled = true;
             this.жанр.Items.AddRange(new object[] {
+            "Не выбрано",
             "Современный роман",
             "Исторический роман",
             "Фэнтези",

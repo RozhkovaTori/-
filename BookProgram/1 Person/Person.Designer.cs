@@ -177,14 +177,14 @@
             this.persik.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.persik.Location = new System.Drawing.Point(0, 0);
             this.persik.Name = "persik";
-            this.persik.Size = new System.Drawing.Size(632, 2780);
+            this.persik.Size = new System.Drawing.Size(632, 2808);
             this.persik.TabIndex = 22;
             // 
             // izmen
             // 
             this.izmen.BackgroundImage = global::BookProgram.Properties.Resources.Изменить;
             this.izmen.Image = global::BookProgram.Properties.Resources.Изменить;
-            this.izmen.Location = new System.Drawing.Point(593, 49);
+            this.izmen.Location = new System.Drawing.Point(593, 67);
             this.izmen.Name = "izmen";
             this.izmen.Size = new System.Drawing.Size(25, 25);
             this.izmen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -198,7 +198,7 @@
             this.горизонтал.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.горизонтал.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.горизонтал.Image = global::BookProgram.Properties.Resources.Для_пикчербоксов;
-            this.горизонтал.Location = new System.Drawing.Point(3, 2084);
+            this.горизонтал.Location = new System.Drawing.Point(3, 2112);
             this.горизонтал.Name = "горизонтал";
             this.горизонтал.Size = new System.Drawing.Size(626, 145);
             this.горизонтал.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -225,7 +225,7 @@
             this.взаимоотношения.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.взаимоотношения.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.взаимоотношения.ForeColor = System.Drawing.Color.Black;
-            this.взаимоотношения.Location = new System.Drawing.Point(203, 825);
+            this.взаимоотношения.Location = new System.Drawing.Point(203, 853);
             this.взаимоотношения.Name = "взаимоотношения";
             this.взаимоотношения.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
             this.взаимоотношения.Size = new System.Drawing.Size(373, 100);
@@ -236,7 +236,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(368, 440);
+            this.label4.Location = new System.Drawing.Point(368, 468);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 25);
             this.label4.TabIndex = 5;
@@ -246,7 +246,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(276, 441);
+            this.label3.Location = new System.Drawing.Point(276, 469);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 25);
             this.label3.TabIndex = 5;
@@ -256,7 +256,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(34, 440);
+            this.label2.Location = new System.Drawing.Point(34, 468);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 25);
             this.label2.TabIndex = 5;
@@ -269,7 +269,7 @@
             this.раса.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.раса.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.раса.ForeColor = System.Drawing.Color.Black;
-            this.раса.Location = new System.Drawing.Point(419, 440);
+            this.раса.Location = new System.Drawing.Point(419, 468);
             this.раса.Multiline = true;
             this.раса.Name = "раса";
             this.раса.Size = new System.Drawing.Size(157, 25);
@@ -283,7 +283,7 @@
             this.пол.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.пол.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.пол.ForeColor = System.Drawing.Color.Black;
-            this.пол.Location = new System.Drawing.Point(321, 441);
+            this.пол.Location = new System.Drawing.Point(321, 469);
             this.пол.Multiline = true;
             this.пол.Name = "пол";
             this.пол.Size = new System.Drawing.Size(34, 25);
@@ -294,7 +294,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label20.Location = new System.Drawing.Point(215, 2519);
+            this.label20.Location = new System.Drawing.Point(215, 2547);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(164, 56);
             this.label20.TabIndex = 5;
@@ -305,7 +305,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label27.Location = new System.Drawing.Point(240, 2248);
+            this.label27.Location = new System.Drawing.Point(240, 2276);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(114, 56);
             this.label27.TabIndex = 5;
@@ -316,7 +316,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(154, 1847);
+            this.label8.Location = new System.Drawing.Point(154, 1875);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(282, 56);
             this.label8.TabIndex = 5;
@@ -327,7 +327,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(199, 950);
+            this.label7.Location = new System.Drawing.Point(199, 978);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(179, 56);
             this.label7.TabIndex = 5;
@@ -338,7 +338,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(188, 613);
+            this.label6.Location = new System.Drawing.Point(188, 641);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(190, 56);
             this.label6.TabIndex = 5;
@@ -349,7 +349,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(109, 334);
+            this.label5.Location = new System.Drawing.Point(109, 362);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(339, 56);
             this.label5.TabIndex = 5;
@@ -360,7 +360,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label25.Location = new System.Drawing.Point(35, 547);
+            this.label25.Location = new System.Drawing.Point(35, 575);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(149, 25);
             this.label25.TabIndex = 5;
@@ -370,7 +370,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label24.Location = new System.Drawing.Point(35, 514);
+            this.label24.Location = new System.Drawing.Point(35, 542);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(96, 25);
             this.label24.TabIndex = 5;
@@ -380,7 +380,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(35, 479);
+            this.label9.Location = new System.Drawing.Point(35, 507);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(146, 25);
             this.label9.TabIndex = 5;
@@ -392,7 +392,7 @@
             this.CompliteBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CompliteBtn.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CompliteBtn.ForeColor = System.Drawing.Color.Black;
-            this.CompliteBtn.Location = new System.Drawing.Point(448, 2753);
+            this.CompliteBtn.Location = new System.Drawing.Point(448, 2781);
             this.CompliteBtn.Name = "CompliteBtn";
             this.CompliteBtn.Size = new System.Drawing.Size(100, 27);
             this.CompliteBtn.TabIndex = 25;
@@ -403,7 +403,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label26.Location = new System.Drawing.Point(35, 1709);
+            this.label26.Location = new System.Drawing.Point(35, 1737);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(169, 25);
             this.label26.TabIndex = 5;
@@ -413,7 +413,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.Location = new System.Drawing.Point(36, 1597);
+            this.label17.Location = new System.Drawing.Point(36, 1625);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(109, 50);
             this.label17.TabIndex = 5;
@@ -423,7 +423,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label22.Location = new System.Drawing.Point(38, 2392);
+            this.label22.Location = new System.Drawing.Point(38, 2420);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(152, 25);
             this.label22.TabIndex = 5;
@@ -433,7 +433,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.Location = new System.Drawing.Point(38, 1374);
+            this.label15.Location = new System.Drawing.Point(38, 1402);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(114, 50);
             this.label15.TabIndex = 5;
@@ -443,7 +443,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label21.Location = new System.Drawing.Point(36, 1917);
+            this.label21.Location = new System.Drawing.Point(36, 1945);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(149, 50);
             this.label21.TabIndex = 5;
@@ -453,7 +453,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(38, 1154);
+            this.label13.Location = new System.Drawing.Point(38, 1182);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(145, 50);
             this.label13.TabIndex = 5;
@@ -463,7 +463,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(38, 825);
+            this.label10.Location = new System.Drawing.Point(38, 853);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(159, 25);
             this.label10.TabIndex = 5;
@@ -473,7 +473,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(35, 402);
+            this.label11.Location = new System.Drawing.Point(35, 430);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(89, 25);
             this.label11.TabIndex = 5;
@@ -483,7 +483,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.Location = new System.Drawing.Point(35, 1485);
+            this.label16.Location = new System.Drawing.Point(35, 1513);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(153, 25);
             this.label16.TabIndex = 5;
@@ -493,7 +493,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label19.Location = new System.Drawing.Point(34, 2353);
+            this.label19.Location = new System.Drawing.Point(34, 2381);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(180, 25);
             this.label19.TabIndex = 5;
@@ -503,7 +503,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(37, 1264);
+            this.label14.Location = new System.Drawing.Point(37, 1292);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(152, 25);
             this.label14.TabIndex = 5;
@@ -513,7 +513,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label18.Location = new System.Drawing.Point(35, 2318);
+            this.label18.Location = new System.Drawing.Point(35, 2346);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(138, 25);
             this.label18.TabIndex = 5;
@@ -523,7 +523,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(38, 1018);
+            this.label12.Location = new System.Drawing.Point(38, 1046);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(89, 25);
             this.label12.TabIndex = 5;
@@ -533,7 +533,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(38, 681);
+            this.label1.Location = new System.Drawing.Point(38, 709);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 25);
             this.label1.TabIndex = 5;
@@ -546,7 +546,7 @@
             this.эффекты.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.эффекты.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.эффекты.ForeColor = System.Drawing.Color.Black;
-            this.эффекты.Location = new System.Drawing.Point(205, 1712);
+            this.эффекты.Location = new System.Drawing.Point(205, 1740);
             this.эффекты.Multiline = true;
             this.эффекты.Name = "эффекты";
             this.эффекты.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -560,7 +560,7 @@
             this.способности.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.способности.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.способности.ForeColor = System.Drawing.Color.Black;
-            this.способности.Location = new System.Drawing.Point(159, 1599);
+            this.способности.Location = new System.Drawing.Point(159, 1627);
             this.способности.Multiline = true;
             this.способности.Name = "способности";
             this.способности.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -574,7 +574,7 @@
             this.источник.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.источник.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.источник.ForeColor = System.Drawing.Color.Black;
-            this.источник.Location = new System.Drawing.Point(220, 2353);
+            this.источник.Location = new System.Drawing.Point(220, 2381);
             this.источник.Multiline = true;
             this.источник.Name = "источник";
             this.источник.Size = new System.Drawing.Size(356, 23);
@@ -587,7 +587,7 @@
             this.короткий_сюжет.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.короткий_сюжет.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.короткий_сюжет.ForeColor = System.Drawing.Color.Black;
-            this.короткий_сюжет.Location = new System.Drawing.Point(196, 2390);
+            this.короткий_сюжет.Location = new System.Drawing.Point(196, 2418);
             this.короткий_сюжет.Multiline = true;
             this.короткий_сюжет.Name = "короткий_сюжет";
             this.короткий_сюжет.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -601,7 +601,7 @@
             this.внешность.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.внешность.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.внешность.ForeColor = System.Drawing.Color.Black;
-            this.внешность.Location = new System.Drawing.Point(158, 1376);
+            this.внешность.Location = new System.Drawing.Point(158, 1404);
             this.внешность.Multiline = true;
             this.внешность.Name = "внешность";
             this.внешность.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -615,7 +615,7 @@
             this.приндалженость.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.приндалженость.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.приндалженость.ForeColor = System.Drawing.Color.Black;
-            this.приндалженость.Location = new System.Drawing.Point(184, 549);
+            this.приндалженость.Location = new System.Drawing.Point(184, 577);
             this.приндалженость.Multiline = true;
             this.приндалженость.Name = "приндалженость";
             this.приндалженость.Size = new System.Drawing.Size(392, 23);
@@ -628,7 +628,7 @@
             this.профессия.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.профессия.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.профессия.ForeColor = System.Drawing.Color.Black;
-            this.профессия.Location = new System.Drawing.Point(137, 516);
+            this.профессия.Location = new System.Drawing.Point(137, 544);
             this.профессия.Multiline = true;
             this.профессия.Name = "профессия";
             this.профессия.Size = new System.Drawing.Size(439, 23);
@@ -641,7 +641,7 @@
             this.место_рождения.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.место_рождения.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.место_рождения.ForeColor = System.Drawing.Color.Black;
-            this.место_рождения.Location = new System.Drawing.Point(184, 481);
+            this.место_рождения.Location = new System.Drawing.Point(184, 509);
             this.место_рождения.Multiline = true;
             this.место_рождения.Name = "место_рождения";
             this.место_рождения.Size = new System.Drawing.Size(392, 23);
@@ -654,7 +654,7 @@
             this.заметки.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.заметки.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.заметки.ForeColor = System.Drawing.Color.Black;
-            this.заметки.Location = new System.Drawing.Point(46, 2590);
+            this.заметки.Location = new System.Drawing.Point(46, 2618);
             this.заметки.Multiline = true;
             this.заметки.Name = "заметки";
             this.заметки.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -668,7 +668,7 @@
             this.доп_информация.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.доп_информация.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.доп_информация.ForeColor = System.Drawing.Color.Black;
-            this.доп_информация.Location = new System.Drawing.Point(191, 1919);
+            this.доп_информация.Location = new System.Drawing.Point(191, 1947);
             this.доп_информация.Multiline = true;
             this.доп_информация.Name = "доп_информация";
             this.доп_информация.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -682,7 +682,7 @@
             this.преимущества.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.преимущества.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.преимущества.ForeColor = System.Drawing.Color.Black;
-            this.преимущества.Location = new System.Drawing.Point(189, 1156);
+            this.преимущества.Location = new System.Drawing.Point(189, 1184);
             this.преимущества.Multiline = true;
             this.преимущества.Name = "преимущества";
             this.преимущества.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -696,7 +696,7 @@
             this.дата.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.дата.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.дата.ForeColor = System.Drawing.Color.Black;
-            this.дата.Location = new System.Drawing.Point(162, 441);
+            this.дата.Location = new System.Drawing.Point(162, 469);
             this.дата.Multiline = true;
             this.дата.Name = "дата";
             this.дата.Size = new System.Drawing.Size(101, 25);
@@ -710,7 +710,7 @@
             this.возраст.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.возраст.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.возраст.ForeColor = System.Drawing.Color.Black;
-            this.возраст.Location = new System.Drawing.Point(119, 441);
+            this.возраст.Location = new System.Drawing.Point(119, 469);
             this.возраст.Multiline = true;
             this.возраст.Name = "возраст";
             this.возраст.Size = new System.Drawing.Size(39, 25);
@@ -724,7 +724,7 @@
             this.увлечения.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.увлечения.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.увлечения.ForeColor = System.Drawing.Color.Black;
-            this.увлечения.Location = new System.Drawing.Point(189, 1487);
+            this.увлечения.Location = new System.Drawing.Point(189, 1515);
             this.увлечения.Multiline = true;
             this.увлечения.Name = "увлечения";
             this.увлечения.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -738,7 +738,7 @@
             this.факты.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.факты.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.факты.ForeColor = System.Drawing.Color.Black;
-            this.факты.Location = new System.Drawing.Point(189, 1266);
+            this.факты.Location = new System.Drawing.Point(189, 1294);
             this.факты.Multiline = true;
             this.факты.Name = "факты";
             this.факты.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -752,7 +752,7 @@
             this.прозвище.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.прозвище.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.прозвище.ForeColor = System.Drawing.Color.Black;
-            this.прозвище.Location = new System.Drawing.Point(130, 406);
+            this.прозвище.Location = new System.Drawing.Point(130, 434);
             this.прозвище.Multiline = true;
             this.прозвище.Name = "прозвище";
             this.прозвище.Size = new System.Drawing.Size(446, 23);
@@ -765,7 +765,7 @@
             this.книга.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.книга.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.книга.ForeColor = System.Drawing.Color.Black;
-            this.книга.Location = new System.Drawing.Point(183, 2321);
+            this.книга.Location = new System.Drawing.Point(183, 2349);
             this.книга.Multiline = true;
             this.книга.Name = "книга";
             this.книга.Size = new System.Drawing.Size(393, 23);
@@ -778,7 +778,7 @@
             this.характер.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.характер.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.характер.ForeColor = System.Drawing.Color.Black;
-            this.характер.Location = new System.Drawing.Point(133, 1022);
+            this.характер.Location = new System.Drawing.Point(133, 1050);
             this.характер.Multiline = true;
             this.характер.Name = "характер";
             this.характер.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -792,7 +792,7 @@
             this.образ.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.образ.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.образ.ForeColor = System.Drawing.Color.Black;
-            this.образ.Location = new System.Drawing.Point(256, 278);
+            this.образ.Location = new System.Drawing.Point(274, 296);
             this.образ.Multiline = true;
             this.образ.Name = "образ";
             this.образ.Size = new System.Drawing.Size(320, 18);
@@ -806,7 +806,7 @@
             this.биография.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.биография.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.биография.ForeColor = System.Drawing.Color.Black;
-            this.биография.Location = new System.Drawing.Point(133, 685);
+            this.биография.Location = new System.Drawing.Point(133, 713);
             this.биография.Multiline = true;
             this.биография.Name = "биография";
             this.биография.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -820,7 +820,7 @@
             this.FIO.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.FIO.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FIO.ForeColor = System.Drawing.Color.Black;
-            this.FIO.Location = new System.Drawing.Point(250, 30);
+            this.FIO.Location = new System.Drawing.Point(250, 48);
             this.FIO.Multiline = true;
             this.FIO.Name = "FIO";
             this.FIO.Size = new System.Drawing.Size(339, 47);
@@ -833,9 +833,9 @@
             this.гориз_профиль.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.гориз_профиль.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.гориз_профиль.Image = global::BookProgram.Properties.Resources.Для_пикчербоксов;
-            this.гориз_профиль.Location = new System.Drawing.Point(252, 82);
+            this.гориз_профиль.Location = new System.Drawing.Point(252, 100);
             this.гориз_профиль.Name = "гориз_профиль";
-            this.гориз_профиль.Size = new System.Drawing.Size(350, 190);
+            this.гориз_профиль.Size = new System.Drawing.Size(366, 190);
             this.гориз_профиль.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.гориз_профиль.TabIndex = 2;
             this.гориз_профиль.TabStop = false;
@@ -847,9 +847,9 @@
             this.профиль.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.профиль.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.профиль.Image = global::BookProgram.Properties.Resources.Для_пикчербоксов;
-            this.профиль.Location = new System.Drawing.Point(23, 17);
+            this.профиль.Location = new System.Drawing.Point(28, 31);
             this.профиль.Name = "профиль";
-            this.профиль.Size = new System.Drawing.Size(221, 293);
+            this.профиль.Size = new System.Drawing.Size(216, 299);
             this.профиль.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.профиль.TabIndex = 2;
             this.профиль.TabStop = false;

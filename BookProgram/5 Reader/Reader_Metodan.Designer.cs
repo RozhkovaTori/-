@@ -1,6 +1,6 @@
 ﻿namespace BookProgram
 {
-    partial class Mybooks_Videoplayer
+    partial class Reader_Metodan
     {
         /// <summary> 
         /// Обязательная переменная конструктора.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Mybooks_Videoplayer
+            // Reader_Metodan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Name = "Mybooks_Videoplayer";
-            this.Size = new System.Drawing.Size(745, 828);
+            this.Name = "Reader_Metodan";
+            this.Size = new System.Drawing.Size(1162, 807);
             this.ResumeLayout(false);
 
         }

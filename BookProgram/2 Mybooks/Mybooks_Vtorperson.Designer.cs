@@ -31,6 +31,8 @@
             this.body = new System.Windows.Forms.Panel();
             this.dynamic_content = new System.Windows.Forms.Panel();
             this.fix_content = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.описание = new System.Windows.Forms.TextBox();
             this.изображение = new System.Windows.Forms.PictureBox();
             this.ФИО = new System.Windows.Forms.TextBox();
@@ -38,15 +40,13 @@
             this.save = new System.Windows.Forms.PictureBox();
             this.add_new = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.body.SuspendLayout();
             this.fix_content.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.изображение)).BeginInit();
             this.menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.save)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.add_new)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // body
@@ -82,6 +82,23 @@
             this.fix_content.Size = new System.Drawing.Size(705, 329);
             this.fix_content.TabIndex = 0;
             this.fix_content.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.OrangeRed;
+            this.pictureBox1.Location = new System.Drawing.Point(669, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.Location = new System.Drawing.Point(12, 292);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(173, 22);
+            this.textBox1.TabIndex = 3;
             // 
             // описание
             // 
@@ -145,23 +162,6 @@
             this.add_new.TabStop = false;
             this.add_new.Click += new System.EventHandler(this.add_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(12, 292);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(173, 22);
-            this.textBox1.TabIndex = 3;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BookProgram.Properties.Resources.Удалить;
-            this.pictureBox1.Location = new System.Drawing.Point(669, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // Mybooks_Vtorperson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,11 +173,11 @@
             this.body.ResumeLayout(false);
             this.fix_content.ResumeLayout(false);
             this.fix_content.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.изображение)).EndInit();
             this.menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.save)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.add_new)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

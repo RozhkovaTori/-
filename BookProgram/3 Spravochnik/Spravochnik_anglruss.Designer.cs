@@ -33,10 +33,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.CompliteBtnmu = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -90,6 +90,24 @@
             this.panel3.Size = new System.Drawing.Size(650, 720);
             this.panel3.TabIndex = 2;
             // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(34, 86);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(338, 183);
+            this.textBox3.TabIndex = 32;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(31, 53);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 18);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Перевод";
+            // 
             // CompliteBtnmu
             // 
             this.CompliteBtnmu.AutoSize = true;
@@ -109,24 +127,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(609, 29);
             this.textBox2.TabIndex = 29;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(31, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 18);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "Перевод";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(34, 86);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(338, 183);
-            this.textBox3.TabIndex = 32;
             // 
             // Spravochnik_4
             // 

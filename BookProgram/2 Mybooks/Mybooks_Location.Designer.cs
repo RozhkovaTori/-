@@ -81,7 +81,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BookProgram.Properties.Resources.Удалить;
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkRed;
             this.pictureBox1.Location = new System.Drawing.Point(669, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(30, 30);

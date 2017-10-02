@@ -76,11 +76,8 @@ namespace BookProgram {
             f.Show();
         }
 
-        private void video_Click(object sender, EventArgs e)
-        {
-            CFormDialog f = new CFormDialog(new Mybooks_Videoplayer());
-            f.Show();
-        }
+
+        
         private void удалитьГлавуToolStripMenuItem_Click(object sender, EventArgs e) {
             if (oglavknigi.Items.Count > 0 && oglavknigi.SelectedIndex >= 0)
                 for (int i = 0; i < CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав.Length; i++)

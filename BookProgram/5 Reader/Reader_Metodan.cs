@@ -8,9 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BookProgram {
-    public partial class Spravochnik : UserControl {
-        public Spravochnik() {
+namespace BookProgram
+{
+    public partial class Reader_Metodan : UserControl
+    {
+        public Reader_Metodan()
+        {
             InitializeComponent();
         }
     }

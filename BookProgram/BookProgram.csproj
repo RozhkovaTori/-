@@ -48,10 +48,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CFormMessage.cs">
+    <Compile Include="5 Reader\Reader_Metodan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="5 Reader\Reader_Metodan.Designer.cs">
+      <DependentUpon>Reader_Metodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6 Other\CFormMessage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CFormMessage.Designer.cs">
+    <Compile Include="6 Other\CFormMessage.Designer.cs">
       <DependentUpon>CFormMessage.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Chapter_class.cs" />
@@ -60,34 +66,28 @@
     <Compile Include="Classes\Person_help_class.cs" />
     <Compile Include="Classes\Second_person_class.cs" />
     <Compile Include="Classes\Location_help_class.cs" />
-    <Compile Include="UserControls\Reader_Chitalka.cs">
+    <Compile Include="5 Reader\Reader_Chitalka.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Reader_Chitalka.Designer.cs">
+    <Compile Include="5 Reader\Reader_Chitalka.Designer.cs">
       <DependentUpon>Reader_Chitalka.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Mybooks_Videoplayer.cs">
+    <Compile Include="6 Other\Helper.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Mybooks_Videoplayer.Designer.cs">
-      <DependentUpon>Mybooks_Videoplayer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\Helper.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\Helper.Designer.cs">
+    <Compile Include="6 Other\Helper.Designer.cs">
       <DependentUpon>Helper.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Mybooks_Foto.cs">
+    <Compile Include="2 Mybooks\Mybooks_Foto.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Mybooks_Foto.Designer.cs">
+    <Compile Include="2 Mybooks\Mybooks_Foto.Designer.cs">
       <DependentUpon>Mybooks_Foto.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Mybooks_Newchapter.cs">
+    <Compile Include="2 Mybooks\Mybooks_Newchapter.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Mybooks_Newchapter.Designer.cs">
+    <Compile Include="2 Mybooks\Mybooks_Newchapter.Designer.cs">
       <DependentUpon>Mybooks_Newchapter.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
@@ -95,90 +95,90 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Spravochnik_obschii.cs">
+    <Compile Include="3 Spravochnik\Spravochnik_obschii.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Spravochnik_obschii.Designer.cs">
+    <Compile Include="3 Spravochnik\Spravochnik_obschii.Designer.cs">
       <DependentUpon>Spravochnik_obschii.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Spravochnik_name.cs">
+    <Compile Include="3 Spravochnik\Spravochnik_name.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Spravochnik_name.Designer.cs">
+    <Compile Include="3 Spravochnik\Spravochnik_name.Designer.cs">
       <DependentUpon>Spravochnik_name.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Spravochnik_mifolog.cs">
+    <Compile Include="3 Spravochnik\Spravochnik_mifolog.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Spravochnik_mifolog.Designer.cs">
+    <Compile Include="3 Spravochnik\Spravochnik_mifolog.Designer.cs">
       <DependentUpon>Spravochnik_mifolog.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Spravochnik_anglruss.cs">
+    <Compile Include="3 Spravochnik\Spravochnik_anglruss.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Spravochnik_anglruss.Designer.cs">
+    <Compile Include="3 Spravochnik\Spravochnik_anglruss.Designer.cs">
       <DependentUpon>Spravochnik_anglruss.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Mybooks_Glaverson.cs">
+    <Compile Include="2 Mybooks\Mybooks_Glaverson.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Mybooks_Glaverson.Designer.cs">
+    <Compile Include="2 Mybooks\Mybooks_Glaverson.Designer.cs">
       <DependentUpon>Mybooks_Glaverson.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Mybooks_Location.cs">
+    <Compile Include="2 Mybooks\Mybooks_Location.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Mybooks_Location.Designer.cs">
+    <Compile Include="2 Mybooks\Mybooks_Location.Designer.cs">
       <DependentUpon>Mybooks_Location.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Mybooks_Newbook.cs">
+    <Compile Include="2 Mybooks\Mybooks_Newbook.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Mybooks_Newbook.Designer.cs">
+    <Compile Include="2 Mybooks\Mybooks_Newbook.Designer.cs">
       <DependentUpon>Mybooks_Newbook.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Mybooks_Oglavlenie.cs">
+    <Compile Include="2 Mybooks\Mybooks_Oglavlenie.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Mybooks_Oglavlenie.Designer.cs">
+    <Compile Include="2 Mybooks\Mybooks_Oglavlenie.Designer.cs">
       <DependentUpon>Mybooks_Oglavlenie.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Mybooks_Vtorperson.cs">
+    <Compile Include="2 Mybooks\Mybooks_Vtorperson.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Mybooks_Vtorperson.Designer.cs">
+    <Compile Include="2 Mybooks\Mybooks_Vtorperson.Designer.cs">
       <DependentUpon>Mybooks_Vtorperson.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Person_class.cs" />
     <Compile Include="Classes\Serialize.cs" />
-    <Compile Include="UserControls\Settings.cs">
+    <Compile Include="6 Other\Settings.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Settings.Designer.cs">
+    <Compile Include="6 Other\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Translate\ExportWord.cs">
+    <Compile Include="4 Translate\ExportWord.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Translate\ExportWord.Designer.cs">
+    <Compile Include="4 Translate\ExportWord.Designer.cs">
       <DependentUpon>ExportWord.cs</DependentUpon>
     </Compile>
-    <Compile Include="Translate\InputText.cs">
+    <Compile Include="4 Translate\InputText.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Translate\InputText.Designer.cs">
+    <Compile Include="4 Translate\InputText.Designer.cs">
       <DependentUpon>InputText.cs</DependentUpon>
     </Compile>
-    <Compile Include="Translate\MainTranslate.cs">
+    <Compile Include="4 Translate\MainTranslate.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Translate\MainTranslate.Designer.cs">
+    <Compile Include="4 Translate\MainTranslate.Designer.cs">
       <DependentUpon>MainTranslate.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Person_list.cs">
+    <Compile Include="1 Person\Person_list.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Person_list.Designer.cs">
+    <Compile Include="1 Person\Person_list.Designer.cs">
       <DependentUpon>Person_list.cs</DependentUpon>
     </Compile>
     <Compile Include="CForm.cs">
@@ -187,35 +187,35 @@
     <Compile Include="CForm.Designer.cs">
       <DependentUpon>CForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CFormDialog.cs">
+    <Compile Include="6 Other\CFormDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CFormDialog.Designer.cs">
+    <Compile Include="6 Other\CFormDialog.Designer.cs">
       <DependentUpon>CFormDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Person.cs">
+    <Compile Include="1 Person\Person.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Person.Designer.cs">
+    <Compile Include="1 Person\Person.Designer.cs">
       <DependentUpon>Person.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Mybooks.cs">
+    <Compile Include="2 Mybooks\Mybooks.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Mybooks.Designer.cs">
+    <Compile Include="2 Mybooks\Mybooks.Designer.cs">
       <DependentUpon>Mybooks.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Reader.cs">
+    <Compile Include="5 Reader\Reader.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Reader.Designer.cs">
+    <Compile Include="5 Reader\Reader.Designer.cs">
       <DependentUpon>Reader.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Settings_class.cs" />
-    <Compile Include="UserControls\Spravochnik.cs">
+    <Compile Include="3 Spravochnik\Spravochnik.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Spravochnik.Designer.cs">
+    <Compile Include="3 Spravochnik\Spravochnik.Designer.cs">
       <DependentUpon>Spravochnik.cs</DependentUpon>
     </Compile>
     <Compile Include="Start.cs">
@@ -227,76 +227,70 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Vtorpers_help_class.cs" />
-    <Compile Include="UserControls\Videoplayer.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\Videoplayer.Designer.cs">
-      <DependentUpon>Videoplayer.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="CFormMessage.resx">
+    <EmbeddedResource Include="5 Reader\Reader_Metodan.resx">
+      <DependentUpon>Reader_Metodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6 Other\CFormMessage.resx">
       <DependentUpon>CFormMessage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Helper.resx">
+    <EmbeddedResource Include="6 Other\Helper.resx">
       <DependentUpon>Helper.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Mybooks_Foto.resx">
+    <EmbeddedResource Include="2 Mybooks\Mybooks_Foto.resx">
       <DependentUpon>Mybooks_Foto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Mybooks_Newchapter.resx">
+    <EmbeddedResource Include="2 Mybooks\Mybooks_Newchapter.resx">
       <DependentUpon>Mybooks_Newchapter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Mybooks_Glaverson.resx">
+    <EmbeddedResource Include="2 Mybooks\Mybooks_Glaverson.resx">
       <DependentUpon>Mybooks_Glaverson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Mybooks_Location.resx">
+    <EmbeddedResource Include="2 Mybooks\Mybooks_Location.resx">
       <DependentUpon>Mybooks_Location.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Mybooks_Newbook.resx">
+    <EmbeddedResource Include="2 Mybooks\Mybooks_Newbook.resx">
       <DependentUpon>Mybooks_Newbook.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Mybooks_Oglavlenie.resx">
+    <EmbeddedResource Include="2 Mybooks\Mybooks_Oglavlenie.resx">
       <DependentUpon>Mybooks_Oglavlenie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Mybooks_Videoplayer.resx">
-      <DependentUpon>Mybooks_Videoplayer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Mybooks_Vtorperson.resx">
+    <EmbeddedResource Include="2 Mybooks\Mybooks_Vtorperson.resx">
       <DependentUpon>Mybooks_Vtorperson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Reader_Chitalka.resx">
+    <EmbeddedResource Include="5 Reader\Reader_Chitalka.resx">
       <DependentUpon>Reader_Chitalka.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Settings.resx">
+    <EmbeddedResource Include="6 Other\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Translate\ExportWord.resx">
+    <EmbeddedResource Include="4 Translate\ExportWord.resx">
       <DependentUpon>ExportWord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Translate\InputText.resx">
+    <EmbeddedResource Include="4 Translate\InputText.resx">
       <DependentUpon>InputText.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Translate\MainTranslate.resx">
+    <EmbeddedResource Include="4 Translate\MainTranslate.resx">
       <DependentUpon>MainTranslate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Person_list.resx">
+    <EmbeddedResource Include="1 Person\Person_list.resx">
       <DependentUpon>Person_list.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CForm.resx">
       <DependentUpon>CForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CFormDialog.resx">
+    <EmbeddedResource Include="6 Other\CFormDialog.resx">
       <DependentUpon>CFormDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Person.resx">
+    <EmbeddedResource Include="1 Person\Person.resx">
       <DependentUpon>Person.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Mybooks.resx">
+    <EmbeddedResource Include="2 Mybooks\Mybooks.resx">
       <DependentUpon>Mybooks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Reader.resx">
+    <EmbeddedResource Include="5 Reader\Reader.resx">
       <DependentUpon>Reader.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Spravochnik.resx">
+    <EmbeddedResource Include="3 Spravochnik\Spravochnik.resx">
       <DependentUpon>Spravochnik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Start.resx">
@@ -307,20 +301,17 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Spravochnik_anglruss.resx">
+    <EmbeddedResource Include="3 Spravochnik\Spravochnik_anglruss.resx">
       <DependentUpon>Spravochnik_anglruss.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Spravochnik_mifolog.resx">
+    <EmbeddedResource Include="3 Spravochnik\Spravochnik_mifolog.resx">
       <DependentUpon>Spravochnik_mifolog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Spravochnik_name.resx">
+    <EmbeddedResource Include="3 Spravochnik\Spravochnik_name.resx">
       <DependentUpon>Spravochnik_name.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Spravochnik_obschii.resx">
+    <EmbeddedResource Include="3 Spravochnik\Spravochnik_obschii.resx">
       <DependentUpon>Spravochnik_obschii.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Videoplayer.resx">
-      <DependentUpon>Videoplayer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -602,5 +593,6 @@
   <ItemGroup>
     <None Include="Resources\разделитель.gif" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

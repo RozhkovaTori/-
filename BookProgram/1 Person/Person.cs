@@ -62,18 +62,6 @@ namespace BookProgram {
             профиль.Image = (Image) pers.img;
             гориз_профиль.Image = (Image)pers.imga;
             горизонтал.Image = (Image)pers.imgak;
-
-            //if (pers.get_variable.Length > 1)
-            //    foreach (Person_help_class p in pers.get_variable) {
-            //        string title = (variable.TabCount + 1).ToString();
-            //        TabPage myTabPage = new TabPage(title);
-            //        myTabPage.BackColor = Color.White;
-            //        myTabPage.AutoScroll = true;
-            //        resize.Add(p.persik);
-            //        myTabPage.Controls.Add(resize[resize.Count - 1]);
-            //        variable.TabPages.Add(myTabPage);
-            //    }
-
         }
         public void pictureBox1_DoubleClick(object sender, EventArgs e) {
             if (openFileDialog1.ShowDialog() == DialogResult.OK) {
@@ -135,7 +123,6 @@ namespace BookProgram {
                     if(профиль.Image != null) pers.img = new Bitmap(профиль.Image);
                     if(гориз_профиль.Image != null) pers.imga = new Bitmap(гориз_профиль.Image);
                     if(горизонтал.Image != null) pers.imgak = new Bitmap(горизонтал.Image);
-                //    foreach (Person_help_class h in help_m) pers.add_variable(h);
 
                     if (book) {
                         CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].add_gg(pers);
@@ -144,10 +131,7 @@ namespace BookProgram {
                     else {
                         CForm.selfref.mass_person.Add(pers);
                         Arxivper.selfref_Arxivper.refrash_list();
-                      //  Arxivper.selfref_Arxivper.Arxivlist.SetSelected(0, true);
                         Arxivper.selfref_Arxivper.refrash_select();
-                        //Arxivper.selfref_Arxivper.select.init_poly(CForm.selfref.mass_person[Arxivper.selfref_Arxivper.Arxivlist.SelectedIndex]);
-
                     }
                     CFormDialog.CRefDialog.CloseCFormDialog(); // закрытие формы
                 }
@@ -216,9 +200,6 @@ namespace BookProgram {
                     pers.img = new Bitmap(профиль.Image);
                     pers.imga = new Bitmap(гориз_профиль.Image);
                     pers.imgak = new Bitmap(горизонтал.Image);
-                    //   foreach (Person_help_class h in help_m) pers.add_variable(h);
-
-
                     if (book) {
                         CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].add_gg(pers);
                         Mybooks_Glaverson.selfref_Mybooks_Glaverson.refrash_list();
@@ -226,9 +207,7 @@ namespace BookProgram {
                     else {
                         CForm.selfref.mass_person.Add(pers);
                         Arxivper.selfref_Arxivper.refrash_list();
-                       // Arxivper.selfref_Arxivper.Arxivlist.SetSelected(0,true);
                         Arxivper.selfref_Arxivper.refrash_select();
-                        //Arxivper.selfref_Arxivper.select.init_poly(pers);
                     }
                 }
                 else {
@@ -333,6 +312,9 @@ namespace BookProgram {
             FIO.ReadOnly = false;
             izmen_bool = true;
             izmen_start_name = FIO.Text;
+        }
+        private void variable_Selected(object sender, TabControlEventArgs e) {
+
         }
     }
 }

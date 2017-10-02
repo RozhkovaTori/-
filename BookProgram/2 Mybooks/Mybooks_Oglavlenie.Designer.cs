@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.word = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.foto = new System.Windows.Forms.PictureBox();
             this.locacii = new System.Windows.Forms.PictureBox();
             this.vtorpers = new System.Windows.Forms.PictureBox();
@@ -41,7 +42,6 @@
             this.oglavknigi = new System.Windows.Forms.ListBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.удалитьГлавуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.oknige = new System.Windows.Forms.Panel();
@@ -50,9 +50,9 @@
             this.HideMenuBtn = new System.Windows.Forms.PictureBox();
             this.HideMenu = new System.Windows.Forms.Panel();
             this.ShowMenuBut = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.word)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.locacii)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vtorpers)).BeginInit();
@@ -67,7 +67,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.HideMenuBtn)).BeginInit();
             this.HideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShowMenuBut)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -95,6 +94,16 @@
             this.word.Size = new System.Drawing.Size(43, 40);
             this.word.TabIndex = 10;
             this.word.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkRed;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 200);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 40);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
             // foto
             // 
@@ -193,23 +202,16 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.удалитьГлавуToolStripMenuItem,
-            this.toolStripMenuItem1});
+            this.удалитьГлавуToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(218, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(152, 26);
             // 
             // удалитьГлавуToolStripMenuItem
             // 
             this.удалитьГлавуToolStripMenuItem.Name = "удалитьГлавуToolStripMenuItem";
-            this.удалитьГлавуToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.удалитьГлавуToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.удалитьГлавуToolStripMenuItem.Text = "Удалить главу";
             this.удалитьГлавуToolStripMenuItem.Click += new System.EventHandler(this.удалитьГлавуToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(217, 22);
-            this.toolStripMenuItem1.Text = "Изменить название главы";
             // 
             // label1
             // 
@@ -294,16 +296,6 @@
             this.ShowMenuBut.TabStop = false;
             this.ShowMenuBut.Click += new System.EventHandler(this.ShowMenuBut_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DarkRed;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 200);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 40);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
             // Mybooks_Oglavlenie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -317,6 +309,7 @@
             this.Size = new System.Drawing.Size(745, 828);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.word)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.locacii)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vtorpers)).EndInit();
@@ -331,7 +324,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.HideMenuBtn)).EndInit();
             this.HideMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ShowMenuBut)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -358,7 +350,6 @@
         public System.Windows.Forms.ListBox oglavknigi;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem удалитьГлавуToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

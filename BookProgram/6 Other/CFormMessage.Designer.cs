@@ -42,9 +42,10 @@
             this.pictureBox3.BackgroundImage = global::BookProgram.Properties.Resources.н_с_закрыть;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox3.Location = new System.Drawing.Point(271, 0);
+            this.pictureBox3.Location = new System.Drawing.Point(277, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(23, 26);
+            this.pictureBox3.Size = new System.Drawing.Size(17, 20);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
@@ -59,7 +60,7 @@
             this.TopBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopBar.Location = new System.Drawing.Point(0, 0);
             this.TopBar.Name = "TopBar";
-            this.TopBar.Size = new System.Drawing.Size(294, 26);
+            this.TopBar.Size = new System.Drawing.Size(294, 20);
             this.TopBar.TabIndex = 14;
             this.TopBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Osnova_MouseDown);
             this.TopBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Osnova_MouseMove);
@@ -73,7 +74,7 @@
             this.name_form.ForeColor = System.Drawing.Color.Gainsboro;
             this.name_form.Location = new System.Drawing.Point(0, 0);
             this.name_form.Name = "name_form";
-            this.name_form.Size = new System.Drawing.Size(271, 26);
+            this.name_form.Size = new System.Drawing.Size(277, 20);
             this.name_form.TabIndex = 4;
             // 
             // content_form
@@ -82,9 +83,9 @@
             this.content_form.Dock = System.Windows.Forms.DockStyle.Fill;
             this.content_form.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.content_form.ForeColor = System.Drawing.Color.Black;
-            this.content_form.Location = new System.Drawing.Point(0, 26);
+            this.content_form.Location = new System.Drawing.Point(0, 20);
             this.content_form.Name = "content_form";
-            this.content_form.Size = new System.Drawing.Size(294, 106);
+            this.content_form.Size = new System.Drawing.Size(294, 112);
             this.content_form.TabIndex = 15;
             // 
             // CFormMessage

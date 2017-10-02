@@ -57,15 +57,9 @@ namespace BookProgram {
         }
         public void refrash_select() {
             if (Arxivlist.Items.Count > 0 && Arxivlist.SelectedIndex >= 0)
-                //for (int i = 0; i < CForm.selfref.mass_person.Count; i++)
-                //if (Arxivlist.Items[Arxivlist.SelectedIndex].ToString() == CForm.selfref.mass_person[i].fio) {
-                //  Dobnovpers.selfref_dobn.init_poly(CForm.selfref.mass_person[i]);
-                //break;
-                //}
                 foreach (Person_class p in CForm.selfref.mass_person) 
                     if (Arxivlist.Items[Arxivlist.SelectedIndex].ToString() == p.fio) {
                         select.init_poly(p);
-                     //   MessageBox.Show(p.fio);
                         break;
                     }
         }
@@ -73,8 +67,7 @@ namespace BookProgram {
             select.build_word_doc();
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
+        private void pictureBox3_Click(object sender, EventArgs e) {
             select.variable.TabPages.Add(new TabPage((select.variable.TabCount + 1).ToString()));
         }
 

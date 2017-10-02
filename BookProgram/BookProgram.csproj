@@ -63,7 +63,6 @@
     <Compile Include="Classes\Chapter_class.cs" />
     <Compile Include="Classes\Book_class.cs" />
     <Compile Include="Classes\Location_сlass.cs" />
-    <Compile Include="Classes\Person_help_class.cs" />
     <Compile Include="Classes\Second_person_class.cs" />
     <Compile Include="Classes\Location_help_class.cs" />
     <Compile Include="5 Reader\Reader_Chitalka.cs">
@@ -90,6 +89,7 @@
     <Compile Include="2 Mybooks\Mybooks_Newchapter.Designer.cs">
       <DependentUpon>Mybooks_Newchapter.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Person_var_class.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

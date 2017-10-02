@@ -45,13 +45,13 @@ namespace BookProgram
         public Bitmap imga { get; set; }
         public Bitmap imgak { get; set; }
       
-        List<Person_help_class> variable = new List<Person_help_class>();
+        List<Person_var_class> var = new List<Person_var_class>();
 
-        public void add_variable(Person_help_class add) { variable.Add(add); }
+        public void add_var(Person_var_class add) { var.Add(add); }
 
-        public void remove_variable(Person_help_class remove) { variable.Remove(remove); }
+        public void remove_var(Person_var_class remove) { var.Remove(remove); }
 
-        public Person_help_class[] get_variable { get { return variable.ToArray(); } }
+        public Person_var_class[] get_var { get { return var.ToArray(); } }
     }
 
 }

@@ -4,13 +4,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace BookProgram
-{
-   [Serializable]
-   public class Person_help_class
-    {
+namespace BookProgram {
+    public class Person_var_class {
+        public string id { get; set; }
         public string fio { get; set; }
         public string образ { get; set; }
         public string прозвище { get; set; }

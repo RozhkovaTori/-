@@ -16,7 +16,7 @@ namespace BookProgram {
         bool izmen_bool = false;
         string izmen_start_name;
         public List<Panel> resize = new List<Panel>();
-        public List<Person_help_class> help_m = new List<Person_help_class>();
+        public List<Person_var_class> mass_m = new List<Person_var_class>();
         public static Dobnovpers selfref_dobn { get; set; }
         public Dobnovpers(bool create, bool inbook) {
             InitializeComponent();
@@ -62,7 +62,40 @@ namespace BookProgram {
             профиль.Image = (Image) pers.img;
             гориз_профиль.Image = (Image)pers.imga;
             горизонтал.Image = (Image)pers.imgak;
+           // mass_m.Add(Convert_person_to_var_person(pers));
+           // foreach (Person_var_class pv in pers.get_var) mass_m.Add(pv);
         }
+        public Person_var_class Convert_person_to_var_person(Person_class pers) {
+            Person_var_class pv = new Person_var_class();
+            pv.fio = pers.fio;
+            pv.образ = pers.образ;
+            pv.прозвище = pers.прозвище;
+            pv.возраст = pers.возраст;
+            pv.дата = pers.дата;
+            pv.пол = pers.пол;
+            pv.раса = pers.раса;
+            pv.место_рождения = pers.место_рождения;
+            pv.профессия = pers.профессия;
+            pv.приндалженость = pers.приндалженость;
+            pv.биография = pers.биография;
+            pv.взаимоотношения = pers.взаимоотношения;
+            pv.характер = pers.характер;
+            pv.преимущества = pers.преимущества;
+            pv.факты = pers.факты;
+            pv.внешность = pers.внешность;
+            pv.увлечения = pers.увлечения;
+            pv.увлечения = pers.способности;
+            pv.увлечения = pers.эффекты;
+            pv.доп_информация = pers.доп_информация;
+            pv.книга = pers.книга;
+            pv.источник = pers.источник;
+            pv.короткий_сюжет = pers.короткий_сюжет;
+            pv.заметки = pers.заметки;
+            pv.img = pers.img;
+            pv.imga = pers.imga;
+            pv.imgak = pers.imgak;
+            return pv;
+        } 
         public void pictureBox1_DoubleClick(object sender, EventArgs e) {
             if (openFileDialog1.ShowDialog() == DialogResult.OK) {
                 профиль.BackgroundImage = null;
@@ -314,6 +347,11 @@ namespace BookProgram {
             izmen_start_name = FIO.Text;
         }
         private void variable_Selected(object sender, TabControlEventArgs e) {
+            refrah_tab();
+        }
+        public void refrah_tab() {
+            variable.TabPages.Clear();
+            
 
         }
     }

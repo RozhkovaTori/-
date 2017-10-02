@@ -18,7 +18,8 @@ namespace BookProgram {
         public Mybooks_Oglavlenie() {
             InitializeComponent();
             selfref_Mybooks_Oglavlenie = this;
-            refrash_list();
+            if(Mybooks.selfref_Mybooks != null) 
+               refrash_list();
         }
         private void HideMenuBtn_Click(object sender, EventArgs e) {
             VisibleMenu.Visible = false;

@@ -100,6 +100,7 @@
             // 
             // persik
             // 
+            this.persik.AutoScroll = true;
             this.persik.AutoSize = true;
             this.persik.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.persik.BackColor = System.Drawing.Color.Transparent;

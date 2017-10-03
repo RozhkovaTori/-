@@ -60,6 +60,30 @@
     <Compile Include="6 Other\CFormMessage.Designer.cs">
       <DependentUpon>CFormMessage.cs</DependentUpon>
     </Compile>
+    <Compile Include="7 Helper\Helper_Knigi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="7 Helper\Helper_Knigi.Designer.cs">
+      <DependentUpon>Helper_Knigi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="7 Helper\Helper_Perevod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="7 Helper\Helper_Perevod.Designer.cs">
+      <DependentUpon>Helper_Perevod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="7 Helper\Helper_Rider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="7 Helper\Helper_Rider.Designer.cs">
+      <DependentUpon>Helper_Rider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="7 Helper\Helper_Slovari.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="7 Helper\Helper_Slovari.Designer.cs">
+      <DependentUpon>Helper_Slovari.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Chapter_class.cs" />
     <Compile Include="Classes\Book_class.cs" />
     <Compile Include="Classes\Location_сlass.cs" />
@@ -71,10 +95,10 @@
     <Compile Include="5 Reader\Reader_Chitalka.Designer.cs">
       <DependentUpon>Reader_Chitalka.cs</DependentUpon>
     </Compile>
-    <Compile Include="6 Other\Helper.cs">
+    <Compile Include="7 Helper\Helper.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="6 Other\Helper.Designer.cs">
+    <Compile Include="7 Helper\Helper.Designer.cs">
       <DependentUpon>Helper.cs</DependentUpon>
     </Compile>
     <Compile Include="2 Mybooks\Mybooks_Foto.cs">
@@ -90,11 +114,6 @@
       <DependentUpon>Mybooks_Newchapter.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Person_var_class.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="3 Spravochnik\Spravochnik_obschii.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -218,6 +237,17 @@
     <Compile Include="3 Spravochnik\Spravochnik.Designer.cs">
       <DependentUpon>Spravochnik.cs</DependentUpon>
     </Compile>
+    <Compile Include="7 Helper\Helper_Person.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="7 Helper\Helper_Person.Designer.cs">
+      <DependentUpon>Helper_Person.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Start.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,7 +263,7 @@
     <EmbeddedResource Include="6 Other\CFormMessage.resx">
       <DependentUpon>CFormMessage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="6 Other\Helper.resx">
+    <EmbeddedResource Include="7 Helper\Helper.resx">
       <DependentUpon>Helper.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="2 Mybooks\Mybooks_Foto.resx">
@@ -562,12 +592,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Изменить-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Удалить.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\удаление-аним.gif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\слов англо-русский.jpg" />

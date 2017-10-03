@@ -893,26 +893,6 @@ namespace BookProgram.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap удаление_аним {
-            get {
-                object obj = ResourceManager.GetObject("удаление-аним", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Удалить {
-            get {
-                object obj = ResourceManager.GetObject("Удалить", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Форматировать {
             get {
                 object obj = ResourceManager.GetObject("Форматировать", resourceCulture);

@@ -1,6 +1,6 @@
-﻿namespace BookProgram
+﻿namespace BookProgram._7_Helper
 {
-    partial class Helper
+    partial class Helper_Perevod
     {
         /// <summary> 
         /// Обязательная переменная конструктора.
@@ -28,17 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Helper
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
-            this.Name = "Helper";
-            this.Size = new System.Drawing.Size(1037, 824);
-            this.ResumeLayout(false);
-
         }
 
         #endregion

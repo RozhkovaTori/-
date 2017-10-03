@@ -130,6 +130,9 @@
             this.caption.Name = "caption";
             this.caption.Size = new System.Drawing.Size(642, 20);
             this.caption.TabIndex = 3;
+            this.caption.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Osnova_MouseDown);
+            this.caption.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Osnova_MouseMove);
+            this.caption.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Osnova_MouseUp);
             // 
             // pictureBox1
             // 

@@ -16,17 +16,20 @@ namespace BookProgram {
 
         public Arxivper() {
             InitializeComponent();
+
             Arxivlist.Sorted = true;
+
+            selfref_Arxivper = this;
+            select.Dock = DockStyle.Fill;
+            arhifper_body.Controls.Add(select);
+            arhifper_body.Controls.SetChildIndex(select, 0);
+
             if (File.Exists(CForm.selfref.global_path_file)) {
                 CForm.selfref.load_is_file(CForm.selfref.global_path_file);
                 refrash_list();
                 if (Arxivlist.Items.Count > 0) Arxivlist.SetSelected(0, true);
                 refrash_select();
             }
-            selfref_Arxivper = this;
-            select.Dock = DockStyle.Fill;
-            arhifper_body.Controls.Add(select);
-            arhifper_body.Controls.SetChildIndex(select, 0);
         }
         public void refrash_list() {
             Arxivlist.Items.Clear();

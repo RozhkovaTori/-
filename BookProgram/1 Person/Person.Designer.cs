@@ -89,14 +89,12 @@
             this.гориз_профиль = new System.Windows.Forms.PictureBox();
             this.профиль = new System.Windows.Forms.PictureBox();
             this.variable = new System.Windows.Forms.TabControl();
-            this.Defaul = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.persik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.izmen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.горизонтал)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.гориз_профиль)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.профиль)).BeginInit();
-            this.variable.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -848,7 +846,6 @@
             // 
             // variable
             // 
-            this.variable.Controls.Add(this.Defaul);
             this.variable.Dock = System.Windows.Forms.DockStyle.Top;
             this.variable.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.variable.HotTrack = true;
@@ -857,18 +854,8 @@
             this.variable.SelectedIndex = 0;
             this.variable.Size = new System.Drawing.Size(680, 24);
             this.variable.TabIndex = 29;
+            this.variable.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.variable_Selecting);
             this.variable.Selected += new System.Windows.Forms.TabControlEventHandler(this.variable_Selected);
-            // 
-            // Defaul
-            // 
-            this.Defaul.AutoScroll = true;
-            this.Defaul.BackColor = System.Drawing.Color.White;
-            this.Defaul.Location = new System.Drawing.Point(4, 26);
-            this.Defaul.Name = "Defaul";
-            this.Defaul.Padding = new System.Windows.Forms.Padding(3);
-            this.Defaul.Size = new System.Drawing.Size(672, 0);
-            this.Defaul.TabIndex = 0;
-            this.Defaul.Text = "Главный персонаж";
             // 
             // panel1
             // 
@@ -890,6 +877,7 @@
             this.DoubleBuffered = true;
             this.Name = "Dobnovpers";
             this.Size = new System.Drawing.Size(680, 590);
+            this.Load += new System.EventHandler(this.Dobnovpers_Load);
             this.Resize += new System.EventHandler(this.Dobnovpers_Resize);
             this.persik.ResumeLayout(false);
             this.persik.PerformLayout();
@@ -897,7 +885,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.горизонтал)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.гориз_профиль)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.профиль)).EndInit();
-            this.variable.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -966,7 +953,6 @@
         public System.Windows.Forms.TextBox FIO;
         public System.Windows.Forms.PictureBox гориз_профиль;
         public System.Windows.Forms.PictureBox профиль;
-        public System.Windows.Forms.TabPage Defaul;
         private System.Windows.Forms.Panel panel1;
     }
 }

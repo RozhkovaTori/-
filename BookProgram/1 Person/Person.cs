@@ -351,17 +351,16 @@ namespace BookProgram {
             izmen_start_name = FIO.Text;
         }
         private void variable_Selected(object sender, TabControlEventArgs e) {
-            refrah_tab();
+            load_content_tab();
         }
         public void refrah_tab() {
-            save_content_tab();
             variable.TabPages.Clear();
+            MessageBox.Show(mass_m.Count.ToString());
             foreach (Person_var_class m in mass_m) variable.TabPages.Add(new TabPage(m.id));
-            load_content_tab();
         }
         public void save_content_tab() {
             if (variable.TabPages.Count > 0 && mass_m.Count > 0)
-                for (int i = 0; i < mass_m.Count; i++)
+              for (int i = 0; i < mass_m.Count; i++)
                 if (mass_m[i].id == variable.SelectedTab.Text) {
                     mass_m[i].fio = FIO.Text;
                     mass_m[i].прозвище = прозвище.Text;
@@ -395,37 +394,46 @@ namespace BookProgram {
         }
         public void load_content_tab() {
            if(variable.TabPages.Count > 0 && mass_m.Count > 0)
-            for (int i = 0; i < mass_m.Count; i++)
-                if (mass_m[i].id == variable.SelectedTab.Text) {
-                    FIO.Text = mass_m[i].fio;
-                    образ.Text = mass_m[i].образ;
-                    прозвище.Text = mass_m[i].прозвище;
-                    возраст.Text = mass_m[i].возраст;
-                    дата.Text = mass_m[i].дата;
-                    пол.Text = mass_m[i].пол;
-                    раса.Text = mass_m[i].раса;
-                    место_рождения.Text = mass_m[i].место_рождения;
-                    профессия.Text = mass_m[i].профессия;
-                    приндалженость.Text = mass_m[i].приндалженость;
-                    биография.Text = mass_m[i].биография;
-                    взаимоотношения.Text = mass_m[i].взаимоотношения;
-                    характер.Text = mass_m[i].характер;
-                    преимущества.Text = mass_m[i].преимущества;
-                    факты.Text = mass_m[i].факты;
-                    внешность.Text = mass_m[i].внешность;
-                    увлечения.Text = mass_m[i].увлечения;
-                    способности.Text = mass_m[i].способности;
-                    эффекты.Text = mass_m[i].эффекты;
-                    доп_информация.Text = mass_m[i].доп_информация;
-                    книга.Text = mass_m[i].книга;
-                    источник.Text = mass_m[i].источник;
-                    короткий_сюжет.Text = mass_m[i].короткий_сюжет;
-                    заметки.Text = mass_m[i].заметки;
-                    профиль.Image = (Image)mass_m[i].img;
-                    гориз_профиль.Image = (Image)mass_m[i].imga;
-                    горизонтал.Image = (Image)mass_m[i].imgak;
+            foreach(Person_var_class pv in mass_m)
+                if (pv.id == variable.SelectedTab.Text) {
+                    MessageBox.Show("dsfdsf");
+                    FIO.Text = pv.fio;
+                    образ.Text = pv.образ;
+                    прозвище.Text = pv.прозвище;
+                    возраст.Text = pv.возраст;
+                    дата.Text = pv.дата;
+                    пол.Text = pv.пол;
+                    раса.Text = pv.раса;
+                    место_рождения.Text = pv.место_рождения;
+                    профессия.Text = pv.профессия;
+                    приндалженость.Text = pv.приндалженость;
+                    биография.Text = pv.биография;
+                    взаимоотношения.Text = pv.взаимоотношения;
+                    характер.Text = pv.характер;
+                    преимущества.Text = pv.преимущества;
+                    факты.Text = pv.факты;
+                    внешность.Text = pv.внешность;
+                    увлечения.Text = pv.увлечения;
+                    способности.Text = pv.способности;
+                    эффекты.Text = pv.эффекты;
+                    доп_информация.Text = pv.доп_информация;
+                    книга.Text = pv.книга;
+                    источник.Text = pv.источник;
+                    короткий_сюжет.Text = pv.короткий_сюжет;
+                    заметки.Text = pv.заметки;
+                    профиль.Image = (Image)pv.img;
+                    гориз_профиль.Image = (Image)pv.imga;
+                    горизонтал.Image = (Image)pv.imgak;
                     break;
                 }
+        }
+        private void variable_Selecting(object sender, TabControlCancelEventArgs e) {
+            save_content_tab();
+        }
+
+        private void Dobnovpers_Load(object sender, EventArgs e) {
+            refrah_tab();
+            load_content_tab();
         }
     }
 }

@@ -90,12 +90,14 @@
             this.профиль = new System.Windows.Forms.PictureBox();
             this.variable = new System.Windows.Forms.TabControl();
             this.Defaul = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.persik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.izmen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.горизонтал)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.гориз_профиль)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.профиль)).BeginInit();
             this.variable.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // persik
@@ -104,7 +106,7 @@
             this.persik.AutoSize = true;
             this.persik.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.persik.BackColor = System.Drawing.Color.Transparent;
-            this.persik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.persik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.persik.Controls.Add(this.izmen);
             this.persik.Controls.Add(this.горизонтал);
             this.persik.Controls.Add(this.CompliteBtnm);
@@ -164,9 +166,9 @@
             this.persik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.persik.Font = new System.Drawing.Font("Monotype Corsiva", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.persik.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.persik.Location = new System.Drawing.Point(0, 24);
+            this.persik.Location = new System.Drawing.Point(0, 0);
             this.persik.Name = "persik";
-            this.persik.Size = new System.Drawing.Size(654, 566);
+            this.persik.Size = new System.Drawing.Size(680, 573);
             this.persik.TabIndex = 22;
             // 
             // izmen
@@ -853,7 +855,7 @@
             this.variable.Location = new System.Drawing.Point(0, 0);
             this.variable.Name = "variable";
             this.variable.SelectedIndex = 0;
-            this.variable.Size = new System.Drawing.Size(654, 24);
+            this.variable.Size = new System.Drawing.Size(680, 24);
             this.variable.TabIndex = 29;
             this.variable.Selected += new System.Windows.Forms.TabControlEventHandler(this.variable_Selected);
             // 
@@ -864,9 +866,18 @@
             this.Defaul.Location = new System.Drawing.Point(4, 26);
             this.Defaul.Name = "Defaul";
             this.Defaul.Padding = new System.Windows.Forms.Padding(3);
-            this.Defaul.Size = new System.Drawing.Size(646, 0);
+            this.Defaul.Size = new System.Drawing.Size(672, 0);
             this.Defaul.TabIndex = 0;
             this.Defaul.Text = "Главный персонаж";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel1.Controls.Add(this.persik);
+            this.panel1.Location = new System.Drawing.Point(2, 26);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(680, 573);
+            this.panel1.TabIndex = 30;
             // 
             // Dobnovpers
             // 
@@ -874,11 +885,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.persik);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.variable);
             this.DoubleBuffered = true;
             this.Name = "Dobnovpers";
-            this.Size = new System.Drawing.Size(654, 590);
+            this.Size = new System.Drawing.Size(680, 590);
             this.Resize += new System.EventHandler(this.Dobnovpers_Resize);
             this.persik.ResumeLayout(false);
             this.persik.PerformLayout();
@@ -887,8 +898,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.гориз_профиль)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.профиль)).EndInit();
             this.variable.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -955,5 +967,6 @@
         public System.Windows.Forms.PictureBox гориз_профиль;
         public System.Windows.Forms.PictureBox профиль;
         public System.Windows.Forms.TabPage Defaul;
+        private System.Windows.Forms.Panel panel1;
     }
 }

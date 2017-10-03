@@ -59,14 +59,15 @@ namespace BookProgram {
             источник.Text = pers.источник;
             короткий_сюжет.Text = pers.короткий_сюжет;
             заметки.Text = pers.заметки;
-            профиль.Image = (Image) pers.img;
+            профиль.Image = (Image)pers.img;
             гориз_профиль.Image = (Image)pers.imga;
             горизонтал.Image = (Image)pers.imgak;
-           // mass_m.Add(Convert_person_to_var_person(pers));
-           // foreach (Person_var_class pv in pers.get_var) mass_m.Add(pv);
+            mass_m.Add(Convert_person_to_var_person(pers, true));
+            foreach (Person_var_class pv in pers.get_var) mass_m.Add(pv);
         }
-        public Person_var_class Convert_person_to_var_person(Person_class pers) {
+        public Person_var_class Convert_person_to_var_person(Person_class pers, bool gg) {
             Person_var_class pv = new Person_var_class();
+            if (gg) pv.id = "Главный персонаж";
             pv.fio = pers.fio;
             pv.образ = pers.образ;
             pv.прозвище = pers.прозвище;
@@ -95,7 +96,7 @@ namespace BookProgram {
             pv.imga = pers.imga;
             pv.imgak = pers.imgak;
             return pv;
-        } 
+        }
         public void pictureBox1_DoubleClick(object sender, EventArgs e) {
             if (openFileDialog1.ShowDialog() == DialogResult.OK) {
                 профиль.BackgroundImage = null;
@@ -153,13 +154,14 @@ namespace BookProgram {
                     pers.источник = источник.Text;
                     pers.короткий_сюжет = короткий_сюжет.Text;
                     pers.заметки = заметки.Text;
-                    if(профиль.Image != null) pers.img = new Bitmap(профиль.Image);
-                    if(гориз_профиль.Image != null) pers.imga = new Bitmap(гориз_профиль.Image);
-                    if(горизонтал.Image != null) pers.imgak = new Bitmap(горизонтал.Image);
+                    if (профиль.Image != null) pers.img = new Bitmap(профиль.Image);
+                    if (гориз_профиль.Image != null) pers.imga = new Bitmap(гориз_профиль.Image);
+                    if (горизонтал.Image != null) pers.imgak = new Bitmap(горизонтал.Image);
+                    foreach (Person_var_class pv in mass_m) pers.add_var(pv);
 
                     if (book) {
                         CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].add_gg(pers);
-                        Mybooks_Glaverson.selfref_Mybooks_Glaverson.refrash_list(); 
+                        Mybooks_Glaverson.selfref_Mybooks_Glaverson.refrash_list();
                     }
                     else {
                         CForm.selfref.mass_person.Add(pers);
@@ -171,7 +173,7 @@ namespace BookProgram {
                 else {
                     CFormMessage s = new CFormMessage(error);
                     s.Show();
-                } 
+                }
             }
             else {
                 string error = "";
@@ -233,6 +235,8 @@ namespace BookProgram {
                     pers.img = new Bitmap(профиль.Image);
                     pers.imga = new Bitmap(гориз_профиль.Image);
                     pers.imgak = new Bitmap(горизонтал.Image);
+                    foreach (Person_var_class pv in mass_m) pers.add_var(pv);
+
                     if (book) {
                         CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].add_gg(pers);
                         Mybooks_Glaverson.selfref_Mybooks_Glaverson.refrash_list();
@@ -245,9 +249,9 @@ namespace BookProgram {
                 }
                 else {
                     CFormMessage s = new CFormMessage(error);
-                    s.Show();                  
+                    s.Show();
                 }
-            } 
+            }
         }
         bool isClonFio() {
             foreach (Person_class p in CForm.selfref.mass_person)
@@ -260,35 +264,35 @@ namespace BookProgram {
             string content = "";
             content += "Фамилия Имя \n" + FIO.Text + "\n";
             if (!String.IsNullOrEmpty(прозвище.Text) || !String.IsNullOrEmpty(образ.Text) || !String.IsNullOrEmpty(возраст.Text) || !String.IsNullOrEmpty(дата.Text) || !String.IsNullOrEmpty(пол.Text) || !String.IsNullOrEmpty(раса.Text) || !String.IsNullOrEmpty(место_рождения.Text) || !String.IsNullOrEmpty(профессия.Text) || !String.IsNullOrEmpty(приндалженость.Text)) content += "P A R T   I  О Б Щ А Я    И Н Ф О Р М А Ц И Я: \n";
-            if(!String.IsNullOrEmpty(прозвище.Text)) content += "Прозвище \n" + прозвище.Text + "\n";
-            if(!String.IsNullOrEmpty(образ.Text)) content += "Образ \n" + образ.Text + "\n";
-            if(!String.IsNullOrEmpty(возраст.Text)) content += "Возраст \n" + возраст.Text + "\n";
-            if(!String.IsNullOrEmpty(дата.Text)) content += "Дата \n" + дата.Text + "\n";
-            if(!String.IsNullOrEmpty(пол.Text)) content += "Пол \n" + пол.Text + "\n";
-            if(!String.IsNullOrEmpty(раса.Text)) content += "Раса \n" + раса.Text + "\n";
-            if(!String.IsNullOrEmpty(место_рождения.Text)) content += "Место_рождения \n" + место_рождения.Text + "\n";
-            if(!String.IsNullOrEmpty(профессия.Text)) content += "Профессия \n" + профессия.Text + "\n";
-            if(!String.IsNullOrEmpty(приндалженость.Text)) content += "Приндалженость \n" + приндалженость.Text + "\n";
-            if(!String.IsNullOrEmpty(биография.Text) || !String.IsNullOrEmpty(взаимоотношения.Text)) content += "P A R T   II Б И О Г Р А Ф И Я: \n";
-            if(!String.IsNullOrEmpty(биография.Text)) content += "Биография \n" + биография.Text + "\n";
-            if(!String.IsNullOrEmpty(взаимоотношения.Text)) content += "Взаимоотношения \n" + взаимоотношения.Text + "\n";
-            if(!String.IsNullOrEmpty(характер.Text) || !String.IsNullOrEmpty(преимущества.Text) || !String.IsNullOrEmpty(факты.Text) || !String.IsNullOrEmpty(внешность.Text) || !String.IsNullOrEmpty(увлечения.Text) || !String.IsNullOrEmpty(способности.Text) || !String.IsNullOrEmpty(эффекты.Text)) content += "P A R T   III Л И Ч Н О С Т Ь: \n";
-            if(!String.IsNullOrEmpty(характер.Text)) content += "Чарактер \n" + характер.Text + "\n";
-            if(!String.IsNullOrEmpty(преимущества.Text)) content += "Преимущества \n" + преимущества.Text + "\n";
-            if(!String.IsNullOrEmpty(факты.Text)) content += "Факты \n" + факты.Text + "\n";
-            if(!String.IsNullOrEmpty(внешность.Text)) content += "Внешность \n" + внешность.Text + "\n";
-            if(!String.IsNullOrEmpty(увлечения.Text)) content += "Увлечения \n" + увлечения.Text + "\n";
-            if(!String.IsNullOrEmpty(способности.Text)) content += "Способности \n" + способности.Text + "\n";
-            if(!String.IsNullOrEmpty(эффекты.Text)) content += "Эффекты \n" + эффекты.Text + "\n";
+            if (!String.IsNullOrEmpty(прозвище.Text)) content += "Прозвище \n" + прозвище.Text + "\n";
+            if (!String.IsNullOrEmpty(образ.Text)) content += "Образ \n" + образ.Text + "\n";
+            if (!String.IsNullOrEmpty(возраст.Text)) content += "Возраст \n" + возраст.Text + "\n";
+            if (!String.IsNullOrEmpty(дата.Text)) content += "Дата \n" + дата.Text + "\n";
+            if (!String.IsNullOrEmpty(пол.Text)) content += "Пол \n" + пол.Text + "\n";
+            if (!String.IsNullOrEmpty(раса.Text)) content += "Раса \n" + раса.Text + "\n";
+            if (!String.IsNullOrEmpty(место_рождения.Text)) content += "Место_рождения \n" + место_рождения.Text + "\n";
+            if (!String.IsNullOrEmpty(профессия.Text)) content += "Профессия \n" + профессия.Text + "\n";
+            if (!String.IsNullOrEmpty(приндалженость.Text)) content += "Приндалженость \n" + приндалженость.Text + "\n";
+            if (!String.IsNullOrEmpty(биография.Text) || !String.IsNullOrEmpty(взаимоотношения.Text)) content += "P A R T   II Б И О Г Р А Ф И Я: \n";
+            if (!String.IsNullOrEmpty(биография.Text)) content += "Биография \n" + биография.Text + "\n";
+            if (!String.IsNullOrEmpty(взаимоотношения.Text)) content += "Взаимоотношения \n" + взаимоотношения.Text + "\n";
+            if (!String.IsNullOrEmpty(характер.Text) || !String.IsNullOrEmpty(преимущества.Text) || !String.IsNullOrEmpty(факты.Text) || !String.IsNullOrEmpty(внешность.Text) || !String.IsNullOrEmpty(увлечения.Text) || !String.IsNullOrEmpty(способности.Text) || !String.IsNullOrEmpty(эффекты.Text)) content += "P A R T   III Л И Ч Н О С Т Ь: \n";
+            if (!String.IsNullOrEmpty(характер.Text)) content += "Чарактер \n" + характер.Text + "\n";
+            if (!String.IsNullOrEmpty(преимущества.Text)) content += "Преимущества \n" + преимущества.Text + "\n";
+            if (!String.IsNullOrEmpty(факты.Text)) content += "Факты \n" + факты.Text + "\n";
+            if (!String.IsNullOrEmpty(внешность.Text)) content += "Внешность \n" + внешность.Text + "\n";
+            if (!String.IsNullOrEmpty(увлечения.Text)) content += "Увлечения \n" + увлечения.Text + "\n";
+            if (!String.IsNullOrEmpty(способности.Text)) content += "Способности \n" + способности.Text + "\n";
+            if (!String.IsNullOrEmpty(эффекты.Text)) content += "Эффекты \n" + эффекты.Text + "\n";
             if (!String.IsNullOrEmpty(доп_информация.Text)) {
                 content += "P A R T   IV Д О П О Л Н И Т Е Л Ь Н О: \n";
                 content += "Доп_информация \n" + доп_информация.Text + "\n";
             }
             if (!String.IsNullOrEmpty(книга.Text) || !String.IsNullOrEmpty(источник.Text) || !String.IsNullOrEmpty(короткий_сюжет.Text)) content += "P A R T   V К Н И Г А: \n";
-            if(!String.IsNullOrEmpty(книга.Text)) content += "Книга \n" + книга.Text + "\n";
-            if(!String.IsNullOrEmpty(источник.Text)) content += "Источник \n" + источник.Text + "\n";
-            if(!String.IsNullOrEmpty(короткий_сюжет.Text)) content += "Короткий_сюжет \n" + короткий_сюжет.Text + "\n";
-            if(!String.IsNullOrEmpty(заметки.Text)) { 
+            if (!String.IsNullOrEmpty(книга.Text)) content += "Книга \n" + книга.Text + "\n";
+            if (!String.IsNullOrEmpty(источник.Text)) content += "Источник \n" + источник.Text + "\n";
+            if (!String.IsNullOrEmpty(короткий_сюжет.Text)) content += "Короткий_сюжет \n" + короткий_сюжет.Text + "\n";
+            if (!String.IsNullOrEmpty(заметки.Text)) {
                 content += "P A R T   VI З А М Е Т К И: \n";
                 content += "Заметки \n" + заметки.Text + "\n";
             }
@@ -310,36 +314,36 @@ namespace BookProgram {
 
                 //добавление новой страницы 
                 winword.Selection.InsertNewPage();
- 
+
                 document.Content.SetRange(0, 0);
 
                 //доавление изоражения
-               // object f = false;
-               // object t = true;
-               // object left = Type.Missing;
-               // object top = Type.Missing;
-              //  object width = 300;
-              //  object height = 300;
-              //  object range = Type.Missing;
-              //  Microsoft.Office.Interop.Word.WdWrapType wrap = Microsoft.Office.Interop.Word.WdWrapType.wdWrapSquare;
-              //  document.Shapes.AddPicture( ref f, ref t, ref left, ref top, ref width, ref height, ref range).WrapFormat.Type = wrap;
+                // object f = false;
+                // object t = true;
+                // object left = Type.Missing;
+                // object top = Type.Missing;
+                //  object width = 300;
+                //  object height = 300;
+                //  object range = Type.Missing;
+                //  Microsoft.Office.Interop.Word.WdWrapType wrap = Microsoft.Office.Interop.Word.WdWrapType.wdWrapSquare;
+                //  document.Shapes.AddPicture( ref f, ref t, ref left, ref top, ref width, ref height, ref range).WrapFormat.Type = wrap;
 
                 //Добавление текста в документ
-                document.Content.Text =  content + Environment.NewLine;
+                document.Content.Text = content + Environment.NewLine;
 
-               winword.Visible = true;
-           }
-           catch (Exception ex) {
-               CFormMessage s = new CFormMessage(ex.Message);
-               s.Show(); 
-           }
+                winword.Visible = true;
+            }
+            catch (Exception ex) {
+                CFormMessage s = new CFormMessage(ex.Message);
+                s.Show();
+            }
         }
-        public void Dobnovpers_Resize(object sender, EventArgs e) { centering(persik,resize.ToArray()); }
+        public void Dobnovpers_Resize(object sender, EventArgs e) { centering(persik, resize.ToArray()); }
         public void centering(Panel start, Panel[] clone) {
             start.Left = Width / 2 - start.Width / 2;
-            if(clone.Length > 0)
-             foreach (Panel p in clone)
-                p.Left = Width / 2 - p.Width / 2;
+            if (clone.Length > 0)
+                foreach (Panel p in clone)
+                    p.Left = Width / 2 - p.Width / 2;
         }
         public void izmen_DoubleClick(object sender, EventArgs e) {
             FIO.ReadOnly = false;
@@ -350,9 +354,78 @@ namespace BookProgram {
             refrah_tab();
         }
         public void refrah_tab() {
+            save_content_tab();
             variable.TabPages.Clear();
-            
-
+            foreach (Person_var_class m in mass_m) variable.TabPages.Add(new TabPage(m.id));
+            load_content_tab();
+        }
+        public void save_content_tab() {
+            if (variable.TabPages.Count > 0 && mass_m.Count > 0)
+                for (int i = 0; i < mass_m.Count; i++)
+                if (mass_m[i].id == variable.SelectedTab.Text) {
+                    mass_m[i].fio = FIO.Text;
+                    mass_m[i].прозвище = прозвище.Text;
+                    mass_m[i].образ = образ.Text;
+                    mass_m[i].возраст = возраст.Text;
+                    mass_m[i].дата = дата.Text;
+                    mass_m[i].пол = пол.Text;
+                    mass_m[i].раса = раса.Text;
+                    mass_m[i].место_рождения = место_рождения.Text;
+                    mass_m[i].профессия = профессия.Text;
+                    mass_m[i].приндалженость = приндалженость.Text;
+                    mass_m[i].биография = биография.Text;
+                    mass_m[i].взаимоотношения = взаимоотношения.Text;
+                    mass_m[i].характер = характер.Text;
+                    mass_m[i].преимущества = преимущества.Text;
+                    mass_m[i].факты = факты.Text;
+                    mass_m[i].внешность = внешность.Text;
+                    mass_m[i].увлечения = увлечения.Text;
+                    mass_m[i].способности = способности.Text;
+                    mass_m[i].эффекты = эффекты.Text;
+                    mass_m[i].доп_информация = доп_информация.Text;
+                    mass_m[i].книга = книга.Text;
+                    mass_m[i].источник = источник.Text;
+                    mass_m[i].короткий_сюжет = короткий_сюжет.Text;
+                    mass_m[i].заметки = заметки.Text;
+                    mass_m[i].img = new Bitmap(профиль.Image);
+                    mass_m[i].imga = new Bitmap(гориз_профиль.Image);
+                    mass_m[i].imgak = new Bitmap(горизонтал.Image);
+                    break;
+                }
+        }
+        public void load_content_tab() {
+           if(variable.TabPages.Count > 0 && mass_m.Count > 0)
+            for (int i = 0; i < mass_m.Count; i++)
+                if (mass_m[i].id == variable.SelectedTab.Text) {
+                    FIO.Text = mass_m[i].fio;
+                    образ.Text = mass_m[i].образ;
+                    прозвище.Text = mass_m[i].прозвище;
+                    возраст.Text = mass_m[i].возраст;
+                    дата.Text = mass_m[i].дата;
+                    пол.Text = mass_m[i].пол;
+                    раса.Text = mass_m[i].раса;
+                    место_рождения.Text = mass_m[i].место_рождения;
+                    профессия.Text = mass_m[i].профессия;
+                    приндалженость.Text = mass_m[i].приндалженость;
+                    биография.Text = mass_m[i].биография;
+                    взаимоотношения.Text = mass_m[i].взаимоотношения;
+                    характер.Text = mass_m[i].характер;
+                    преимущества.Text = mass_m[i].преимущества;
+                    факты.Text = mass_m[i].факты;
+                    внешность.Text = mass_m[i].внешность;
+                    увлечения.Text = mass_m[i].увлечения;
+                    способности.Text = mass_m[i].способности;
+                    эффекты.Text = mass_m[i].эффекты;
+                    доп_информация.Text = mass_m[i].доп_информация;
+                    книга.Text = mass_m[i].книга;
+                    источник.Text = mass_m[i].источник;
+                    короткий_сюжет.Text = mass_m[i].короткий_сюжет;
+                    заметки.Text = mass_m[i].заметки;
+                    профиль.Image = (Image)mass_m[i].img;
+                    гориз_профиль.Image = (Image)mass_m[i].imga;
+                    горизонтал.Image = (Image)mass_m[i].imgak;
+                    break;
+                }
         }
     }
 }

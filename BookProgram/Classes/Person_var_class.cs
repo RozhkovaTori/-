@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BookProgram {
+    [Serializable]
     public class Person_var_class {
         public string id { get; set; }
         public string fio { get; set; }

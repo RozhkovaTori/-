@@ -68,12 +68,19 @@ namespace BookProgram {
         }
 
         private void pictureBox3_Click(object sender, EventArgs e) {
-            select.variable.TabPages.Add(new TabPage((select.variable.TabCount + 1).ToString()));
+            Person_var_class pv = new Person_var_class();
+            pv.id = select.mass_m.Count.ToString();
+            select.mass_m.Add(pv);
+            select.refrah_tab();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e) {
-            if (select.variable.SelectedTab.Name != "Defaul") 
-            select.variable.TabPages.Remove(select.variable.SelectedTab);
+            foreach (Person_var_class pv in select.mass_m)
+                if (pv.id == select.variable.SelectedTab.Text && pv.id != "Главный персонаж" ) {
+                    select.mass_m.Remove(pv);
+                    select.refrah_tab();
+                    break;
+                }
         }
 
         private void Arxivlist_SelectedIndexChanged(object sender, EventArgs e) {

@@ -84,6 +84,12 @@
     <Compile Include="7 Helper\Helper_Slovari.Designer.cs">
       <DependentUpon>Helper_Slovari.cs</DependentUpon>
     </Compile>
+    <Compile Include="1 Person\Person.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="1 Person\Person.Designer.cs">
+      <DependentUpon>Person.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Chapter_class.cs" />
     <Compile Include="Classes\Book_class.cs" />
     <Compile Include="Classes\Location_сlass.cs" />
@@ -113,7 +119,6 @@
     <Compile Include="2 Mybooks\Mybooks_Newchapter.Designer.cs">
       <DependentUpon>Mybooks_Newchapter.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Person_var_class.cs" />
     <Compile Include="3 Spravochnik\Spravochnik_obschii.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -212,12 +217,6 @@
     <Compile Include="6 Other\CFormDialog.Designer.cs">
       <DependentUpon>CFormDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="1 Person\Person.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="1 Person\Person.Designer.cs">
-      <DependentUpon>Person.cs</DependentUpon>
-    </Compile>
     <Compile Include="2 Mybooks\Mybooks.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -305,14 +304,14 @@
     <EmbeddedResource Include="1 Person\Person_list.resx">
       <DependentUpon>Person_list.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="1 Person\Person.resx">
+      <DependentUpon>Person.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CForm.resx">
       <DependentUpon>CForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="6 Other\CFormDialog.resx">
       <DependentUpon>CFormDialog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="1 Person\Person.resx">
-      <DependentUpon>Person.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="2 Mybooks\Mybooks.resx">
       <DependentUpon>Mybooks.cs</DependentUpon>

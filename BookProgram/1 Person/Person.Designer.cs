@@ -1,16 +1,16 @@
 ﻿namespace BookProgram
 {
-    partial class Dobnovpers
+    partial class Person
     {
         /// <summary> 
-        /// Required designer variable.
+        /// Обязательная переменная конструктора.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary> 
-        /// Clean up any resources being used.
+        /// Освободить все используемые ресурсы.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,17 +20,15 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Код, автоматически созданный конструктором компонентов
 
         /// <summary> 
-        /// Required method for Designer support - do not modify 
-        /// the contents of this method with the code editor.
+        /// Требуемый метод для поддержки конструктора — не изменяйте 
+        /// содержимое этого метода с помощью редактора кода.
         /// </summary>
         private void InitializeComponent()
         {
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
-            this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.persik = new System.Windows.Forms.Panel();
             this.izmen = new System.Windows.Forms.PictureBox();
             this.горизонтал = new System.Windows.Forms.PictureBox();
@@ -88,15 +86,22 @@
             this.FIO = new System.Windows.Forms.TextBox();
             this.гориз_профиль = new System.Windows.Forms.PictureBox();
             this.профиль = new System.Windows.Forms.PictureBox();
-            this.variable = new System.Windows.Forms.TabControl();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5.SuspendLayout();
             this.persik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.izmen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.горизонтал)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.гориз_профиль)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.профиль)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.persik);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(966, 774);
+            this.panel5.TabIndex = 33;
             // 
             // persik
             // 
@@ -166,7 +171,7 @@
             this.persik.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.persik.Location = new System.Drawing.Point(0, 0);
             this.persik.Name = "persik";
-            this.persik.Size = new System.Drawing.Size(680, 573);
+            this.persik.Size = new System.Drawing.Size(966, 774);
             this.persik.TabIndex = 22;
             // 
             // izmen
@@ -179,7 +184,6 @@
             this.izmen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.izmen.TabIndex = 28;
             this.izmen.TabStop = false;
-            this.izmen.Click += new System.EventHandler(this.izmen_DoubleClick);
             // 
             // горизонтал
             // 
@@ -193,7 +197,6 @@
             this.горизонтал.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.горизонтал.TabIndex = 27;
             this.горизонтал.TabStop = false;
-            this.горизонтал.DoubleClick += new System.EventHandler(this.горизонтал_DoubleClick);
             // 
             // CompliteBtnm
             // 
@@ -206,7 +209,6 @@
             this.CompliteBtnm.Size = new System.Drawing.Size(100, 27);
             this.CompliteBtnm.TabIndex = 26;
             this.CompliteBtnm.Text = "Записать";
-            this.CompliteBtnm.Click += new System.EventHandler(this.label23_Click);
             // 
             // взаимоотношения
             // 
@@ -386,7 +388,6 @@
             this.CompliteBtn.Size = new System.Drawing.Size(100, 27);
             this.CompliteBtn.TabIndex = 25;
             this.CompliteBtn.Text = "Записать";
-            this.CompliteBtn.Click += new System.EventHandler(this.label23_Click);
             // 
             // label26
             // 
@@ -828,7 +829,6 @@
             this.гориз_профиль.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.гориз_профиль.TabIndex = 2;
             this.гориз_профиль.TabStop = false;
-            this.гориз_профиль.DoubleClick += new System.EventHandler(this.pictureBox2_DoubleClick);
             // 
             // профиль
             // 
@@ -842,61 +842,30 @@
             this.профиль.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.профиль.TabIndex = 2;
             this.профиль.TabStop = false;
-            this.профиль.DoubleClick += new System.EventHandler(this.pictureBox1_DoubleClick);
             // 
-            // variable
-            // 
-            this.variable.Dock = System.Windows.Forms.DockStyle.Top;
-            this.variable.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.variable.HotTrack = true;
-            this.variable.Location = new System.Drawing.Point(0, 0);
-            this.variable.Name = "variable";
-            this.variable.SelectedIndex = 0;
-            this.variable.Size = new System.Drawing.Size(680, 24);
-            this.variable.TabIndex = 29;
-            this.variable.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.variable_Selecting);
-            this.variable.Selected += new System.Windows.Forms.TabControlEventHandler(this.variable_Selected);
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel1.Controls.Add(this.persik);
-            this.panel1.Location = new System.Drawing.Point(2, 26);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(680, 573);
-            this.panel1.TabIndex = 30;
-            // 
-            // Dobnovpers
+            // Add_person
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.variable);
-            this.DoubleBuffered = true;
-            this.Name = "Dobnovpers";
-            this.Size = new System.Drawing.Size(680, 590);
-            this.Load += new System.EventHandler(this.Dobnovpers_Load);
-            this.Resize += new System.EventHandler(this.Dobnovpers_Resize);
+            this.Controls.Add(this.panel5);
+            this.Name = "Add_person";
+            this.Size = new System.Drawing.Size(966, 774);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.persik.ResumeLayout(false);
             this.persik.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.izmen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.горизонтал)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.гориз_профиль)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.профиль)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        public System.Windows.Forms.TabControl variable;
+
+        private System.Windows.Forms.Panel panel5;
         public System.Windows.Forms.Panel persik;
-        public System.Windows.Forms.OpenFileDialog openFileDialog1;
-        public System.Windows.Forms.OpenFileDialog openFileDialog2;
-        public System.Windows.Forms.OpenFileDialog openFileDialog3;
         public System.Windows.Forms.PictureBox izmen;
         public System.Windows.Forms.PictureBox горизонтал;
         public System.Windows.Forms.Label CompliteBtnm;
@@ -953,6 +922,5 @@
         public System.Windows.Forms.TextBox FIO;
         public System.Windows.Forms.PictureBox гориз_профиль;
         public System.Windows.Forms.PictureBox профиль;
-        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -12,7 +12,6 @@ using System.IO;
 namespace BookProgram {
     public partial class Arxivper : UserControl {
         public static Arxivper selfref_Arxivper { get; set; }
-        public Dobnovpers select = new Dobnovpers(false, false);
 
         public Arxivper() {
             InitializeComponent();

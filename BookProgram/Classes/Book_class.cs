@@ -34,6 +34,6 @@ namespace BookProgram {
         public void add_range_location(Location_class[] add) { хранилище_локаций.AddRange(add); }
         public void remove_location(Location_class delete) { хранилище_локаций.Remove(delete); }
         public Location_class[] массив_локаций { get { return хранилище_локаций.ToArray(); } }
-
+        //
     }
 }

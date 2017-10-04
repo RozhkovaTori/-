@@ -18,7 +18,7 @@ namespace BookProgram {
             book_gg.Sorted = true;
             if (CForm.selfref.mass_person.Count > 0) {
                 foreach (Person_class pers in CForm.selfref.mass_person)
-                    all_gg.Items.Add(pers.fio);
+                    all_gg.Items.Add(pers.get_var[0].fio);
                 all_gg.SetSelected(0, true);
             }
             if (CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей.Length > 0) {
@@ -30,7 +30,7 @@ namespace BookProgram {
             book_gg.Items.Clear();
             CForm.selfref.save_to_file(CForm.selfref.global_path_file);
             foreach (Person_class p in CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей)
-                book_gg.Items.Add(p.fio);
+                book_gg.Items.Add(p.get_var[0].fio);
         }
 
         private void remove_to_book_MouseHover(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace BookProgram {
             remove_to_book.Image = Properties.Resources.Стрелочка_2;
             if (book_gg.Items.Count > 0 && book_gg.SelectedIndex >= 0) {
                 for (int i = 0; i < CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей.Length; i++)
-                    if (book_gg.Items[book_gg.SelectedIndex].ToString() == CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей[i].fio) {
+                    if (book_gg.Items[book_gg.SelectedIndex].ToString() == CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей[i].get_var[0].fio) {
                         CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].remove_gg(CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей[i]);
                         refrash_list();
                         break;
@@ -70,7 +70,7 @@ namespace BookProgram {
             add_to_book.Image = Properties.Resources.Стрелочка_1;
             if (all_gg.Items.Count > 0 && all_gg.SelectedIndex >= 0) {
                 for (int i = 0; i < CForm.selfref.mass_person.Count; i++)
-                    if (all_gg.Items[all_gg.SelectedIndex].ToString() == CForm.selfref.mass_person[i].fio) {
+                    if (all_gg.Items[all_gg.SelectedIndex].ToString() == CForm.selfref.mass_person[i].get_var[0].fio) {
                         CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].add_gg(CForm.selfref.mass_person[i]);
                         refrash_list();
                         break;
@@ -84,7 +84,7 @@ namespace BookProgram {
         private void all_gg_DoubleClick(object sender, EventArgs e) {
             if (all_gg.Items.Count > 0 && all_gg.SelectedIndex >= 0)
                 for (int i = 0; i < CForm.selfref.mass_person.Count; i++)
-                    if (all_gg.Items[all_gg.SelectedIndex].ToString() == CForm.selfref.mass_person[i].fio) {
+                    if (all_gg.Items[all_gg.SelectedIndex].ToString() == CForm.selfref.mass_person[i].get_var[0].fio) {
                         Dobnovpers d = new Dobnovpers(false, false);
                         d.init_poly(CForm.selfref.mass_person[i]);
                         CFormDialog c = new CFormDialog(d);
@@ -95,7 +95,7 @@ namespace BookProgram {
         private void book_gg_DoubleClick(object sender, EventArgs e) {
             if (book_gg.Items.Count > 0 && book_gg.SelectedIndex >= 0)
                 for (int i = 0; i < CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей.Length; i++)
-                    if (all_gg.Items[all_gg.SelectedIndex].ToString() == CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей[i].fio) {
+                    if (all_gg.Items[all_gg.SelectedIndex].ToString() == CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей[i].get_var[0].fio) {
                         Dobnovpers d = new Dobnovpers(false,true);
                         d.init_poly(CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей[i]);
                         d.init_book_info(CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex]);

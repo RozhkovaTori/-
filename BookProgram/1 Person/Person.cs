@@ -21,10 +21,16 @@ namespace BookProgram {
         public Dobnovpers(bool create, bool inbook) {
             InitializeComponent();
             selfref_dobn = this;
-            if (!create) {
+            if (!create)
+            {
                 CompliteBtn.Text = "Изменить";
                 CompliteBtnm.Text = "Изменить";
                 FIO.ReadOnly = true;
+            }
+            else {
+                Person_var_class pv = new Person_var_class();
+                pv.id = "Главная страница";
+                mass_m.Add(pv);
             }
             cr = create;
             book = inbook;
@@ -35,68 +41,69 @@ namespace BookProgram {
             короткий_сюжет.Text = book.о_книге;
         }
         public void init_poly(Person_class pers) {
-            FIO.Text = pers.fio;
-            образ.Text = pers.образ;
-            прозвище.Text = pers.прозвище;
-            возраст.Text = pers.возраст;
-            дата.Text = pers.дата;
-            пол.Text = pers.пол;
-            раса.Text = pers.раса;
-            место_рождения.Text = pers.место_рождения;
-            профессия.Text = pers.профессия;
-            приндалженость.Text = pers.приндалженость;
-            биография.Text = pers.биография;
-            взаимоотношения.Text = pers.взаимоотношения;
-            характер.Text = pers.характер;
-            преимущества.Text = pers.преимущества;
-            факты.Text = pers.факты;
-            внешность.Text = pers.внешность;
-            увлечения.Text = pers.увлечения;
-            способности.Text = pers.способности;
-            эффекты.Text = pers.эффекты;
-            доп_информация.Text = pers.доп_информация;
-            книга.Text = pers.книга;
-            источник.Text = pers.источник;
-            короткий_сюжет.Text = pers.короткий_сюжет;
-            заметки.Text = pers.заметки;
-            профиль.Image = (Image)pers.img;
-            гориз_профиль.Image = (Image)pers.imga;
-            горизонтал.Image = (Image)pers.imgak;
-            mass_m.Add(Convert_person_to_var_person(pers, true));
+            //FIO.Text = pers.fio;
+            //образ.Text = pers.образ;
+            //прозвище.Text = pers.прозвище;
+            //возраст.Text = pers.возраст;
+            //дата.Text = pers.дата;
+            //пол.Text = pers.пол;
+            //раса.Text = pers.раса;
+            //место_рождения.Text = pers.место_рождения;
+            //профессия.Text = pers.профессия;
+            //приндалженость.Text = pers.приндалженость;
+            //биография.Text = pers.биография;
+            //взаимоотношения.Text = pers.взаимоотношения;
+            //характер.Text = pers.характер;
+            //преимущества.Text = pers.преимущества;
+            //факты.Text = pers.факты;
+            //внешность.Text = pers.внешность;
+            //увлечения.Text = pers.увлечения;
+            //способности.Text = pers.способности;
+            //эффекты.Text = pers.эффекты;
+            //доп_информация.Text = pers.доп_информация;
+            //книга.Text = pers.книга;
+            //источник.Text = pers.источник;
+            //короткий_сюжет.Text = pers.короткий_сюжет;
+            //заметки.Text = pers.заметки;
+            //профиль.Image = (Image)pers.img;
+            //гориз_профиль.Image = (Image)pers.imga;
+            //горизонтал.Image = (Image)pers.imgak;
+            //  mass_m.Add(Convert_person_to_var_person(pers, true));
             foreach (Person_var_class pv in pers.get_var) mass_m.Add(pv);
+            refrah_tab();
         }
-        public Person_var_class Convert_person_to_var_person(Person_class pers, bool gg) {
-            Person_var_class pv = new Person_var_class();
-            if (gg) pv.id = "Главный персонаж";
-            pv.fio = pers.fio;
-            pv.образ = pers.образ;
-            pv.прозвище = pers.прозвище;
-            pv.возраст = pers.возраст;
-            pv.дата = pers.дата;
-            pv.пол = pers.пол;
-            pv.раса = pers.раса;
-            pv.место_рождения = pers.место_рождения;
-            pv.профессия = pers.профессия;
-            pv.приндалженость = pers.приндалженость;
-            pv.биография = pers.биография;
-            pv.взаимоотношения = pers.взаимоотношения;
-            pv.характер = pers.характер;
-            pv.преимущества = pers.преимущества;
-            pv.факты = pers.факты;
-            pv.внешность = pers.внешность;
-            pv.увлечения = pers.увлечения;
-            pv.увлечения = pers.способности;
-            pv.увлечения = pers.эффекты;
-            pv.доп_информация = pers.доп_информация;
-            pv.книга = pers.книга;
-            pv.источник = pers.источник;
-            pv.короткий_сюжет = pers.короткий_сюжет;
-            pv.заметки = pers.заметки;
-            pv.img = pers.img;
-            pv.imga = pers.imga;
-            pv.imgak = pers.imgak;
-            return pv;
-        }
+        //public Person_var_class Convert_person_to_var_person(Person_class pers, bool gg) {
+        //    Person_var_class pv = new Person_var_class();
+        //    if (gg) pv.id = "Главный персонаж"; 
+        //    pv.fio = pers.fio;
+        //    pv.образ = pers.образ;
+        //    pv.прозвище = pers.прозвище;
+        //    pv.возраст = pers.возраст;
+        //    pv.дата = pers.дата;
+        //    pv.пол = pers.пол;
+        //    pv.раса = pers.раса;
+        //    pv.место_рождения = pers.место_рождения;
+        //    pv.профессия = pers.профессия;
+        //    pv.приндалженость = pers.приндалженость;
+        //    pv.биография = pers.биография;
+        //    pv.взаимоотношения = pers.взаимоотношения;
+        //    pv.характер = pers.характер;
+        //    pv.преимущества = pers.преимущества;
+        //    pv.факты = pers.факты;
+        //    pv.внешность = pers.внешность;
+        //    pv.увлечения = pers.увлечения;
+        //    pv.увлечения = pers.способности;
+        //    pv.увлечения = pers.эффекты;
+        //    pv.доп_информация = pers.доп_информация;
+        //    pv.книга = pers.книга;
+        //    pv.источник = pers.источник;
+        //    pv.короткий_сюжет = pers.короткий_сюжет;
+        //    pv.заметки = pers.заметки;
+        //    pv.img = pers.img;
+        //    pv.imga = pers.imga;
+        //    pv.imgak = pers.imgak;
+        //    return pv;
+        //}
         public void pictureBox1_DoubleClick(object sender, EventArgs e) {
             if (openFileDialog1.ShowDialog() == DialogResult.OK) {
                 профиль.BackgroundImage = null;
@@ -130,33 +137,33 @@ namespace BookProgram {
                 if (String.IsNullOrEmpty(FIO.Text)) error += "Ошибка: Поле Имя Фамилия пустое";
                 if (error == "") {
                     Person_class pers = new Person_class();
-                    pers.fio = FIO.Text;
-                    pers.прозвище = прозвище.Text;
-                    pers.образ = образ.Text;
-                    pers.возраст = возраст.Text;
-                    pers.дата = дата.Text;
-                    pers.пол = пол.Text;
-                    pers.раса = раса.Text;
-                    pers.место_рождения = место_рождения.Text;
-                    pers.профессия = профессия.Text;
-                    pers.приндалженость = приндалженость.Text;
-                    pers.биография = биография.Text;
-                    pers.взаимоотношения = взаимоотношения.Text;
-                    pers.характер = характер.Text;
-                    pers.преимущества = преимущества.Text;
-                    pers.факты = факты.Text;
-                    pers.внешность = внешность.Text;
-                    pers.увлечения = увлечения.Text;
-                    pers.способности = способности.Text;
-                    pers.эффекты = эффекты.Text;
-                    pers.доп_информация = доп_информация.Text;
-                    pers.книга = книга.Text;
-                    pers.источник = источник.Text;
-                    pers.короткий_сюжет = короткий_сюжет.Text;
-                    pers.заметки = заметки.Text;
-                    if (профиль.Image != null) pers.img = new Bitmap(профиль.Image);
-                    if (гориз_профиль.Image != null) pers.imga = new Bitmap(гориз_профиль.Image);
-                    if (горизонтал.Image != null) pers.imgak = new Bitmap(горизонтал.Image);
+                    //pers.fio = FIO.Text;
+                    //pers.прозвище = прозвище.Text;
+                    //pers.образ = образ.Text;
+                    //pers.возраст = возраст.Text;
+                    //pers.дата = дата.Text;
+                    //pers.пол = пол.Text;
+                    //pers.раса = раса.Text;
+                    //pers.место_рождения = место_рождения.Text;
+                    //pers.профессия = профессия.Text;
+                    //pers.приндалженость = приндалженость.Text;
+                    //pers.биография = биография.Text;
+                    //pers.взаимоотношения = взаимоотношения.Text;
+                    //pers.характер = характер.Text;
+                    //pers.преимущества = преимущества.Text;
+                    //pers.факты = факты.Text;
+                    //pers.внешность = внешность.Text;
+                    //pers.увлечения = увлечения.Text;
+                    //pers.способности = способности.Text;
+                    //pers.эффекты = эффекты.Text;
+                    //pers.доп_информация = доп_информация.Text;
+                    //pers.книга = книга.Text;
+                    //pers.источник = источник.Text;
+                    //pers.короткий_сюжет = короткий_сюжет.Text;
+                    //pers.заметки = заметки.Text;
+                    //if (профиль.Image != null) pers.img = new Bitmap(профиль.Image);
+                    //if (гориз_профиль.Image != null) pers.imga = new Bitmap(гориз_профиль.Image);
+                    //if (горизонтал.Image != null) pers.imgak = new Bitmap(горизонтал.Image);
                     foreach (Person_var_class pv in mass_m) pers.add_var(pv);
 
                     if (book) {
@@ -182,7 +189,7 @@ namespace BookProgram {
                 if (error == "") {
                     if (book) {
                         for (int i = 0; i < CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей.Length; i++)
-                            if (FIO.Text == CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей[i].fio) {
+                            if (FIO.Text == CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей[i].get_var[0].fio) {
                                 CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].remove_gg(CForm.selfref.mass_book[Mybooks.selfref_Mybooks.mybook.SelectedIndex].массив_глав_персонажей[i]);
                                 break;
                             }
@@ -190,7 +197,7 @@ namespace BookProgram {
                     else {
                         if (izmen_bool) {
                             for (int i = 0; i < CForm.selfref.mass_person.Count; i++)
-                                if (izmen_start_name == CForm.selfref.mass_person[i].fio) {
+                                if (izmen_start_name == CForm.selfref.mass_person[i].get_var[0].fio) {
                                     CForm.selfref.mass_person.Remove(CForm.selfref.mass_person[i]);
                                     izmen_bool = false;
                                     FIO.ReadOnly = true;
@@ -200,7 +207,7 @@ namespace BookProgram {
                         }
                         else {
                             for (int i = 0; i < CForm.selfref.mass_person.Count; i++)
-                                if (FIO.Text == CForm.selfref.mass_person[i].fio) {
+                                if (FIO.Text == CForm.selfref.mass_person[i].get_var[0].fio) {
                                     CForm.selfref.mass_person.Remove(CForm.selfref.mass_person[i]);
                                     break;
                                 }
@@ -208,33 +215,33 @@ namespace BookProgram {
                     }
 
                     Person_class pers = new Person_class();
-                    pers.fio = FIO.Text;
-                    pers.прозвище = прозвище.Text;
-                    pers.образ = образ.Text;
-                    pers.возраст = возраст.Text;
-                    pers.дата = дата.Text;
-                    pers.пол = пол.Text;
-                    pers.раса = раса.Text;
-                    pers.место_рождения = место_рождения.Text;
-                    pers.профессия = профессия.Text;
-                    pers.приндалженость = приндалженость.Text;
-                    pers.биография = биография.Text;
-                    pers.взаимоотношения = взаимоотношения.Text;
-                    pers.характер = характер.Text;
-                    pers.преимущества = преимущества.Text;
-                    pers.факты = факты.Text;
-                    pers.внешность = внешность.Text;
-                    pers.увлечения = увлечения.Text;
-                    pers.способности = способности.Text;
-                    pers.эффекты = эффекты.Text;
-                    pers.доп_информация = доп_информация.Text;
-                    pers.книга = книга.Text;
-                    pers.источник = источник.Text;
-                    pers.короткий_сюжет = короткий_сюжет.Text;
-                    pers.заметки = заметки.Text;
-                    pers.img = new Bitmap(профиль.Image);
-                    pers.imga = new Bitmap(гориз_профиль.Image);
-                    pers.imgak = new Bitmap(горизонтал.Image);
+                    //pers.fio = FIO.Text;
+                    //pers.прозвище = прозвище.Text;
+                    //pers.образ = образ.Text;
+                    //pers.возраст = возраст.Text;
+                    //pers.дата = дата.Text;
+                    //pers.пол = пол.Text;
+                    //pers.раса = раса.Text;
+                    //pers.место_рождения = место_рождения.Text;
+                    //pers.профессия = профессия.Text;
+                    //pers.приндалженость = приндалженость.Text;
+                    //pers.биография = биография.Text;
+                    //pers.взаимоотношения = взаимоотношения.Text;
+                    //pers.характер = характер.Text;
+                    //pers.преимущества = преимущества.Text;
+                    //pers.факты = факты.Text;
+                    //pers.внешность = внешность.Text;
+                    //pers.увлечения = увлечения.Text;
+                    //pers.способности = способности.Text;
+                    //pers.эффекты = эффекты.Text;
+                    //pers.доп_информация = доп_информация.Text;
+                    //pers.книга = книга.Text;
+                    //pers.источник = источник.Text;
+                    //pers.короткий_сюжет = короткий_сюжет.Text;
+                    //pers.заметки = заметки.Text;
+                    //pers.img = new Bitmap(профиль.Image);
+                    //pers.imga = new Bitmap(гориз_профиль.Image);
+                    //pers.imgak = new Bitmap(горизонтал.Image);
                     foreach (Person_var_class pv in mass_m) pers.add_var(pv);
 
                     if (book) {
@@ -255,7 +262,7 @@ namespace BookProgram {
         }
         bool isClonFio() {
             foreach (Person_class p in CForm.selfref.mass_person)
-                if (p.fio == FIO.Text)
+                if (mass_m[0].fio == FIO.Text)
                     return true;
             return false;
         }
@@ -355,7 +362,7 @@ namespace BookProgram {
         }
         public void refrah_tab() {
             variable.TabPages.Clear();
-            MessageBox.Show(mass_m.Count.ToString());
+          //  MessageBox.Show(mass_m.Count.ToString());
             foreach (Person_var_class m in mass_m) variable.TabPages.Add(new TabPage(m.id));
         }
         public void save_content_tab() {
@@ -396,7 +403,7 @@ namespace BookProgram {
            if(variable.TabPages.Count > 0 && mass_m.Count > 0)
             foreach(Person_var_class pv in mass_m)
                 if (pv.id == variable.SelectedTab.Text) {
-                    MessageBox.Show("dsfdsf");
+                //    MessageBox.Show("dsfdsf");
                     FIO.Text = pv.fio;
                     образ.Text = pv.образ;
                     прозвище.Text = pv.прозвище;

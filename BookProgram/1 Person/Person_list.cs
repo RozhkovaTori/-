@@ -35,7 +35,7 @@ namespace BookProgram {
             Arxivlist.Items.Clear();
             CForm.selfref.save_to_file(CForm.selfref.global_path_file);
             foreach (Person_class p in CForm.selfref.mass_person) 
-                Arxivlist.Items.Add(p.fio);
+                Arxivlist.Items.Add(p.get_var[0].fio);
         }
         private void pictureBox1_Click(object sender, EventArgs e) {
             CFormDialog f = new CFormDialog(new Dobnovpers(true, false));
@@ -44,7 +44,7 @@ namespace BookProgram {
         private void удалитьВыбранногоПерсонажаToolStripMenuItem_Click(object sender, EventArgs e) {
             if (Arxivlist.Items.Count > 0 && Arxivlist.SelectedIndex >= 0) {
                 for (int i = 0; i < CForm.selfref.mass_person.Count; i++)
-                    if (Arxivlist.Items[Arxivlist.SelectedIndex].ToString() == CForm.selfref.mass_person[i].fio) {
+                    if (Arxivlist.Items[Arxivlist.SelectedIndex].ToString() == CForm.selfref.mass_person[i].get_var[0].fio) {
                         int index = Arxivlist.SelectedIndex;
                         CForm.selfref.mass_person.Remove(CForm.selfref.mass_person[i]);
                         refrash_list();
@@ -61,8 +61,10 @@ namespace BookProgram {
         public void refrash_select() {
             if (Arxivlist.Items.Count > 0 && Arxivlist.SelectedIndex >= 0)
                 foreach (Person_class p in CForm.selfref.mass_person) 
-                    if (Arxivlist.Items[Arxivlist.SelectedIndex].ToString() == p.fio) {
+                    if (Arxivlist.Items[Arxivlist.SelectedIndex].ToString() == p.get_var[0].fio) {
                         select.init_poly(p);
+                        select.refrah_tab();
+                        select.load_content_tab();
                         break;
                     }
         }

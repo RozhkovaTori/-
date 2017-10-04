@@ -12,7 +12,7 @@ namespace BookProgram {
 
         public string id { get; set; }
         public string id_book { get; set; }
-        bool is_gg { get; set; }
+        public bool is_gg { get; set; }
 
         public string fio { get; set; }
         public string образ { get; set; }

@@ -37,7 +37,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Arxivlist = new System.Windows.Forms.ListBox();
+            this.list = new System.Windows.Forms.ListBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.удалитьВыбранногоПерсонажаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arhifper_body = new System.Windows.Forms.Panel();
@@ -149,7 +149,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(40, 28);
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
@@ -161,7 +160,6 @@
             this.pictureBox3.Size = new System.Drawing.Size(40, 28);
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pech
             // 
@@ -172,7 +170,6 @@
             this.pech.Name = "pech";
             this.pech.Size = new System.Drawing.Size(40, 46);
             this.pech.TabIndex = 6;
-            this.pech.Click += new System.EventHandler(this.pech_Click);
             // 
             // pictureBox1
             // 
@@ -184,7 +181,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(40, 39);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel3
             // 
@@ -197,26 +193,25 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.Arxivlist);
+            this.panel2.Controls.Add(this.list);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(191, 824);
             this.panel2.TabIndex = 1;
             // 
-            // Arxivlist
+            // list
             // 
-            this.Arxivlist.BackColor = System.Drawing.Color.White;
-            this.Arxivlist.ContextMenuStrip = this.contextMenuStrip1;
-            this.Arxivlist.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Arxivlist.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Arxivlist.FormattingEnabled = true;
-            this.Arxivlist.ItemHeight = 18;
-            this.Arxivlist.Location = new System.Drawing.Point(0, 0);
-            this.Arxivlist.Name = "Arxivlist";
-            this.Arxivlist.Size = new System.Drawing.Size(191, 824);
-            this.Arxivlist.TabIndex = 0;
-            this.Arxivlist.SelectedIndexChanged += new System.EventHandler(this.Arxivlist_SelectedIndexChanged);
+            this.list.BackColor = System.Drawing.Color.White;
+            this.list.ContextMenuStrip = this.contextMenuStrip1;
+            this.list.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.list.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.list.FormattingEnabled = true;
+            this.list.ItemHeight = 18;
+            this.list.Location = new System.Drawing.Point(0, 0);
+            this.list.Name = "list";
+            this.list.Size = new System.Drawing.Size(191, 824);
+            this.list.TabIndex = 0;
             // 
             // contextMenuStrip1
             // 
@@ -230,7 +225,6 @@
             this.удалитьВыбранногоПерсонажаToolStripMenuItem.Name = "удалитьВыбранногоПерсонажаToolStripMenuItem";
             this.удалитьВыбранногоПерсонажаToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.удалитьВыбранногоПерсонажаToolStripMenuItem.Text = "Удалить выбранного персонажа";
-            this.удалитьВыбранногоПерсонажаToolStripMenuItem.Click += new System.EventHandler(this.удалитьВыбранногоПерсонажаToolStripMenuItem_Click);
             // 
             // arhifper_body
             // 
@@ -317,9 +311,9 @@
             this.persik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.persik.Font = new System.Drawing.Font("Monotype Corsiva", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.persik.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.persik.Location = new System.Drawing.Point(0, 43);
+            this.persik.Location = new System.Drawing.Point(0, 37);
             this.persik.Name = "persik";
-            this.persik.Size = new System.Drawing.Size(806, 781);
+            this.persik.Size = new System.Drawing.Size(806, 787);
             this.persik.TabIndex = 22;
             // 
             // izmen
@@ -999,7 +993,7 @@
             this.variable.Location = new System.Drawing.Point(0, 0);
             this.variable.Name = "variable";
             this.variable.SelectedIndex = 0;
-            this.variable.Size = new System.Drawing.Size(806, 43);
+            this.variable.Size = new System.Drawing.Size(806, 37);
             this.variable.TabIndex = 31;
             // 
             // Arxivper
@@ -1040,7 +1034,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel pech;
-        public System.Windows.Forms.ListBox Arxivlist;
+        public System.Windows.Forms.ListBox list;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem удалитьВыбранногоПерсонажаToolStripMenuItem;
         private System.Windows.Forms.Panel arhifper_body;

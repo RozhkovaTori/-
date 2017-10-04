@@ -15,80 +15,88 @@ namespace BookProgram {
 
         public Arxivper() {
             InitializeComponent();
-
-            Arxivlist.Sorted = true;
-
-            selfref_Arxivper = this;
-            select.Dock = DockStyle.Fill;
-            arhifper_body.Controls.Add(select);
-            arhifper_body.Controls.SetChildIndex(select, 0);
-
-            if (File.Exists(CForm.selfref.global_path_file)) {
-                CForm.selfref.load_is_file(CForm.selfref.global_path_file);
-                refrash_list();
-                if (Arxivlist.Items.Count > 0) Arxivlist.SetSelected(0, true);
-                refrash_select();
-            }
+            list.Sorted = true;
         }
         public void refrash_list() {
-            Arxivlist.Items.Clear();
-            CForm.selfref.save_to_file(CForm.selfref.global_path_file);
-            foreach (Person_class p in CForm.selfref.mass_person) 
-                Arxivlist.Items.Add(p.get_var[0].fio);
+            list.Items.Clear();
+            foreach (Person_class p in CForm.selfref.mass_person)
+                list.Items.Add(p.fio);
         }
-        private void pictureBox1_Click(object sender, EventArgs e) {
-            CFormDialog f = new CFormDialog(new Dobnovpers(true, false));
-            f.Show();
+        public void refrash_tab() {
+          if(list.SelectedIndex >= 0)
+            variable.TabPages.Clear();
+            foreach (Person_class p in CForm.selfref.mass_person)
+               if (list.SelectedItem.ToString() == p.id) {
+                    if(p.is_gg) variable.TabPages.Add(new TabPage("Главный персонаж"));
+                    variable.TabPages.Add(new TabPage("Вариация " + CForm.selfref.mass_person.Count.ToString()));
+               }
         }
-        private void удалитьВыбранногоПерсонажаToolStripMenuItem_Click(object sender, EventArgs e) {
-            if (Arxivlist.Items.Count > 0 && Arxivlist.SelectedIndex >= 0) {
-                for (int i = 0; i < CForm.selfref.mass_person.Count; i++)
-                    if (Arxivlist.Items[Arxivlist.SelectedIndex].ToString() == CForm.selfref.mass_person[i].get_var[0].fio) {
-                        int index = Arxivlist.SelectedIndex;
-                        CForm.selfref.mass_person.Remove(CForm.selfref.mass_person[i]);
-                        refrash_list();
-                        if (index > 0) Arxivlist.SetSelected(index - 1, true);
-                        refrash_select();
-                        break;
-                    }
-            }
-            else {
-                CFormMessage s = new CFormMessage("Список пуст");
-                s.Show();
-            } 
-        }
-        public void refrash_select() {
-            if (Arxivlist.Items.Count > 0 && Arxivlist.SelectedIndex >= 0)
-                foreach (Person_class p in CForm.selfref.mass_person) 
-                    if (Arxivlist.Items[Arxivlist.SelectedIndex].ToString() == p.get_var[0].fio) {
-                        select.init_poly(p);
-                        select.refrah_tab();
-                        select.load_content_tab();
-                        break;
-                    }
-        }
-        private void pech_Click(object sender, EventArgs e) {
-            select.build_word_doc();
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e) {
-            Person_var_class pv = new Person_var_class();
-            pv.id = select.mass_m.Count.ToString();
-            select.mass_m.Add(pv);
-            select.refrah_tab();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e) {
-            foreach (Person_var_class pv in select.mass_m)
-                if (pv.id == select.variable.SelectedTab.Text && pv.id != "Главный персонаж" ) {
-                    select.mass_m.Remove(pv);
-                    select.refrah_tab();
+        public void save_content() {
+            foreach (Person_class pv in CForm.selfref.mass_person)
+                if (pv.id == variable.SelectedTab.Text) {
+                    pv.fio = FIO.Text;
+                    pv.прозвище = прозвище.Text;
+                    pv.образ = образ.Text;
+                    pv.возраст = возраст.Text;
+                    pv.дата = дата.Text;
+                    pv.пол = пол.Text;
+                    pv.раса = раса.Text;
+                    pv.место_рождения = место_рождения.Text;
+                    pv.профессия = профессия.Text;
+                    pv.приндалженость = приндалженость.Text;
+                    pv.биография = биография.Text;
+                    pv.взаимоотношения = взаимоотношения.Text;
+                    pv.характер = характер.Text;
+                    pv.преимущества = преимущества.Text;
+                    pv.факты = факты.Text;
+                    pv.внешность = внешность.Text;
+                    pv.увлечения = увлечения.Text;
+                    pv.способности = способности.Text;
+                    pv.эффекты = эффекты.Text;
+                    pv.доп_информация = доп_информация.Text;
+                    pv.книга = книга.Text;
+                    pv.источник = источник.Text;
+                    pv.короткий_сюжет = короткий_сюжет.Text;
+                    pv.заметки = заметки.Text;
+                    if (профиль.Image != null) pv.img = new Bitmap(профиль.Image);
+                    if (гориз_профиль.Image != null) pv.imga = new Bitmap(гориз_профиль.Image);
+                    if (горизонтал.Image != null) pv.imgak = new Bitmap(горизонтал.Image);
+                    CForm.selfref.save_to_file("default.bm") ;
                     break;
                 }
         }
-
-        private void Arxivlist_SelectedIndexChanged(object sender, EventArgs e) {
-            refrash_select();
+        public void load_content() {
+           foreach (Person_class pv in CForm.selfref.mass_person)
+             if (pv.id == variable.SelectedTab.Text) {
+                FIO.Text = pv.fio;
+                образ.Text = pv.образ;
+                прозвище.Text = pv.прозвище;
+                возраст.Text = pv.возраст;
+                дата.Text = pv.дата;
+                пол.Text = pv.пол;
+                раса.Text = pv.раса;
+                место_рождения.Text = pv.место_рождения;
+                профессия.Text = pv.профессия;
+                приндалженость.Text = pv.приндалженость;
+                биография.Text = pv.биография;
+                взаимоотношения.Text = pv.взаимоотношения;
+                характер.Text = pv.характер;
+                преимущества.Text = pv.преимущества;
+                факты.Text = pv.факты;
+                внешность.Text = pv.внешность;
+                увлечения.Text = pv.увлечения;
+                способности.Text = pv.способности;
+                эффекты.Text = pv.эффекты;
+                доп_информация.Text = pv.доп_информация;
+                книга.Text = pv.книга;
+                источник.Text = pv.источник;
+                короткий_сюжет.Text = pv.короткий_сюжет;
+                заметки.Text = pv.заметки;
+                профиль.Image = (Image)pv.img;
+                гориз_профиль.Image = (Image)pv.imga;
+                горизонтал.Image = (Image)pv.imgak;
+                break;
+            }
         }
     }
 }

@@ -16,6 +16,7 @@ namespace BookProgram {
         public Arxivper() {
             InitializeComponent();
             list.Sorted = true;
+            if(list.Items.Count > 0) refrash_list();
         }
         public void refrash_list() {
             list.Items.Clear();
@@ -28,7 +29,7 @@ namespace BookProgram {
             foreach (Person_class p in CForm.selfref.mass_person)
                if (list.SelectedItem.ToString() == p.id) {
                     if(p.is_gg) variable.TabPages.Add(new TabPage("Главный персонаж"));
-                    variable.TabPages.Add(new TabPage("Вариация " + CForm.selfref.mass_person.Count.ToString()));
+                    else variable.TabPages.Add(new TabPage("Вариация " + CForm.selfref.mass_person.Count.ToString()));
                }
         }
         public void save_content() {
@@ -96,6 +97,29 @@ namespace BookProgram {
                 гориз_профиль.Image = (Image)pv.imga;
                 горизонтал.Image = (Image)pv.imgak;
                 break;
+            }
+        }
+        private void add_p_Click(object sender, EventArgs e) {
+            Person_class p = new Person_class();
+            p.fio = "Новый персонаж " + CForm.selfref.mass_person.Count.ToString();
+            p.id = p.fio;
+            p.is_gg = true;
+            CForm.selfref.mass_person.Add(p);
+            refrash_list();
+        }
+        private void delete_p_Click(object sender, EventArgs e) {
+
+        }
+        private void add_tab_Click(object sender, EventArgs e) {
+
+        }
+        private void delete_tab_Click(object sender, EventArgs e) {
+
+        }
+        private void list_SelectedIndexChanged(object sender, EventArgs e) {
+            if (list.SelectedIndex >= 0) {
+                refrash_tab();
+                load_content();
             }
         }
     }

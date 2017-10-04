@@ -31,15 +31,15 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pech = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.delete_tab = new System.Windows.Forms.PictureBox();
+            this.add_tab = new System.Windows.Forms.PictureBox();
+            this.word = new System.Windows.Forms.Panel();
+            this.add_p = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.list = new System.Windows.Forms.ListBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.удалитьВыбранногоПерсонажаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.delete_p = new System.Windows.Forms.ToolStripMenuItem();
             this.arhifper_body = new System.Windows.Forms.Panel();
             this.content = new System.Windows.Forms.Panel();
             this.persik = new System.Windows.Forms.Panel();
@@ -102,9 +102,9 @@
             this.variable = new System.Windows.Forms.TabControl();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.delete_tab)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.add_tab)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.add_p)).BeginInit();
             this.panel2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.arhifper_body.SuspendLayout();
@@ -120,8 +120,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.pech);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.word);
+            this.panel1.Controls.Add(this.add_p);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(997, 0);
@@ -131,56 +131,59 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Controls.Add(this.pictureBox3);
+            this.panel4.Controls.Add(this.delete_tab);
+            this.panel4.Controls.Add(this.add_tab);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 95);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(40, 729);
             this.panel4.TabIndex = 8;
             // 
-            // pictureBox2
+            // delete_tab
             // 
-            this.pictureBox2.BackgroundImage = global::BookProgram.Properties.Resources.Для_пикчербоксов1;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 28);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 28);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
+            this.delete_tab.BackgroundImage = global::BookProgram.Properties.Resources.Для_пикчербоксов1;
+            this.delete_tab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.delete_tab.Dock = System.Windows.Forms.DockStyle.Top;
+            this.delete_tab.Location = new System.Drawing.Point(0, 28);
+            this.delete_tab.Name = "delete_tab";
+            this.delete_tab.Size = new System.Drawing.Size(40, 28);
+            this.delete_tab.TabIndex = 7;
+            this.delete_tab.TabStop = false;
+            this.delete_tab.Click += new System.EventHandler(this.delete_tab_Click);
             // 
-            // pictureBox3
+            // add_tab
             // 
-            this.pictureBox3.BackgroundImage = global::BookProgram.Properties.Resources.добавить;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(40, 28);
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
+            this.add_tab.BackgroundImage = global::BookProgram.Properties.Resources.добавить;
+            this.add_tab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.add_tab.Dock = System.Windows.Forms.DockStyle.Top;
+            this.add_tab.Location = new System.Drawing.Point(0, 0);
+            this.add_tab.Name = "add_tab";
+            this.add_tab.Size = new System.Drawing.Size(40, 28);
+            this.add_tab.TabIndex = 8;
+            this.add_tab.TabStop = false;
+            this.add_tab.Click += new System.EventHandler(this.add_tab_Click);
             // 
-            // pech
+            // word
             // 
-            this.pech.BackgroundImage = global::BookProgram.Properties.Resources.ворд;
-            this.pech.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pech.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pech.Location = new System.Drawing.Point(0, 49);
-            this.pech.Name = "pech";
-            this.pech.Size = new System.Drawing.Size(40, 46);
-            this.pech.TabIndex = 6;
+            this.word.BackgroundImage = global::BookProgram.Properties.Resources.ворд;
+            this.word.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.word.Dock = System.Windows.Forms.DockStyle.Top;
+            this.word.Location = new System.Drawing.Point(0, 49);
+            this.word.Name = "word";
+            this.word.Size = new System.Drawing.Size(40, 46);
+            this.word.TabIndex = 6;
             // 
-            // pictureBox1
+            // add_p
             // 
-            this.pictureBox1.BackgroundImage = global::BookProgram.Properties.Resources.новый_герой;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 39);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.add_p.BackgroundImage = global::BookProgram.Properties.Resources.новый_герой;
+            this.add_p.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.add_p.Dock = System.Windows.Forms.DockStyle.Top;
+            this.add_p.Location = new System.Drawing.Point(0, 10);
+            this.add_p.Name = "add_p";
+            this.add_p.Size = new System.Drawing.Size(40, 39);
+            this.add_p.TabIndex = 2;
+            this.add_p.TabStop = false;
+            this.add_p.Click += new System.EventHandler(this.add_p_Click);
             // 
             // panel3
             // 
@@ -212,19 +215,21 @@
             this.list.Name = "list";
             this.list.Size = new System.Drawing.Size(191, 824);
             this.list.TabIndex = 0;
+            this.list.SelectedIndexChanged += new System.EventHandler(this.list_SelectedIndexChanged);
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.удалитьВыбранногоПерсонажаToolStripMenuItem});
+            this.delete_p});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(254, 26);
             // 
-            // удалитьВыбранногоПерсонажаToolStripMenuItem
+            // delete_p
             // 
-            this.удалитьВыбранногоПерсонажаToolStripMenuItem.Name = "удалитьВыбранногоПерсонажаToolStripMenuItem";
-            this.удалитьВыбранногоПерсонажаToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.удалитьВыбранногоПерсонажаToolStripMenuItem.Text = "Удалить выбранного персонажа";
+            this.delete_p.Name = "delete_p";
+            this.delete_p.Size = new System.Drawing.Size(253, 22);
+            this.delete_p.Text = "Удалить выбранного персонажа";
+            this.delete_p.Click += new System.EventHandler(this.delete_p_Click);
             // 
             // arhifper_body
             // 
@@ -311,9 +316,9 @@
             this.persik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.persik.Font = new System.Drawing.Font("Monotype Corsiva", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.persik.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.persik.Location = new System.Drawing.Point(0, 37);
+            this.persik.Location = new System.Drawing.Point(0, 25);
             this.persik.Name = "persik";
-            this.persik.Size = new System.Drawing.Size(806, 787);
+            this.persik.Size = new System.Drawing.Size(806, 799);
             this.persik.TabIndex = 22;
             // 
             // izmen
@@ -993,7 +998,7 @@
             this.variable.Location = new System.Drawing.Point(0, 0);
             this.variable.Name = "variable";
             this.variable.SelectedIndex = 0;
-            this.variable.Size = new System.Drawing.Size(806, 37);
+            this.variable.Size = new System.Drawing.Size(806, 25);
             this.variable.TabIndex = 31;
             // 
             // Arxivper
@@ -1009,9 +1014,9 @@
             this.Size = new System.Drawing.Size(1037, 824);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.delete_tab)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.add_tab)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.add_p)).EndInit();
             this.panel2.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
             this.arhifper_body.ResumeLayout(false);
@@ -1030,17 +1035,17 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox add_p;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel pech;
+        private System.Windows.Forms.Panel word;
         public System.Windows.Forms.ListBox list;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem удалитьВыбранногоПерсонажаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem delete_p;
         private System.Windows.Forms.Panel arhifper_body;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox delete_tab;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox add_tab;
         private System.Windows.Forms.Panel content;
         public System.Windows.Forms.Panel persik;
         public System.Windows.Forms.PictureBox izmen;

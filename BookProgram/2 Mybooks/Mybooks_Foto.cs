@@ -15,10 +15,9 @@ namespace BookProgram {
             InitializeComponent();
             content.Controls.Clear();
             if(CForm.selfref.mass_person.Count > 0)
-            foreach(Person_class o in CForm.selfref.mass_person) 
-                    foreach(Person_var_class c in o.get_var) { 
-                add_img(c.img);
-                add_img(c.imga);
+            foreach(Person_class o in CForm.selfref.mass_person) {   
+                                add_img(o.img);
+                               add_img(o.imga);
             }
             if(CForm.selfref.mass_book.Count > 0)
                  foreach(Book_class book in CForm.selfref.mass_book) {
@@ -42,5 +41,6 @@ namespace BookProgram {
             p.Dock = DockStyle.Fill;
             content.Controls.Add(p);
         } 
+
     }
 }

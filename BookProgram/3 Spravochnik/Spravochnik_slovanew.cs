@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BookProgram
 {
-    public partial class Spravochnik_4 : UserControl
+    public partial class Spravochnik_slovanew : UserControl
     {
-        public Spravochnik_4()
+        public Spravochnik_slovanew()
         {
             InitializeComponent();
         }

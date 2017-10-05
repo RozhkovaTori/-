@@ -122,5 +122,10 @@ namespace BookProgram {
                 load_content();
             }
         }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -84,11 +84,11 @@
     <Compile Include="7 Helper\Helper_Slovari.Designer.cs">
       <DependentUpon>Helper_Slovari.cs</DependentUpon>
     </Compile>
-    <Compile Include="1 Person\Person.cs">
+    <Compile Include="2 Mybooks\Mybooks_Person.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="1 Person\Person.Designer.cs">
-      <DependentUpon>Person.cs</DependentUpon>
+    <Compile Include="2 Mybooks\Mybooks_Person.Designer.cs">
+      <DependentUpon>Mybooks_Person.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Chapter_class.cs" />
     <Compile Include="Classes\Book_class.cs" />
@@ -119,30 +119,6 @@
     <Compile Include="2 Mybooks\Mybooks_Newchapter.Designer.cs">
       <DependentUpon>Mybooks_Newchapter.cs</DependentUpon>
     </Compile>
-    <Compile Include="3 Spravochnik\Spravochnik_obschii.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="3 Spravochnik\Spravochnik_obschii.Designer.cs">
-      <DependentUpon>Spravochnik_obschii.cs</DependentUpon>
-    </Compile>
-    <Compile Include="3 Spravochnik\Spravochnik_name.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="3 Spravochnik\Spravochnik_name.Designer.cs">
-      <DependentUpon>Spravochnik_name.cs</DependentUpon>
-    </Compile>
-    <Compile Include="3 Spravochnik\Spravochnik_mifolog.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="3 Spravochnik\Spravochnik_mifolog.Designer.cs">
-      <DependentUpon>Spravochnik_mifolog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="3 Spravochnik\Spravochnik_anglruss.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="3 Spravochnik\Spravochnik_anglruss.Designer.cs">
-      <DependentUpon>Spravochnik_anglruss.cs</DependentUpon>
-    </Compile>
     <Compile Include="2 Mybooks\Mybooks_Glaverson.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -154,18 +130,6 @@
     </Compile>
     <Compile Include="2 Mybooks\Mybooks_Location.Designer.cs">
       <DependentUpon>Mybooks_Location.cs</DependentUpon>
-    </Compile>
-    <Compile Include="2 Mybooks\Mybooks_Newbook.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="2 Mybooks\Mybooks_Newbook.Designer.cs">
-      <DependentUpon>Mybooks_Newbook.cs</DependentUpon>
-    </Compile>
-    <Compile Include="2 Mybooks\Mybooks_Oglavlenie.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="2 Mybooks\Mybooks_Oglavlenie.Designer.cs">
-      <DependentUpon>Mybooks_Oglavlenie.cs</DependentUpon>
     </Compile>
     <Compile Include="2 Mybooks\Mybooks_Vtorperson.cs">
       <SubType>UserControl</SubType>
@@ -247,6 +211,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="3 Spravochnik\Spravochnik_slovanew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="3 Spravochnik\Spravochnik_slovanew.Designer.cs">
+      <DependentUpon>Spravochnik_slovanew.cs</DependentUpon>
+    </Compile>
     <Compile Include="Start.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,12 +247,6 @@
     <EmbeddedResource Include="2 Mybooks\Mybooks_Location.resx">
       <DependentUpon>Mybooks_Location.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="2 Mybooks\Mybooks_Newbook.resx">
-      <DependentUpon>Mybooks_Newbook.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="2 Mybooks\Mybooks_Oglavlenie.resx">
-      <DependentUpon>Mybooks_Oglavlenie.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="2 Mybooks\Mybooks_Vtorperson.resx">
       <DependentUpon>Mybooks_Vtorperson.cs</DependentUpon>
     </EmbeddedResource>
@@ -304,8 +268,8 @@
     <EmbeddedResource Include="1 Person\Person_list.resx">
       <DependentUpon>Person_list.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="1 Person\Person.resx">
-      <DependentUpon>Person.cs</DependentUpon>
+    <EmbeddedResource Include="2 Mybooks\Mybooks_Person.resx">
+      <DependentUpon>Mybooks_Person.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CForm.resx">
       <DependentUpon>CForm.cs</DependentUpon>
@@ -322,6 +286,9 @@
     <EmbeddedResource Include="3 Spravochnik\Spravochnik.resx">
       <DependentUpon>Spravochnik.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="3 Spravochnik\Spravochnik_slovanew.resx">
+      <DependentUpon>Spravochnik_slovanew.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Start.resx">
       <DependentUpon>Start.cs</DependentUpon>
     </EmbeddedResource>
@@ -329,18 +296,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="3 Spravochnik\Spravochnik_anglruss.resx">
-      <DependentUpon>Spravochnik_anglruss.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="3 Spravochnik\Spravochnik_mifolog.resx">
-      <DependentUpon>Spravochnik_mifolog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="3 Spravochnik\Spravochnik_name.resx">
-      <DependentUpon>Spravochnik_name.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="3 Spravochnik\Spravochnik_obschii.resx">
-      <DependentUpon>Spravochnik_obschii.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -616,6 +571,8 @@
   <ItemGroup>
     <None Include="Resources\разделитель.gif" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Удалить.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

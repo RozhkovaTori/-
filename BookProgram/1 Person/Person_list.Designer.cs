@@ -33,7 +33,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.delete_tab = new System.Windows.Forms.PictureBox();
             this.add_tab = new System.Windows.Forms.PictureBox();
-            this.word = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.add_p = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -42,6 +42,7 @@
             this.delete_p = new System.Windows.Forms.ToolStripMenuItem();
             this.arhifper_body = new System.Windows.Forms.Panel();
             this.content = new System.Windows.Forms.Panel();
+            this.variable = new System.Windows.Forms.TabControl();
             this.persik = new System.Windows.Forms.Panel();
             this.izmen = new System.Windows.Forms.PictureBox();
             this.горизонтал = new System.Windows.Forms.PictureBox();
@@ -99,11 +100,11 @@
             this.FIO = new System.Windows.Forms.TextBox();
             this.гориз_профиль = new System.Windows.Forms.PictureBox();
             this.профиль = new System.Windows.Forms.PictureBox();
-            this.variable = new System.Windows.Forms.TabControl();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.delete_tab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.add_tab)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.add_p)).BeginInit();
             this.panel2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -120,7 +121,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.word);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.add_p);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
@@ -134,19 +135,20 @@
             this.panel4.Controls.Add(this.delete_tab);
             this.panel4.Controls.Add(this.add_tab);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 95);
+            this.panel4.Location = new System.Drawing.Point(0, 88);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(40, 729);
+            this.panel4.Size = new System.Drawing.Size(40, 736);
             this.panel4.TabIndex = 8;
             // 
             // delete_tab
             // 
-            this.delete_tab.BackgroundImage = global::BookProgram.Properties.Resources.Для_пикчербоксов1;
+            this.delete_tab.BackgroundImage = global::BookProgram.Properties.Resources.Удалить;
             this.delete_tab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.delete_tab.Dock = System.Windows.Forms.DockStyle.Top;
             this.delete_tab.Location = new System.Drawing.Point(0, 28);
             this.delete_tab.Name = "delete_tab";
             this.delete_tab.Size = new System.Drawing.Size(40, 28);
+            this.delete_tab.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.delete_tab.TabIndex = 7;
             this.delete_tab.TabStop = false;
             this.delete_tab.Click += new System.EventHandler(this.delete_tab_Click);
@@ -159,19 +161,22 @@
             this.add_tab.Location = new System.Drawing.Point(0, 0);
             this.add_tab.Name = "add_tab";
             this.add_tab.Size = new System.Drawing.Size(40, 28);
+            this.add_tab.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.add_tab.TabIndex = 8;
             this.add_tab.TabStop = false;
             this.add_tab.Click += new System.EventHandler(this.add_tab_Click);
             // 
-            // word
+            // pictureBox1
             // 
-            this.word.BackgroundImage = global::BookProgram.Properties.Resources.ворд;
-            this.word.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.word.Dock = System.Windows.Forms.DockStyle.Top;
-            this.word.Location = new System.Drawing.Point(0, 49);
-            this.word.Name = "word";
-            this.word.Size = new System.Drawing.Size(40, 46);
-            this.word.TabIndex = 6;
+            this.pictureBox1.BackgroundImage = global::BookProgram.Properties.Resources.ворд;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 49);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // add_p
             // 
@@ -181,6 +186,7 @@
             this.add_p.Location = new System.Drawing.Point(0, 10);
             this.add_p.Name = "add_p";
             this.add_p.Size = new System.Drawing.Size(40, 39);
+            this.add_p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.add_p.TabIndex = 2;
             this.add_p.TabStop = false;
             this.add_p.Click += new System.EventHandler(this.add_p_Click);
@@ -249,6 +255,17 @@
             this.content.Name = "content";
             this.content.Size = new System.Drawing.Size(806, 824);
             this.content.TabIndex = 32;
+            // 
+            // variable
+            // 
+            this.variable.Dock = System.Windows.Forms.DockStyle.Top;
+            this.variable.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.variable.HotTrack = true;
+            this.variable.Location = new System.Drawing.Point(0, 0);
+            this.variable.Name = "variable";
+            this.variable.SelectedIndex = 0;
+            this.variable.Size = new System.Drawing.Size(806, 25);
+            this.variable.TabIndex = 31;
             // 
             // persik
             // 
@@ -319,7 +336,7 @@
             this.persik.Location = new System.Drawing.Point(0, 25);
             this.persik.Name = "persik";
             this.persik.Size = new System.Drawing.Size(806, 799);
-            this.persik.TabIndex = 22;
+            this.persik.TabIndex = 32;
             // 
             // izmen
             // 
@@ -990,17 +1007,6 @@
             this.профиль.TabIndex = 2;
             this.профиль.TabStop = false;
             // 
-            // variable
-            // 
-            this.variable.Dock = System.Windows.Forms.DockStyle.Top;
-            this.variable.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.variable.HotTrack = true;
-            this.variable.Location = new System.Drawing.Point(0, 0);
-            this.variable.Name = "variable";
-            this.variable.SelectedIndex = 0;
-            this.variable.Size = new System.Drawing.Size(806, 25);
-            this.variable.TabIndex = 31;
-            // 
             // Arxivper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1016,6 +1022,7 @@
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.delete_tab)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.add_tab)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.add_p)).EndInit();
             this.panel2.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
@@ -1038,7 +1045,6 @@
         private System.Windows.Forms.PictureBox add_p;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel word;
         public System.Windows.Forms.ListBox list;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem delete_p;
@@ -1047,6 +1053,8 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox add_tab;
         private System.Windows.Forms.Panel content;
+        public System.Windows.Forms.TabControl variable;
+        private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Panel persik;
         public System.Windows.Forms.PictureBox izmen;
         public System.Windows.Forms.PictureBox горизонтал;
@@ -1104,6 +1112,5 @@
         public System.Windows.Forms.TextBox FIO;
         public System.Windows.Forms.PictureBox гориз_профиль;
         public System.Windows.Forms.PictureBox профиль;
-        public System.Windows.Forms.TabControl variable;
     }
 }

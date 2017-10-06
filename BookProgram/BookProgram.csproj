@@ -574,29 +574,5 @@
   <ItemGroup>
     <None Include="Resources\Удалить.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\книги_добавить.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\книги_читать.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\книги_изменить.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\книги_удалить.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Сортировка.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Найти.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Расширенный-поиск-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Расширенный поиск.jpg" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

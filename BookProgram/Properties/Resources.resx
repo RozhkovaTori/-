@@ -124,24 +124,14 @@
   <data name="локации" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\локации.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="настройки" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\настройки.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="hide" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="форматировать-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\форматировать-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="к_перевод" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\к_перевод.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Стрелочка-2-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Стрелочка-2-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Новый-герой-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Новый-герой-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="новая книга" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\новая книга.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,9 +168,7 @@
   <data name="с.к. закрыть" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\с.к. закрыть.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="главный-персонаж-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\главный-персонаж-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="к_с_свернуть" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\к_с_свернуть.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,21 +178,15 @@
   <data name="к_с_развернуть" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\к_с_развернуть.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="новая-глава-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\новая-глава-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="н_с_развернуть" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\н_с_развернуть.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="локации-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\локации-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="н_с_закрыть" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\н_с_закрыть.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="слов-именной-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\слов-именной-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="к_книги" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\к_книги.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -214,24 +196,18 @@
   <data name="н_персонажи" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\н_персонажи.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="слов-общий-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\слов-общий-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="с_перевод" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\с_перевод.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="triangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\triangle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="новая-книга-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\новая-книга-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="с_книги" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\с_книги.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="добавить-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\добавить-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="с_с_старт" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\с_с_старт.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -256,9 +232,7 @@
   <data name="c_читалка" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\c_читалка.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="фото-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\фото-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="ворд" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ворд.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -268,9 +242,7 @@
   <data name="с_с_развернуть" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\с_с_развернуть.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Изменить-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Изменить-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="к_справочники" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\к_справочники.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -289,9 +261,7 @@
   <data name="с_справочники" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\с_справочники.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Стрелочка-1-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Стрелочка-1-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="с_ролевые" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\с_ролевые.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -313,18 +283,14 @@
   <data name="разделитель1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\разделитель.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="настройки-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\настройки-аним.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="н_перевод" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\н_перевод.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Основной фон" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Основной фон1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Сохранить-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Сохранить-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="Стрелочка 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Стрелочка 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -337,30 +303,19 @@
   <data name="слов общий" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\слов общий.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Для-пикчербоксов1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Для-пикчербоксов1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="Сохранить" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Сохранить.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Путь-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Путь-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="н_с_старт" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\н_с_старт.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ворд_аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ворд_аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="слов-мифологический-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\слов-мифологический-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="Для пикчербоксов" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Для пикчербоксов.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="остальные-персонажи-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\остальные-персонажи-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="слов мифологический" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\слов мифологический.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -373,9 +328,7 @@
   <data name="Изменить" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Изменить.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="закр-аним" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\закр-аним.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="старт-закрыть" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\старт-закрыть.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

@@ -113,29 +113,9 @@ namespace BookProgram.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ворд_аним {
-            get {
-                object obj = ResourceManager.GetObject("ворд_аним", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap главный_персонаж {
             get {
                 object obj = ResourceManager.GetObject("главный персонаж", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap главный_персонаж_аним {
-            get {
-                object obj = ResourceManager.GetObject("главный-персонаж-аним", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,29 +133,9 @@ namespace BookProgram.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Для_пикчербоксов1 {
-            get {
-                object obj = ResourceManager.GetObject("Для-пикчербоксов1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap добавить {
             get {
                 object obj = ResourceManager.GetObject("добавить", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap добавить_аним {
-            get {
-                object obj = ResourceManager.GetObject("добавить-аним", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,29 +153,9 @@ namespace BookProgram.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap закр_аним {
-            get {
-                object obj = ResourceManager.GetObject("закр-аним", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Изменить {
             get {
                 object obj = ResourceManager.GetObject("Изменить", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Изменить_аним {
-            get {
-                object obj = ResourceManager.GetObject("Изменить-аним", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,16 +283,6 @@ namespace BookProgram.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap локации_аним {
-            get {
-                object obj = ResourceManager.GetObject("локации-аним", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap н_книги {
             get {
                 object obj = ResourceManager.GetObject("н_книги", resourceCulture);
@@ -453,26 +383,6 @@ namespace BookProgram.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap настройки {
-            get {
-                object obj = ResourceManager.GetObject("настройки", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap настройки_аним {
-            get {
-                object obj = ResourceManager.GetObject("настройки-аним", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap настройки_осн {
             get {
                 object obj = ResourceManager.GetObject("настройки_осн", resourceCulture);
@@ -503,16 +413,6 @@ namespace BookProgram.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap новая_глава_аним {
-            get {
-                object obj = ResourceManager.GetObject("новая-глава-аним", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap новая_книга {
             get {
                 object obj = ResourceManager.GetObject("новая книга", resourceCulture);
@@ -523,29 +423,9 @@ namespace BookProgram.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap новая_книга_аним {
-            get {
-                object obj = ResourceManager.GetObject("новая-книга-аним", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap новый_герой {
             get {
                 object obj = ResourceManager.GetObject("новый герой", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Новый_герой_аним {
-            get {
-                object obj = ResourceManager.GetObject("Новый-герой-аним", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -573,29 +453,9 @@ namespace BookProgram.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap остальные_персонажи_аним {
-            get {
-                object obj = ResourceManager.GetObject("остальные-персонажи-аним", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Путь {
             get {
                 object obj = ResourceManager.GetObject("Путь", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Путь_аним {
-            get {
-                object obj = ResourceManager.GetObject("Путь-аним", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -783,29 +643,9 @@ namespace BookProgram.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap слов_именной_аним {
-            get {
-                object obj = ResourceManager.GetObject("слов-именной-аним", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap слов_мифологический {
             get {
                 object obj = ResourceManager.GetObject("слов мифологический", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap слов_мифологический_аним {
-            get {
-                object obj = ResourceManager.GetObject("слов-мифологический-аним", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -823,29 +663,9 @@ namespace BookProgram.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap слов_общий_аним {
-            get {
-                object obj = ResourceManager.GetObject("слов-общий-аним", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Сохранить {
             get {
                 object obj = ResourceManager.GetObject("Сохранить", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Сохранить_аним {
-            get {
-                object obj = ResourceManager.GetObject("Сохранить-аним", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -903,29 +723,9 @@ namespace BookProgram.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Стрелочка_1_аним {
-            get {
-                object obj = ResourceManager.GetObject("Стрелочка-1-аним", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Стрелочка_2 {
             get {
                 object obj = ResourceManager.GetObject("Стрелочка 2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Стрелочка_2_аним {
-            get {
-                object obj = ResourceManager.GetObject("Стрелочка-2-аним", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -946,26 +746,6 @@ namespace BookProgram.Properties {
         internal static System.Drawing.Bitmap Форматировать {
             get {
                 object obj = ResourceManager.GetObject("Форматировать", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap форматировать_аним {
-            get {
-                object obj = ResourceManager.GetObject("форматировать-аним", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap фото_аним {
-            get {
-                object obj = ResourceManager.GetObject("фото-аним", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

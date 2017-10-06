@@ -206,16 +206,16 @@
     <Compile Include="7 Helper\Helper_Person.Designer.cs">
       <DependentUpon>Helper_Person.cs</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="3 Spravochnik\Spravochnik_slovanew.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="3 Spravochnik\Spravochnik_slovanew.Designer.cs">
       <DependentUpon>Spravochnik_slovanew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Start.cs">
       <SubType>Form</SubType>
@@ -422,9 +422,6 @@
     <None Include="Resources\н_читалка.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\настройки.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\новый герой.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -467,57 +464,6 @@
     <None Include="Resources\Стрелочка 2.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Для-пикчербоксов1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ворд_аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\главный-персонаж-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\добавить-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\закр-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\локации-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\настройки-аним.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\новая-глава-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\новая-книга-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Новый-герой-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\остальные-персонажи-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Путь-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Сохранить-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Стрелочка-1-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Стрелочка-2-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\форматировать-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\фото-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Стрелочка 1.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -545,9 +491,6 @@
     <None Include="Resources\Изменить.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Изменить-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\слов англо-русский.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -558,15 +501,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\слов общий.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\слов-именной-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\слов-мифологический-аним.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\слов-общий-аним.gif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\разделитель.gif" />

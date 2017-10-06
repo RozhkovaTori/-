@@ -574,5 +574,17 @@
   <ItemGroup>
     <None Include="Resources\Удалить.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\настройки_осн2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\настройки_осн-аним2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\справка3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\справыка-аним3.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -162,26 +162,33 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Salmon;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Image = global::BookProgram.Properties.Resources.справка;
             this.pictureBox1.Location = new System.Drawing.Point(351, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
+            this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
             // 
             // setting
             // 
-            this.setting.BackgroundImage = global::BookProgram.Properties.Resources.настройки;
             this.setting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.setting.Dock = System.Windows.Forms.DockStyle.Left;
+            this.setting.Image = global::BookProgram.Properties.Resources.настройки_осн;
             this.setting.Location = new System.Drawing.Point(0, 0);
             this.setting.Name = "setting";
             this.setting.Size = new System.Drawing.Size(35, 35);
+            this.setting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.setting.TabIndex = 0;
             this.setting.TabStop = false;
             this.setting.Click += new System.EventHandler(this.setting_Click);
+            this.setting.MouseLeave += new System.EventHandler(this.setting_MouseLeave);
+            this.setting.MouseHover += new System.EventHandler(this.setting_MouseHover);
             // 
             // DocMenu
             // 

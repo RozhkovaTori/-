@@ -473,6 +473,26 @@ namespace BookProgram.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap настройки_осн {
+            get {
+                object obj = ResourceManager.GetObject("настройки_осн", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap настройки_осн_аним {
+            get {
+                object obj = ResourceManager.GetObject("настройки_осн-аним", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap новая_глава {
             get {
                 object obj = ResourceManager.GetObject("новая глава", resourceCulture);
@@ -826,6 +846,26 @@ namespace BookProgram.Properties {
         internal static System.Drawing.Bitmap Сохранить_аним {
             get {
                 object obj = ResourceManager.GetObject("Сохранить-аним", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap справка {
+            get {
+                object obj = ResourceManager.GetObject("справка", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap справыка_аним {
+            get {
+                object obj = ResourceManager.GetObject("справыка-аним", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

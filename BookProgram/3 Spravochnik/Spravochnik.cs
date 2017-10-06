@@ -14,40 +14,42 @@ namespace BookProgram {
             InitializeComponent();
         }
 
+        
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            //panel3.Controls.Clear();
-            //Spravochnik_1 it = new Spravochnik_1();
-            //it.Dock = DockStyle.Fill;
-            //panel3.Controls.Add(it);
-            //panel3.Controls.SetChildIndex(it, 0);
+            obhi.Visible = true;
+            anglrus.Visible = false;
+            ima.Visible = false;
+            mifol.Visible = false;
         }
 
+       
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            //panel3.Controls.Clear();
-            //Spravochnik_2 it = new Spravochnik_2();
-            //it.Dock = DockStyle.Fill;
-            //panel3.Controls.Add(it);
-            //panel3.Controls.SetChildIndex(it, 0);
+            obhi.Visible = false;
+            anglrus.Visible = false;
+            ima.Visible = true;
+            mifol.Visible = false;
         }
 
+        
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            //panel3.Controls.Clear();
-            //Spravochnik_4 it = new Spravochnik_4();
-            //it.Dock = DockStyle.Fill;
-            //panel3.Controls.Add(it);
-            //panel3.Controls.SetChildIndex(it, 0);
+            obhi.Visible = false;
+            anglrus.Visible = true;
+            ima.Visible = false;
+            mifol.Visible = false;
         }
 
+       
         private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            //panel3.Controls.Clear();
-            //Spravochnik_3 it = new Spravochnik_3();
-            //it.Dock = DockStyle.Fill;
-            //panel3.Controls.Add(it);
-            //panel3.Controls.SetChildIndex(it, 0);
+        { 
+            obhi.Visible = false;
+            anglrus.Visible = false;
+            ima.Visible = false;
+            mifol.Visible = true;
         }
+
+
     }
 }

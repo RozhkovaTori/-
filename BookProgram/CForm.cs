@@ -208,17 +208,35 @@ namespace BookProgram {
             Body.Controls.SetChildIndex(it, 0);
         }
 
-
+        private void setting_MouseHover(object sender, EventArgs e)
+        {
+            setting.Image  = Properties.Resources.настройки_осн_аним;
+        }
+    private void setting_MouseLeave(object sender, EventArgs e)
+        {
+            setting.Image= Properties.Resources.настройки_осн;
+        }
        private void setting_Click(object sender, EventArgs e) {
             Body.Controls.Clear();
+            setting.Image = Properties.Resources.настройки_осн;
             Settings it = new Settings();
             it.Dock = DockStyle.Fill;
             Body.Controls.Add(it);
             Body.Controls.SetChildIndex(it, 0);
         }
+
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.справыка_аним;
+        }
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.справка;
+        }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Body.Controls.Clear();
+            pictureBox1.Image = Properties.Resources.справка;
             Helper it = new Helper();
             it.Dock = DockStyle.Fill;
             Body.Controls.Add(it);
@@ -287,8 +305,11 @@ namespace BookProgram {
             Width = set.width_form;
             if (set.fullscreen) WindowState = FormWindowState.Maximized;
         }
+
+
+
         #endregion
 
-       
+
     } 
 }

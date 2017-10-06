@@ -93,7 +93,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(211, 815);
+            this.panel1.Size = new System.Drawing.Size(163, 815);
             this.panel1.TabIndex = 0;
             // 
             // mybook
@@ -105,7 +105,7 @@
             this.mybook.ItemHeight = 18;
             this.mybook.Location = new System.Drawing.Point(0, 0);
             this.mybook.Name = "mybook";
-            this.mybook.Size = new System.Drawing.Size(211, 815);
+            this.mybook.Size = new System.Drawing.Size(163, 815);
             this.mybook.TabIndex = 2;
             this.mybook.SelectedIndexChanged += new System.EventHandler(this.mybook_SelectedIndexChanged);
             // 
@@ -127,9 +127,9 @@
             // 
             this.panel2.Controls.Add(this.newbook);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(211, 0);
+            this.panel2.Location = new System.Drawing.Point(163, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(908, 40);
+            this.panel2.Size = new System.Drawing.Size(956, 40);
             this.panel2.TabIndex = 1;
             // 
             // newbook
@@ -151,9 +151,9 @@
             this.kniga.Controls.Add(this.panel3);
             this.kniga.Controls.Add(this.panel5);
             this.kniga.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kniga.Location = new System.Drawing.Point(211, 40);
+            this.kniga.Location = new System.Drawing.Point(163, 40);
             this.kniga.Name = "kniga";
-            this.kniga.Size = new System.Drawing.Size(908, 775);
+            this.kniga.Size = new System.Drawing.Size(956, 775);
             this.kniga.TabIndex = 2;
             // 
             // panel3
@@ -163,7 +163,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(43, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(865, 804);
+            this.panel3.Size = new System.Drawing.Size(913, 804);
             this.panel3.TabIndex = 2;
             // 
             // oglav
@@ -174,7 +174,7 @@
             this.oglav.Dock = System.Windows.Forms.DockStyle.Fill;
             this.oglav.Location = new System.Drawing.Point(0, 376);
             this.oglav.Name = "oglav";
-            this.oglav.Size = new System.Drawing.Size(865, 428);
+            this.oglav.Size = new System.Drawing.Size(913, 428);
             this.oglav.TabIndex = 1;
             // 
             // oglavknigi
@@ -186,7 +186,7 @@
             this.oglavknigi.ItemHeight = 18;
             this.oglavknigi.Location = new System.Drawing.Point(0, 25);
             this.oglavknigi.Name = "oglavknigi";
-            this.oglavknigi.Size = new System.Drawing.Size(845, 403);
+            this.oglavknigi.Size = new System.Drawing.Size(893, 403);
             this.oglavknigi.TabIndex = 0;
             // 
             // label1
@@ -195,7 +195,7 @@
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(845, 25);
+            this.label1.Size = new System.Drawing.Size(893, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "ОГЛАВЛЕНИЕ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -203,7 +203,7 @@
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(845, 0);
+            this.panel4.Location = new System.Drawing.Point(893, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(20, 428);
             this.panel4.TabIndex = 2;
@@ -215,7 +215,7 @@
             this.oknige.Dock = System.Windows.Forms.DockStyle.Top;
             this.oknige.Location = new System.Drawing.Point(0, 0);
             this.oknige.Name = "oknige";
-            this.oknige.Size = new System.Drawing.Size(865, 376);
+            this.oknige.Size = new System.Drawing.Size(913, 376);
             this.oknige.TabIndex = 0;
             // 
             // VisibleMenu
@@ -225,7 +225,7 @@
             this.VisibleMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VisibleMenu.Location = new System.Drawing.Point(0, 0);
             this.VisibleMenu.Name = "VisibleMenu";
-            this.VisibleMenu.Size = new System.Drawing.Size(865, 366);
+            this.VisibleMenu.Size = new System.Drawing.Size(913, 366);
             this.VisibleMenu.TabIndex = 12;
             // 
             // content_book
@@ -238,14 +238,14 @@
             this.content_book.Dock = System.Windows.Forms.DockStyle.Fill;
             this.content_book.Location = new System.Drawing.Point(0, 0);
             this.content_book.Name = "content_book";
-            this.content_book.Size = new System.Drawing.Size(845, 366);
+            this.content_book.Size = new System.Drawing.Size(893, 366);
             this.content_book.TabIndex = 31;
             // 
             // обложка
             // 
             this.обложка.BackgroundImage = global::BookProgram.Properties.Resources.Для_пикчербоксов;
             this.обложка.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.обложка.Location = new System.Drawing.Point(51, 6);
+            this.обложка.Location = new System.Drawing.Point(28, 6);
             this.обложка.Name = "обложка";
             this.обложка.Size = new System.Drawing.Size(249, 319);
             this.обложка.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -259,17 +259,17 @@
             this.о_книге.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.о_книге.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.о_книге.ForeColor = System.Drawing.Color.Black;
-            this.о_книге.Location = new System.Drawing.Point(319, 50);
+            this.о_книге.Location = new System.Drawing.Point(296, 50);
             this.о_книге.Multiline = true;
             this.о_книге.Name = "о_книге";
             this.о_книге.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.о_книге.Size = new System.Drawing.Size(489, 307);
+            this.о_книге.Size = new System.Drawing.Size(432, 307);
             this.о_книге.TabIndex = 29;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::BookProgram.Properties.Resources.Изменить;
-            this.pictureBox2.Location = new System.Drawing.Point(748, 15);
+            this.pictureBox2.Location = new System.Drawing.Point(669, 16);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 25);
             this.pictureBox2.TabIndex = 29;
@@ -290,7 +290,7 @@
             "Детектив",
             "Антиутопия",
             "Драма"});
-            this.жанр.Location = new System.Drawing.Point(67, 331);
+            this.жанр.Location = new System.Drawing.Point(47, 331);
             this.жанр.Name = "жанр";
             this.жанр.Size = new System.Drawing.Size(215, 26);
             this.жанр.TabIndex = 0;
@@ -302,7 +302,7 @@
             this.название.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.название.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.название.ForeColor = System.Drawing.Color.Black;
-            this.название.Location = new System.Drawing.Point(396, 16);
+            this.название.Location = new System.Drawing.Point(317, 17);
             this.название.Multiline = true;
             this.название.Name = "название";
             this.название.Size = new System.Drawing.Size(346, 24);
@@ -314,7 +314,7 @@
             this.DocMenu.BackColor = System.Drawing.Color.Transparent;
             this.DocMenu.Controls.Add(this.HideMenuBtn);
             this.DocMenu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.DocMenu.Location = new System.Drawing.Point(845, 0);
+            this.DocMenu.Location = new System.Drawing.Point(893, 0);
             this.DocMenu.Name = "DocMenu";
             this.DocMenu.Size = new System.Drawing.Size(20, 366);
             this.DocMenu.TabIndex = 11;
@@ -337,7 +337,7 @@
             this.HideMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.HideMenu.Location = new System.Drawing.Point(0, 366);
             this.HideMenu.Name = "HideMenu";
-            this.HideMenu.Size = new System.Drawing.Size(865, 10);
+            this.HideMenu.Size = new System.Drawing.Size(913, 10);
             this.HideMenu.TabIndex = 10;
             this.HideMenu.Visible = false;
             // 
@@ -347,7 +347,7 @@
             this.ShowMenuBut.Image = global::BookProgram.Properties.Resources.menud;
             this.ShowMenuBut.Location = new System.Drawing.Point(0, 0);
             this.ShowMenuBut.Name = "ShowMenuBut";
-            this.ShowMenuBut.Size = new System.Drawing.Size(865, 10);
+            this.ShowMenuBut.Size = new System.Drawing.Size(913, 10);
             this.ShowMenuBut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ShowMenuBut.TabIndex = 0;
             this.ShowMenuBut.TabStop = false;

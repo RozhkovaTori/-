@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BookProgram {
-    
+namespace BookProgram
+{
+
     [Serializable]
-    public class Person_class {
+    public class Person_class
+    {
 
         public string id { get; set; }
         public string id_book { get; set; }
@@ -47,6 +45,6 @@ namespace BookProgram {
         public Bitmap img { get; set; }
         public Bitmap imga { get; set; }
         public Bitmap imgak { get; set; }
-     
+
     }
 }

@@ -1,20 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
-namespace BookProgram {
-    public partial class Mybooks : UserControl {
+namespace BookProgram
+{
+    public partial class Mybooks : UserControl
+    {
         public static Mybooks selfref_Mybooks { get; set; }
         //Mybooks_Oglavlenie headers = new Mybooks_Oglavlenie();
-       // Mybooks_Newbook book = new Mybooks_Newbook(false);
-        public Mybooks() {
+        // Mybooks_Newbook book = new Mybooks_Newbook(false);
+        public Mybooks()
+        {
             InitializeComponent();
             //selfref_Mybooks = this;
             //mybook.Sorted = true;
@@ -34,25 +29,30 @@ namespace BookProgram {
             //    refresh_mybook();
             //}
         }
-        public void refrash_list() {
+        public void refrash_list()
+        {
             //mybook.Items.Clear();
             //CForm.selfref.save_to_file(CForm.selfref.global_path_file);
             //foreach (Book_class p in CForm.selfref.mass_book)
             //    mybook.Items.Add(p.название);
             //if (mybook.Items.Count > 0) headers.Visible = true; else headers.Visible = false;
         }
-        private void newbook_MouseHover(object sender, EventArgs e) {
+        private void newbook_MouseHover( object sender, EventArgs e )
+        {
             //newbook.Image= Properties.Resources.новая_книга_аним;
         }
-        private void newbook_MouseLeave(object sender, EventArgs e) {
+        private void newbook_MouseLeave( object sender, EventArgs e )
+        {
             //newbook.Image = Properties.Resources.новая_книга;
         }
-        private void newbook_Click(object sender, EventArgs e) {
+        private void newbook_Click( object sender, EventArgs e )
+        {
             //newbook.Image = Properties.Resources.новая_книга;
             //CFormDialog f = new CFormDialog(new Mybooks_Newbook(true));
             //f.Show();
         }
-        private void удалитьВыбраннуюКнигуToolStripMenuItem_Click(object sender, EventArgs e) {
+        private void удалитьВыбраннуюКнигуToolStripMenuItem_Click( object sender, EventArgs e )
+        {
             //if (mybook.Items.Count > 0) {
             //    for (int i = 0; i < CForm.selfref.mass_book.Count; i++)
             //        if (mybook.Items[mybook.SelectedIndex].ToString() == CForm.selfref.mass_book[i].название) {
@@ -65,11 +65,12 @@ namespace BookProgram {
             //        }
             //}
             //else {
-                //CFormMessage s = new CFormMessage("Список пуст");
-                //s.Show();
+            //CFormMessage s = new CFormMessage("Список пуст");
+            //s.Show();
             //}
         }
-        public void refresh_mybook() {
+        public void refresh_mybook()
+        {
             //if (mybook.Items.Count > 0 && mybook.SelectedIndex >= 0)
             //    for (int i = 0; i < CForm.selfref.mass_book.Count; i++)
             //        if (mybook.Items[mybook.SelectedIndex].ToString() == CForm.selfref.mass_book[i].название) {
@@ -78,7 +79,7 @@ namespace BookProgram {
             //        }
         }
 
-        private void mybook_SelectedIndexChanged(object sender, EventArgs e)
+        private void mybook_SelectedIndexChanged( object sender, EventArgs e )
         {
             //refresh_mybook();
             //headers.refrash_list();
@@ -88,6 +89,6 @@ namespace BookProgram {
 
 
 
-    
-   
+
+
 
